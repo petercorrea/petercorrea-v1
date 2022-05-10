@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "mocha 'Tests/**/*.js'",
+    "eslint": "eslint --fix --ext .js,.jsx .",
+    "pre-commit": "pretty-quick --staged",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,css, ts, tsx}\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
