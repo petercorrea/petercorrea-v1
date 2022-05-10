@@ -114,5 +114,12 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
 .wip
+
+# env files
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.testing
+

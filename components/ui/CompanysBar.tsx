@@ -21,13 +21,13 @@ const CompanysBar = styled("div", {
     alignItems: "center",
 
     li: {
-      display: "block"
-    }
+      display: "block",
+    },
   },
 
   img: {
-    filter: "grayscale(100%) contrast(100%) invert(100%)"
-  }
+    filter: "grayscale(100%) contrast(100%) invert(100%)",
+  },
 })
 
 export default (props) => {

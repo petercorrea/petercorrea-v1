@@ -19,10 +19,10 @@ const NavBar = styled("div", {
 
       "&:hover": {
         fontWeight: "bold",
-        cursor: "pointer"
-      }
-    }
-  }
+        cursor: "pointer",
+      },
+    },
+  },
 })
 
 export default () => {

@@ -1,3 +1,15 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"]
+  "extends": ["next", "prettier"],
+   "rules": {
+    "react/no-unescaped-entities": "off",
+    "react/display-name": "off",
+    "import/no-anonymous-default-export": ["off"],
+    "comma-dangle": ["warn", {
+        "arrays": "never",
+        "objects": "always",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+    }]
+  }
 }

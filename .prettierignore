@@ -124,3 +124,5 @@ dist
 
 wscript
 Tests
+.husky
+.env.*
