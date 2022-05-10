@@ -1,12 +1,12 @@
-import { styled } from "../stitches.config"
+import { styled } from "../../stitches.config"
 
-const Flex = styled("div", {
+const Box = styled("div", {
+  position: "relative",
   display: "block",
   width: "auto",
   height: "100%",
-  padding: "10px",
-  backgroundColor: "$green500",
   color: "black",
+  border: "solid black 1px",
 
   variants: {
     row: {
@@ -24,10 +24,18 @@ const Flex = styled("div", {
         justifyContent: "space-evenly",
         alignItems: "center"
       }
+    },
+    HStack: {
+      true: {
+        display: "flex",
+        flexFlow: "row nowrap",
+        justifyContent: "left",
+        alignItems: "center"
+      }
     }
   }
 })
 
 export default (props) => {
-  return <Flex {...props}>{props.children}</Flex>
+  return <Box {...props}>{props.children}</Box>
 }

@@ -8,7 +8,8 @@ export const globalStyles = globalCss({
     margin: 0,
     padding: 0,
     boxSizing: "border-box",
-    fontFamily: "arial"
+    fontFamily: "arial",
+    listStyle: "none"
   },
   body: {
     maxWidth: "100vw",
@@ -17,6 +18,15 @@ export const globalStyles = globalCss({
 
     h2: {
       "font-size": "2.8rem"
+    },
+
+    img: {
+      objectFit: "contain",
+      background: "transparent"
+    },
+
+    a: {
+      cursor: "pointer"
     }
   }
 })
