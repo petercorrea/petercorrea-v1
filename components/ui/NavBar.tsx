@@ -3,18 +3,14 @@ import Link from "next/link"
 import { styled } from "../../stitches.config"
 
 const NavBar = styled("div", {
-  border: "solid red 1px",
-
   ul: {
     width: "100%",
-    border: "solid white 1px",
     display: "flex",
     flexDirection: "row",
     justifyContent: "flex-end",
     alignItems: "center",
 
     li: {
-      border: "solid black 1px",
       display: "block",
       padding: "5px",
       marginLeft: "5px",

@@ -26,7 +26,9 @@ export const globalStyles = globalCss({
     },
 
     a: {
-      cursor: "pointer"
+      cursor: "pointer",
+      color: "black",
+      textDecoration: "none"
     }
   }
 })

@@ -6,7 +6,7 @@ const Box = styled("div", {
   width: "auto",
   height: "100%",
   color: "black",
-  border: "solid black 1px",
+  border: "solid red 1px",
 
   variants: {
     row: {
@@ -14,26 +14,18 @@ const Box = styled("div", {
         display: "flex",
         flexFlow: "row nowrap",
         justifyContent: "space-evenly",
-        alignItems: "center"
-      }
+        alignItems: "center",
+      },
     },
     column: {
       true: {
         display: "flex",
         flexFlow: "column nowrap",
         justifyContent: "space-evenly",
-        alignItems: "center"
-      }
+        alignItems: "center",
+      },
     },
-    HStack: {
-      true: {
-        display: "flex",
-        flexFlow: "row nowrap",
-        justifyContent: "left",
-        alignItems: "center"
-      }
-    }
-  }
+  },
 })
 
 export default (props) => {

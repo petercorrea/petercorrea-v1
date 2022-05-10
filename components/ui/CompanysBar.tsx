@@ -21,8 +21,7 @@ const CompanysBar = styled("div", {
     alignItems: "center",
 
     li: {
-      display: "block",
-      borderRadius: "5px"
+      display: "block"
     }
   },
 

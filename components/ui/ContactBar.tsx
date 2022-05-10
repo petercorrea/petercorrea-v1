@@ -10,7 +10,6 @@ const ContactBar = styled("div", {
   width: "100%",
 
   ul: {
-    border: "solid blue 2px",
     width: "100%",
     display: "flex",
     flexDirection: "row",
@@ -18,13 +17,9 @@ const ContactBar = styled("div", {
     li: {
       display: "block",
       margin: "5px",
-      marginRight: "15px",
-      ".navbar-images": {
-        display: "inline",
-        margin: "15px"
-      }
-    }
-  }
+      marginRight: "25px",
+    },
+  },
 })
 
 export default () => {

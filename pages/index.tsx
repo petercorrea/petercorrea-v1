@@ -4,37 +4,39 @@ import Navbar from "../components/ui/NavBar"
 import ContactBar from "../components/ui/ContactBar"
 import Bipanel from "../components/layout/Bipanel"
 import CompanysBar from "../components/ui/CompanysBar"
+import Href from "../components/forms/Href"
+
+import Experience from "../components/ui/Experience"
 
 export default function Home() {
   return (
     <Provider>
-      <Box center>
-        <div>This is some text</div>
-        <div>This is some text</div>
-        <div>This is some text</div>
-      </Box>
-      <Box row>
-        <div>This is some text</div>
-        <div>This is some text</div>
-        <div>This is some text</div>
-      </Box>
+      <ContactBar></ContactBar>
+      <Navbar></Navbar>
+      <Href href="./Peter Correa CV.pdf" download>
+        Resume
+      </Href>
+
       <Box column>
         <div>This is some text</div>
         <div>This is some text</div>
         <div>This is some text</div>
       </Box>
-      <Box HStack>
+
+      <Box row>
         <div>This is some text</div>
         <div>This is some text</div>
         <div>This is some text</div>
       </Box>
-      <ContactBar></ContactBar>
-      <Navbar></Navbar>
+
       <Bipanel>
         <div>This is some text</div>
         <div>This is some text</div>
       </Bipanel>
+
       <CompanysBar></CompanysBar>
+
+      <Experience></Experience>
     </Provider>
   )
 }
