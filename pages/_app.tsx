@@ -1,5 +1,11 @@
-function MyApp({ Component, pageProps, }) {
-  return <Component {...pageProps} />
+import Provider from "../components/structure/Provider"
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <Provider>
+      <Component {...pageProps} />
+    </Provider>
+  )
 }
 
 export default MyApp

@@ -9,7 +9,6 @@ const DynamicRoute = () => {
     if (router.isReady) {
       setId(router.query.id)
     }
-    console.log("FIRED")
   }, [router.isReady])
 
   return <p>This is a dynamic route with id: {id}</p>

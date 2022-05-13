@@ -1,7 +1,7 @@
 import { styled } from "../../stitches.config"
 import Image from "next/image"
 
-const Wrapper = styled("div", {
+const Wrapper = styled("a", {
   display: "flex",
   flexWrap: "row nowrap",
   justifyContent: "space-between",
@@ -12,30 +12,27 @@ const Wrapper = styled("div", {
   },
   img: {
     height: "20px",
-    margin: "5px",
   },
 })
 
-export default (props) => {
+export default ({ download, href, width, height, children }) => {
   let downloadHTML
 
-  if (props.download) {
+  if (download) {
     downloadHTML = (
       <Image
         src="/design/download resume.png"
         alt="download icon"
-        width={20}
-        height={20}
+        width={width}
+        height={height}
       ></Image>
     )
   }
 
   return (
-    <Wrapper>
+    <Wrapper target="_blank" rel="noopener noreferrer" download href={href}>
+      {children}
       {downloadHTML}
-      <a {...props} target="_blank" rel="noopener noreferrer">
-        {props.children}
-      </a>
     </Wrapper>
   )
 }

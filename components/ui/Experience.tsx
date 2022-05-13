@@ -1,61 +1,51 @@
 import content from "../../content.json"
 import { styled } from "../../stitches.config"
 import Box from "../layout/Box"
+import Padding from "../layout/Padding"
 
-const Row = styled(Box, {
-  width: "100%",
-  height: "min-content",
-  justifyContent: "space-between",
+const Wrapper = styled(Box, {
+  margin: "40px 0px",
+  display: "flex",
+  "flex-direction": "row",
+  "align-items": "flex-start",
 })
 
-const Item = styled(Box, {
-  width: "auto",
-  maxWidth: "400px",
-  flexBasis: "25%",
-})
-
-const LongItem = styled(Box, {
+const Column = styled("div", {
+  display: "flex",
+  flexDirection: "column",
   justifyContent: "flex-start",
-  alignItems: "flex-start",
-  width: "auto",
-  maxWidth: "500px",
-  flexBasis: "50%",
+  flexBasis: "80%",
 })
-
-const RenderBulletPoints = (content) => {
-  let items = content.experience
-  let points = []
-
-  // generate each item in row
-  for (let item of items) {
-    points = []
-    for (let idx in item["bullet-points"]) {
-      points.push(<Box>{item["bullet-points"][idx]}</Box>)
-    }
-  }
-  return points
-}
 
 export default () => {
   let items = content.experience
   let html = []
 
   // generate each row
-  for (let item of items) {
+  for (let idx in items) {
     html.push(
-      <Row row>
-        <Item column>
-          <Box>{item.years}</Box>
-          <Box>{item.skills}</Box>
-        </Item>
-        <Item column>
-          <Box>{item.company}</Box>
-          <Box>{item.title}</Box>
-        </Item>
-        <LongItem>{RenderBulletPoints(content)}</LongItem>
-      </Row>
+      <Wrapper>
+        <Column>
+          <h2>{items[idx].company}</h2>
+          <h3>{items[idx].title}</h3>
+          <h5>{items[idx].years}</h5>
+          <p>{items[idx].skills}</p>
+        </Column>
+
+        <Box column>
+          <h6>{items[idx].team}</h6>
+          <p>{items[idx]["bullet-points"].join(". ") + "."}</p>
+        </Box>
+      </Wrapper>
     )
   }
 
-  return <Box>{html}</Box>
+  return (
+    <Padding>
+      <Box column>
+        <h1>experience</h1>
+        {html}
+      </Box>
+    </Padding>
+  )
 }

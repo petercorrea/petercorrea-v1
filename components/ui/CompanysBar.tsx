@@ -8,10 +8,10 @@ import ThinkfulLogo from "../../public/logos/thinkful.svg"
 import FiuLogo from "../../public/logos/fiu.png"
 import PaypalLogo from "../../public/logos/paypal.png"
 
-const CompanysBar = styled("div", {
+const CompanysBar = styled(Box, {
   display: "block",
-  backgroundColor: "rgba(59, 59, 59, 0.94)",
-  height: "100%",
+  backgroundColor: "rgba(0, 0, 0, 0.94)",
+  height: "150px",
 
   ul: {
     width: "100%",
@@ -22,59 +22,57 @@ const CompanysBar = styled("div", {
 
     li: {
       display: "block",
-    },
-  },
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
 
-  img: {
-    filter: "grayscale(100%) contrast(100%) invert(100%)",
+      img: {
+        filter: "grayscale(100%) contrast(100%) invert(100%) brightness(120%)",
+      },
+    },
   },
 })
 
 export default (props) => {
   return (
-    <CompanysBar {...props}>
+    <CompanysBar {...props} row>
       <Box row>
         <ul>
-          <li>
+          <li key="CompanysBar_0">
             <Image
-              className="navbar-images"
               src={ThinkfulLogo}
               alt="company logo of thinkful"
               width={100}
               height={100}
             ></Image>
           </li>
-          <li>
+
+          <li key="CompanysBar_2">
             <Image
-              className="navbar-images"
-              src={AppleLogo}
-              alt="company logo of Apple"
-              width={60}
-              height={60}
-            ></Image>
-          </li>
-          <li>
-            <Image
-              className="navbar-images"
               src={TargetLogo}
               alt="company logo of target"
               width={60}
               height={60}
             ></Image>
           </li>
-
-          <li>
+          <li key="CompanysBar_1">
             <Image
-              className="navbar-images"
+              src={AppleLogo}
+              alt="company logo of Apple"
+              width={60}
+              height={60}
+            ></Image>
+          </li>
+          <li key="CompanysBar_3">
+            <Image
               src={CoinbaseLogo}
               alt="company logo of  coinbase"
               width={100}
               height={100}
             ></Image>
           </li>
-          <li>
+          <li key="CompanysBar_4">
             <Image
-              className="navbar-images"
               src={PaypalLogo}
               alt="company logo of paypal"
               width={100}

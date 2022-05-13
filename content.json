@@ -3,8 +3,8 @@
     {
       "company": "PayPal",
       "industry": "FinTech",
-      "team": "Growth",
-      "years": "2021 - present",
+      "team": "Growth Team",
+      "years": "2021 - now",
       "title": "Software Engineer ||",
       "bullet-points": [
         "Implemented new cash products resulting in 18% increased engagement",
@@ -16,14 +16,14 @@
         "Conduct hands on workshops regarding software engineering and web design",
         "Monitored deployments on cloud hosting environments for usage and high availability"
       ],
-      "skills": "typescript, javascript, html, css"
+      "skills": "backend development, typescript, graphql, apollo, nodejs, jenkins"
     },
     {
-      "company": "PayPal",
+      "company": "",
       "industry": "FinTech",
       "team": "Product Team",
-      "years": "2021 - present",
-      "title": "Software Engineer ||",
+      "years": "",
+      "title": "",
       "bullet-points": [
         "Focused on building out an in-house content management system to support all teams",
         "Developed AI/ML personalization platform for user promotions increasing transactions per capita by 30%",
@@ -33,14 +33,14 @@
         "Facilitate forum discussions on object oriented code, data structure and algorithms and testing",
         "Built for a variety of target devices including web and native platforms"
       ],
-      "skills": "typescript, javascript, html, css"
+      "skills": ""
     },
     {
       "company": "Coinbase",
       "industry": "FinTech",
       "team": "Data Science Team",
       "years": "2020 - 2021",
-      "title": "Software Engineer ||",
+      "title": "Software Engineer",
       "bullet-points": [
         "Conduct statistical analysis, data modeling, sanitation, imputation and standardization with pandas and numpy",
         "Develop dashboards and visualizations with seaborn and ggplot",
@@ -49,14 +49,14 @@
         "Develop web scraping scripts and automated testing ",
         "Rearchitect multipage web apps into single page to improve performance by 17%"
       ],
-      "skills": "typescript, javascript, html, css"
+      "skills": "typescript, react, frontend development, css"
     },
     {
-      "company": "Coinbase",
+      "company": "",
       "industry": "FinTech",
       "team": "Product Team",
-      "years": "2020 - 2021",
-      "title": "Software Engineer",
+      "years": "",
+      "title": "",
       "bullet-points": [
         "Worked on improving frontend experience by implementing automated testing in Datadog",
         "Migrated flagship product from monorepos to microservices reduced bundle size by 26% ",
@@ -66,7 +66,7 @@
         "Built HIPPA compliant persistence models, migration and data cacheing strategies: postgres, mongoDB, mysql",
         "Designed single page, client/server, serverless, JAMStack and service oriented architectures: React, NextJS"
       ],
-      "skills": "typescript, javascript, html, css"
+      "skills": ""
     },
     {
       "company": "Thinkful",
@@ -81,7 +81,7 @@
         "Integrated token based authentication and authorization systems with appropriate hash and salt mechanisms",
         "Developed single page applications with frontend frameworks: React"
       ],
-      "skills": "typescript, javascript, html, css"
+      "skills": "fullstack development, react"
     },
     {
       "company": "Target",
@@ -96,7 +96,7 @@
         "Grew online sales by 47% and improved gross margins by 38%",
         "Managed a team with 50+ direct reports achieving in highest number of promotions and cultural satisfaction"
       ],
-      "skills": "typescript, javascript, html, css"
+      "skills": "operational excellence, management, recruitment, p/l"
     },
     {
       "company": "Apple",
@@ -111,12 +111,12 @@
         "Verify and audit technical repairs, hardware upgrades, and data recovery and migrations",
         "Train and develop peers and new employees "
       ],
-      "skills": "typescript, javascript, html, css"
+      "skills": "hardware repairs, software debugging, mentoring"
     },
     {
       "company": "FIU Dept. of Biology",
       "industry": "Education",
-      "team": "student",
+      "team": "Peer Leader",
       "years": "2013 - 2014",
       "title": "Team Leader",
       "bullet-points": [
@@ -125,7 +125,7 @@
         "Plan, build and present curriculum covering topics in physics, biology and chemistry",
         "Collaborate with staff and faculty to assess and improve student engagement and performance"
       ],
-      "skills": "typescript, javascript, html, css"
+      "skills": "lecturing, presenting, research"
     }
   ],
   "biography": {
@@ -153,5 +153,23 @@
   "assets": {
     "resume": "link"
   },
-  "skills": "typescript, javascript, python, rust, node.js, postgres, sql, mongodb, jenkins, cypress, jest, react, next.js, solid.js, unix, docker, npm, git, html, css, graphql, amazon web services, s3, cognitodb, vercel, heroku, strapi, contentful, data analytics, data science, testing, object oriented, frontend development, backend development, mobile development"
+  "skills": "typescript, javascript, python, rust, node.js, postgres, sql, mongodb, jenkins, cypress, jest, react, next.js, solid.js, unix, docker, npm, git, html, css, graphql, amazon web services, s3, cognitodb, vercel, heroku, strapi, contentful, data analytics, data science, testing, object oriented, frontend development, backend development, mobile development",
+  "quiz": {
+    "question": "You can update the page content by manipulating the DOM.",
+    "options":[
+          { 
+             "id": 1, 
+            "text": "True", 
+            "correct": true, 
+            "explanation":"Yes. Because its, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense."
+          },
+          { 
+             "id": 0, 
+            "text": "False", 
+            "correct": false, 
+            "explanation":"No. Because its, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense."
+          }
+      ],    
+    "category":"True or False"
+  }
 }

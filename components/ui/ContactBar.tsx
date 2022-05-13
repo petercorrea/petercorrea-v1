@@ -7,8 +7,6 @@ import { styled } from "../../stitches.config"
 import Href from "../forms/Href"
 
 const ContactBar = styled("div", {
-  width: "100%",
-
   ul: {
     width: "100%",
     display: "flex",
@@ -16,7 +14,6 @@ const ContactBar = styled("div", {
 
     li: {
       display: "block",
-      margin: "5px",
       marginRight: "25px",
     },
   },
@@ -27,38 +24,43 @@ export default () => {
     <ContactBar>
       <Box row>
         <ul>
-          <li>
+          <li key="ContactBar_0">
             <Href href="https://www.github.com/petercorrea">
               <Image
-                className="navbar-images"
                 src={githubImage}
                 alt="link to peter's git hub"
-                width={40}
-                height={40}
+                width={30}
+                height={30}
               ></Image>
             </Href>
           </li>
-          <li>
+          <li key="ContactBar_1">
             <Href href="https://www.linkedin.com/in/petercorrea">
               <Image
-                className="navbar-images"
                 src={linkedinImage}
                 alt="link to peter's linked in"
-                width={40}
-                height={40}
+                width={30}
+                height={30}
               ></Image>
             </Href>
           </li>
-          <li>
-            <Href href="mailto:pmcorrea@me.com">
+          <li key="ContactBar_2">
+            <Href href="mailto:pmcorrea@me.com?subject=PeterCorrea.com: reaching out...">
               <Image
-                className="navbar-images"
                 src={emailImage}
                 alt="link to send peter an email"
-                width={40}
-                height={40}
+                width={30}
+                height={30}
               ></Image>
             </Href>
+          </li>
+          <li key="ContactBar_3">
+            <Href
+              href="./Peter Correa CV.pdf"
+              download
+              width={30}
+              height={30}
+            ></Href>
           </li>
         </ul>
       </Box>
