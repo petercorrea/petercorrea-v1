@@ -2,7 +2,7 @@ import confetti from "canvas-confetti"
 
 let count = 200
 let defaults = {
-  origin: { y: 0.5, x: 0.5 },
+  origin: { y: 0.5, x: 0.5, },
 }
 
 function fire(particleRatio, opts) {

@@ -1,15 +1,13 @@
-import { styled } from "@stitches/react"
+import { keyframes, styled } from "@stitches/react"
 import Box from "../../layout/Box"
-import { keyframes } from "@stitches/react"
-import { useRef } from "react"
 
 const shake = keyframes({
-  "0%": { transform: "translateX(10px)" },
-  "20%": { transform: "translateX(-10px)" },
-  "40%": { transform: "translateX(10px)" },
-  "60%": { transform: "translateX(-10px)" },
-  "80%": { transform: "translateX(10px)" },
-  "100%": { transform: "translateX(0px)" },
+  "0%": { transform: "translateX(10px)", },
+  "20%": { transform: "translateX(-10px)", },
+  "40%": { transform: "translateX(10px)", },
+  "60%": { transform: "translateX(-10px)", },
+  "80%": { transform: "translateX(10px)", },
+  "100%": { transform: "translateX(0px)", },
 })
 
 const abcInterator = () => {
@@ -81,7 +79,7 @@ const OptionsButton = styled(Box, {
   },
 })
 
-export default ({ options, selection, handleSelect, correct, submitted }) => {
+export default ({ options, selection, handleSelect, correct, submitted, }) => {
   let choicesHtml = []
   let abcIterate = abcInterator()
 

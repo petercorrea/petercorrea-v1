@@ -5,7 +5,7 @@ const DynamicRoute = () => {
   const [id, setId] = useState<string,>("10")
   const router = useRouter()
 
-  useEffect(() => {
+  useEffect((router) => {
     if (router.isReady) {
       setId(router.query.id)
     }

@@ -1,17 +1,23 @@
-import Box from "../layout/Box"
-import { styled } from "../../stitches.config"
 import Image from "next/image"
 import AppleLogo from "../../public/logos/apple.png"
 import CoinbaseLogo from "../../public/logos/coinbase.png"
+import PaypalLogo from "../../public/logos/paypal.png"
 import TargetLogo from "../../public/logos/target.png"
 import ThinkfulLogo from "../../public/logos/thinkful.svg"
-import FiuLogo from "../../public/logos/fiu.png"
-import PaypalLogo from "../../public/logos/paypal.png"
+import { styled } from "../../stitches.config"
+import Box from "../layout/Box"
 
 const CompanysBar = styled(Box, {
   display: "block",
   backgroundColor: "rgba(0, 0, 0, 0.94)",
-  height: "150px",
+  // height: "150px",
+  padding: "20px 0px",
+
+  h3: {
+    color: "white",
+    textAlign: "center",
+    margin: "10px",
+  },
 
   ul: {
     width: "100%",
@@ -35,7 +41,11 @@ const CompanysBar = styled(Box, {
 
 export default (props) => {
   return (
-    <CompanysBar {...props} row>
+    <CompanysBar {...props} column>
+      <Box row full>
+        <h3>I've work with...</h3>
+      </Box>
+
       <Box row>
         <ul>
           <li key="CompanysBar_0">

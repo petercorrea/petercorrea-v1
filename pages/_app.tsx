@@ -1,6 +1,6 @@
-import Provider from "../components/structure/Provider"
+import Provider from "../context/Provider"
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, }) {
   return (
     <Provider>
       <Component {...pageProps} />

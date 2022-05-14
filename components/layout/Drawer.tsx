@@ -1,9 +1,9 @@
-import { styled } from "../../stitches.config"
-import Box from "./Box"
-import { useState, useEffect } from "react"
+import Image from "next/image"
+import { useEffect } from "react"
 import { useAppContext } from "../../context/AppContext"
 import hamburger from "../../public/design/hamburger.png"
-import Image from "next/image"
+import { styled } from "../../stitches.config"
+import Box from "./Box"
 
 // Outside Drawer Component
 const OutsideDrawer = styled(Box, {
@@ -62,14 +62,14 @@ const Wrapper = styled(Box, {
 })
 
 export const Drawer = (props) => {
-  let { appContext, setAppContext } = useAppContext()
+  let { appContext, setAppContext, } = useAppContext()
 
   useEffect(() => {
     // console.log("Drawer was rendered")
   }, [])
 
   const closeDrawer = () => {
-    setAppContext({ show: false })
+    setAppContext({ show: false, })
   }
 
   return appContext.show ? (
@@ -104,10 +104,10 @@ const ButtonWrapper = styled("button", {
 })
 
 export const DrawerButton = () => {
-  let { appContext, setAppContext } = useAppContext()
+  let { appContext, setAppContext, } = useAppContext()
 
   const openDrawer = () => {
-    setAppContext({ show: true })
+    setAppContext({ show: true, })
   }
 
   return (

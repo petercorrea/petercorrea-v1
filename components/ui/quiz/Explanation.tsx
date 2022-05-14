@@ -46,7 +46,7 @@ const AttachedModal = styled(Box, {
   },
 })
 
-export default ({ submitted, correct, selection, options }) => {
+export default ({ submitted, correct, selection, options, }) => {
   let currentSelection = options.filter((option) => {
     return selection == option.id
   })[0]

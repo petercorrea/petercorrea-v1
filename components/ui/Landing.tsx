@@ -1,5 +1,4 @@
 import Box from "../../components/layout/Box"
-import Hero from "../../components/ui/Hero"
 import { styled } from "../../stitches.config"
 import Padding from "../layout/Padding"
 
@@ -7,10 +6,6 @@ const Column = styled(Box, {
   // border: "solid red 1px",
   "min-height": "100%",
   // justifyContent: "flex-start",
-})
-
-const LargeText = styled(Box, {
-  marginBottom: "300px",
 })
 
 const Row = styled(Box, {
@@ -27,10 +22,6 @@ export default () => {
   let date = new Date()
   return (
     <Padding>
-      <LargeText column>
-        <h1>Peter Correa</h1>
-      </LargeText>
-
       <Row row>
         <Item column>
           <h2>role</h2>
@@ -52,7 +43,6 @@ export default () => {
           <h4>fullstack, data structures and algorithms</h4>
         </Item>
       </Row>
-      <Hero></Hero>
     </Padding>
   )
 }

@@ -1,11 +1,11 @@
+import { keyframes } from "@stitches/core"
+import { useEffect, useState } from "react"
 import { styled } from "../../../stitches.config"
 import Box from "../../layout/Box"
-import { useState, useEffect } from "react"
-import Question from "./Question"
-import Options from "./Options"
 import Explanation from "./Explanation"
-import { keyframes } from "@stitches/core"
 import fireworks from "./Fireworks"
+import Options from "./Options"
+import Question from "./Question"
 
 const slideUp = keyframes({
   "0%": { transform: "translateY(20px)", opacity: 0 },
@@ -75,6 +75,7 @@ export default ({ content }) => {
         setAnswer(option.id)
       }
     }
+    // eslint-disable-next-line
   }, [])
 
   // select handler
