@@ -8,12 +8,13 @@ import StyledLink from "./StyledLink"
 
 const MobileNavbar = styled(Box, {
   flexDirection: "column",
-  // border: "red solid 1px",
-  position: "fixed",
+  position: "sticky",
   top: "-150px",
+  bottom: "0px",
   zIndex: 10,
   backgroundColor: "#ffffffd5",
   backdropFilter: "blur(4px)",
+  overflow: "hidden",
 
   "@bp1": {
     display: "flex",
@@ -61,12 +62,19 @@ const MobileNavbar = styled(Box, {
         transition: "top 200ms ease",
       },
     },
+
+    open: {
+      true: {
+        height: "100vh",
+        bottom: "0px",
+        top: "0px",
+      },
+    },
   },
 })
 
 const TopBar = styled(Box, {
   padding: "$m $l",
-  // border: "red solid 2px",
   justifyContent: "flex-end",
 
   "&>*": {
@@ -82,6 +90,9 @@ const Links = styled(Box, {
     show: {
       true: {
         display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-end",
+        justifyContent: "center",
       },
     },
   },
@@ -89,12 +100,16 @@ const Links = styled(Box, {
 
 export default () => {
   const [isVisible, setVisible] = useState(false)
+  const [isOpen, setOpen] = useState(false)
+
   const toggleMenu = () => {
     setVisible(!isVisible)
+    setOpen(!isOpen)
   }
 
   const closeMenu = () => {
     setVisible(false)
+    setOpen(false)
   }
 
   const scrollDirection = useScrollDirection({
@@ -104,7 +119,11 @@ export default () => {
   })
 
   return (
-    <MobileNavbar show={scrollDirection === "down" ? false : true}>
+    <MobileNavbar
+      show={scrollDirection === "down" ? false : true}
+      border
+      open={isOpen}
+    >
       <TopBar row>
         <Button onClick={() => {}}>
           <a download href="./Peter Correa CV.pdf" id="resume">
@@ -115,7 +134,7 @@ export default () => {
         <HamburgerMenuIcon id="hamburger" onClick={toggleMenu} />
       </TopBar>
 
-      <Links show={isVisible} right border>
+      <Links show={isVisible} right>
         <ul>
           <li onClick={closeMenu}>
             <StyledLink href="/#bio">bio</StyledLink>
