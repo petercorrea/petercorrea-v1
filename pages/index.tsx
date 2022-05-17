@@ -1,21 +1,23 @@
-import Bio from "../components/ui/Bio"
-import CompanysBar from "../components/ui/CompanysBar"
-import ContactMe from "../components/ui/ContactMe"
-import Experience from "../components/ui/Experience"
-import Hero from "../components/ui/Hero"
-import Landing from "../components/ui/Landing"
-import Navbar from "../components/ui/Navbar"
+import MobileNavbar from "../components/ui/components/MobileNavbar"
+import Navbar from "../components/ui/components/Navbar"
+import Bio from "../components/ui/content/Bio"
+import ContactMe from "../components/ui/content/ContactMe"
+import Experience from "../components/ui/content/Experience"
+import Landing from "../components/ui/content/Landing"
+import LogosBar from "../components/ui/content/LogosBar"
+import content from "../content.json"
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <Hero></Hero>
+      <MobileNavbar links={content.links} />
+      <Navbar links={content.links} />
       <Landing />
-      <ContactMe />
+      {/* <Typography></Typography> */}
       <Bio />
-      <CompanysBar />
+      <LogosBar />
       <Experience></Experience>
+      <ContactMe />
       {/* <Quiz content={content.quiz} /> */}
       {/* <Drawer></Drawer> */}
       {/* <Typography /> */}

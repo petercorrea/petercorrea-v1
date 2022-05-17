@@ -1,8 +1,8 @@
 import { styled } from "@stitches/react"
 import Image from "next/image"
-import Box from "../../layout/Box"
 import Check from "../../../public/design/check.png"
 import Wrong from "../../../public/design/wrong.png"
+import Box from "../../layout/Box"
 
 const AttachedModal = styled(Box, {
   width: "100%",
@@ -14,39 +14,37 @@ const AttachedModal = styled(Box, {
 
   "& > * ": {
     "& > * ": {
-      fontWeight: "600",
-      margin: "0px 10px",
-    },
+      margin: "0px 10px"
+    }
   },
 
   ".explanation": {
-    color: "black",
-    margin: "10px 0px",
-    fontSize: "1.1rem",
+    color: "$black",
+    margin: "10px 0px"
   },
 
   variants: {
     hide: {
       true: {
-        display: "none",
-      },
+        display: "none"
+      }
     },
     show: {
       true: {
-        display: "block",
-      },
+        display: "block"
+      }
     },
     correct: {
       true: {
         "& > * ": {
-          color: "green",
-        },
-      },
-    },
-  },
+          color: "$green"
+        }
+      }
+    }
+  }
 })
 
-export default ({ submitted, correct, selection, options, }) => {
+export default ({ submitted, correct, selection, options }) => {
   let currentSelection = options.filter((option) => {
     return selection == option.id
   })[0]

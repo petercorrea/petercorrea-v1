@@ -1,17 +1,24 @@
 import { createContext, useContext, useState } from "react"
 
-const AppContext = createContext({})
+interface AppContextInterface {
+  appContext: { show: boolean, },
+  setAppContext: any,
+}
+
+const ContextComponent = createContext({} as AppContextInterface | null)
+
+export function useAppContext() {
+  return useContext(ContextComponent)
+}
 
 export function AppContextWrapper({ children }) {
   let [appContext, setAppContext] = useState({ show: true })
+  const AppContext = { appContext: appContext, setAppContext: setAppContext }
 
   return (
-    <AppContext.Provider value={{ appContext, setAppContext }}>
+    <ContextComponent.Provider value={AppContext}>
       {children}
-    </AppContext.Provider>
+    </ContextComponent.Provider>
   )
 }
 
-export function useAppContext() {
-  return useContext(AppContext)
-}

@@ -5,7 +5,8 @@ const Wrapper = styled("div", {
   width: "100px",
   minHeight: "100px",
   minWidth: "100px",
-  backgroundColor: "lightgray",
+  backgroundColor: "$lightgray",
+  border: "$border-dark"
 })
 
 export default (props) => {

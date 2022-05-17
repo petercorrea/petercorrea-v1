@@ -4,30 +4,54 @@ export const { config, createTheme, css, getCssText, styled, theme } =
   createStitches({
     theme: {
       colors: {
-        white: "#F0EDEE",
+        // neutrals
         black: "#000000",
         charcoal: "#2F2F2F",
         gray: "#A4A4A4",
+        lightgray: "#0c0c0c26",
+        white: "#ffffff",
+
+        // primaries
         red: "#9B0606",
-        green: "#72ECB8",
-        blue: "#38B9F5",
         yellow: "#FFE176",
-        magenta: "#D077D3",
+        green: "#72ECB8",
         cyan: "#1ADBE6",
+        lightblue: "#008cff8f",
+        blue: "#008cff",
+        magenta: "#D077D3",
+
+        // active, secondary, disabled
+        active: "$blue",
+        secondary: "$black",
+        disabled: "$gray",
+        bg: "#37005c",
+
+        // border styles
+        "border-light": "solid $lightgray 1px",
+        "border-white": "solid $white 1px",
+        "border-dark": "solid $black 1px",
+        "border-red": "solid red 5px",
+        "border-yellow": "solid $yellow 5px",
+        "border-green": "solid $green 5px",
+        "border-blue": "solid $blue 1px",
       },
       space: {
+        xxxs: "1px",
+        xxs: "2px",
         xs: "5px",
         s: "10px",
         m: "15px",
         l: "20px",
         xl: "40px",
-        sectionPadding: "100px",
+        xxl: "80px",
+        xxxl: "100px",
       },
       fontSizes: {
+        xxl: "5rem",
         xl: "3rem",
         l: "2rem",
-        m: "1rem",
-        s: ".8rem",
+        m: "1.2rem",
+        s: "1rem",
         xs: ".6rem",
       },
       fonts: {
@@ -35,19 +59,36 @@ export const { config, createTheme, css, getCssText, styled, theme } =
         mono: "Söhne Mono, menlo, monospace",
       },
       fontWeights: {},
-      lineHeights: {},
+      lineHeights: {
+        s: "1.8rem",
+        m: "4rem",
+        l: "11rem",
+      },
       letterSpacings: {},
       sizes: {},
       borderWidths: {},
       borderStyles: {},
-      radii: {},
-      shadows: {},
+      radii: {
+        borderRadius: "10px",
+      },
+      shadows: {
+        dark: "0px 0px 15px 2px #5c5c5ca6",
+        light: "10px 10px 10px 1px #0c0c0c26",
+        blue: "0px 0px 10px 2px #008cff8f",
+        lightblue: "0px 0px 15px 2px #008cff65",
+      },
       zIndices: {},
       transitions: {},
+    },
+    media: {
+      bp1: "(min-width: 0px)",
+      bp2: "(min-width: 512px)",
+      bp3: "(min-width: 768px)",
     },
   })
 
 export const globalStyles = globalCss({
+  // layout // layout // layout // layout // layout // layout // layout // layout
   ":root": {
     "font-size": "16px",
   },
@@ -61,130 +102,130 @@ export const globalStyles = globalCss({
   body: {
     maxWidth: "100vw",
     minHeight: "fit-content",
-    "overflow-x": "clip",
+    "overflow-x": "hidden",
   },
 
+  // typography // typography // typography // typography // typography // typography
   h1: {
-    fontSize: "15rem",
+    fontSize: "10vh",
     fontWeight: "900",
     display: "block",
-    textTransform: "uppercase",
-    "letter-spacing": "-22px",
-    lineHeight: "11rem",
+    "letter-spacing": "-3px",
   },
-
   h2: {
-    fontSize: "4rem",
+    fontSize: "$xl",
     fontWeight: "100",
     display: "block",
-    lineHeight: "4rem",
   },
-
   h3: {
-    fontSize: "2rem",
+    fontSize: "$l",
     fontWeight: "600",
     display: "block",
-    textTransform: "uppercase",
   },
   h4: {
-    fontSize: "1.2rem",
+    fontSize: "$m",
     fontWeight: "600",
     display: "block",
-    textTransform: "capitalize",
   },
   h5: {
-    fontSize: "1.2rem",
+    fontSize: "$m",
     fontWeight: "400",
     display: "block",
-    textTransform: "capitalize",
   },
   h6: {
-    fontSize: "1.2rem",
+    fontSize: "$m",
     fontWeight: "400",
     display: "block",
-    textTransform: "capitalize",
-    color: "rgba(1, 1, 1, .3)",
+    color: "$gray",
   },
-
   p: {
     display: "inline",
-    fontSize: "1.2rem",
+    fontSize: "$m",
     fontWeight: "300",
-    lineHeight: "1.8rem",
+    lineHeight: "$s",
     "letter-spacing": "0px",
     wordSpacing: "1px",
   },
 
-  ".hightlight": {
-    display: "inline",
-    fontSize: "1.2rem",
-    fontWeight: "300",
-    lineHeight: "1.8rem",
-    "letter-spacing": "0px",
-    wordSpacing: "1px",
-    color: "black",
-    backgroundColor: "yellow",
-    padding: "5px",
-    textAlign: "center",
-  },
-  ".bold": {
-    display: "inline",
-    fontSize: "1.2rem",
-    fontWeight: "800",
-    lineHeight: "1.8rem",
-    "letter-spacing": "0px",
-    wordSpacing: "1px",
-    color: "black",
-    padding: "5px",
-    textAlign: "center",
-  },
-  ".strike": {
-    display: "inline",
-    fontSize: "1.2rem",
-    fontWeight: "800",
-    lineHeight: "1.8rem",
-    "letter-spacing": "0px",
-    wordSpacing: "1px",
-    color: "black",
-    padding: "5px",
-    textAlign: "center",
-    "text-decoration": "wavy underline red",
-  },
-  ".code": {
-    margin: "0px 5px",
-    display: "inline",
-    fontSize: "1.2rem",
-    fontWeight: "200",
-    lineHeight: "1.8rem",
-    "letter-spacing": "0px",
-    wordSpacing: "1px",
-    color: "black",
-    padding: "2px",
-    textAlign: "center",
-    fontFamily: "monospace",
-    backgroundColor: "lightgray",
-    letterSpacing: "-1px",
-    padding: "5px",
-  },
-
+  // links and buttons // links and buttons // links and buttons // links and buttons
   a: {
-    cursor: "pointer",
-    color: "black",
+    fontSize: "1.1rem",
     textDecoration: "none",
+    color: "$black",
   },
 
   "a:hover, button:hover": {
     cursor: "pointer",
   },
 
+  "a:visited": {
+    color: "$black",
+    "text-decoration": "none",
+  },
+
+  button: {
+    fontSize: "1.1rem",
+    textDecoration: "none",
+    display: "block",
+    padding: "10px",
+    border: "$border-blue",
+    borderRadius: "$borderRadius",
+    color: "$white",
+    transition: "transform 100ms ease",
+    transform: "translateY(0px)",
+    backgroundColor: "$active",
+    boxShadow: "$lightblue",
+
+    "&:hover": {
+      transform: "translateY(-10px)",
+      transition: "transform 100ms ease",
+    },
+  },
+
+  // assets // assets // assets // assets // assets // assets // assets // assets
   img: {
     objectFit: "contain",
     background: "transparent",
   },
 
-  ".hero-text": {
-    fontSize: "8rem",
-    fontWeight: "800",
+  // global classes // global classes // global classes // global classes // global classes
+  ".hightlight": {
+    display: "inline",
+    fontSize: "$m",
+    fontWeight: "300",
+    wordSpacing: "1px",
+    color: "$black",
+    backgroundColor: "$yellow",
+    padding: "5px",
     textAlign: "center",
+  },
+  ".bold": {
+    display: "inline",
+    fontSize: "$m",
+    fontWeight: "800",
+    "letter-spacing": "0px",
+    wordSpacing: "1px",
+    color: "$black",
+    padding: "5px",
+    textAlign: "center",
+  },
+  ".code": {
+    "font-family": "'IBM Plex Mono', monospace",
+    display: "inline",
+    fontSize: "$s",
+    fontWeight: "400",
+    letterSpacing: "-1px",
+    backgroundColor: "$lightgray",
+  },
+  ".active": {
+    color: "$active",
+  },
+  ".caption": {
+    "font-family": "'IBM Plex Mono', monospace",
+    color: "$black",
+    fontWeight: "400",
+    fontSize: "$s",
+    letterSpacing: "-1px",
+    wordSpacing: "-4px",
   },
 })

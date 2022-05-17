@@ -5,8 +5,8 @@ const Wrapper = styled("div", {
   height: "20px",
   margin: "0px 10px",
 
-  ".slidecontainer": {
-    width: "100%" /* Width of the outside container */,
+  ".slideContainer": {
+    width: "100%" /* Width of the outside container */
   },
 
   ".slider": {
@@ -14,10 +14,10 @@ const Wrapper = styled("div", {
     appearance: "none",
     width: "100%",
     height: "5px",
-    background: "#008cff",
+    background: "$blue",
     outline: "none",
     borderRadius: "5px",
-    boxShadow: "0px 0px 15px 2px #5c5c5c2d",
+    boxShadow: "$light"
   },
 
   /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
@@ -26,30 +26,27 @@ const Wrapper = styled("div", {
     appearance: "none",
     width: "25px",
     height: "25px",
-    background: "#ffffff",
+    background: "$white",
     cursor: "pointer",
     borderRadius: "50%",
-    border: "solid #0c0c0c26 1px",
-    boxShadow: "0px 0px 15px 2px #5c5c5c2d",
+    border: "$border-light",
+    boxShadow: "$light"
   },
 
   ".slider::-moz-range-thumb": {
     width: "25px",
     height: "25px",
-    background: "#04AA6D",
+    background: "$green",
     cursor: "pointer",
-    borderRadius: "50%",
-  },
+    borderRadius: "50%"
+  }
 })
 
 export default () => {
-  const handleInput = () => {}
-
   return (
-    <Wrapper className="slidecontainer">
+    <Wrapper className="slideContainer">
       <input
         className="slider"
-        steps={100}
         type="range"
         min="1"
         max="100"

@@ -2,24 +2,54 @@ import { styled } from "../../stitches.config"
 
 const Wrapper = styled("div", {
   width: "100%",
-  maxWidth: "1300px",
-  padding: "80px 80px",
   margin: "auto",
+  maxWidth: "800px",
+  minWidth: "320px",
 
   variants: {
-    small: {
+    border: {
       true: {
-        padding: "10px 10px",
+        border: "red solid 5px",
       },
     },
-    medium: {
+    xxxs: {
       true: {
-        padding: "40px 40px",
+        padding: "$xxxs",
       },
     },
-    large: {
+    xxs: {
       true: {
-        padding: "80px 80px",
+        padding: "$xxs",
+      },
+    },
+    xs: {
+      true: {
+        padding: "$xs",
+      },
+    },
+    s: {
+      true: {
+        padding: "$s",
+      },
+    },
+    m: {
+      true: {
+        padding: "$m",
+      },
+    },
+    l: {
+      true: {
+        padding: "$l",
+      },
+    },
+    xxl: {
+      true: {
+        padding: "$xxl",
+      },
+    },
+    xxxl: {
+      true: {
+        padding: "$xxxl",
       },
     },
   },

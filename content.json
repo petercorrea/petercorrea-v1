@@ -16,7 +16,7 @@
         "Conduct hands on workshops regarding software engineering and web design",
         "Monitored deployments on cloud hosting environments for usage and high availability"
       ],
-      "skills": "backend development, typescript, graphql, apollo, nodejs, jenkins"
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
     },
     {
       "company": "",
@@ -33,7 +33,7 @@
         "Facilitate forum discussions on object oriented code, data structure and algorithms and testing",
         "Built for a variety of target devices including web and native platforms"
       ],
-      "skills": ""
+      "skills": []
     },
     {
       "company": "Coinbase",
@@ -49,7 +49,7 @@
         "Develop web scraping scripts and automated testing ",
         "Rearchitect multipage web apps into single page to improve performance by 17%"
       ],
-      "skills": "typescript, react, frontend development, css"
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
     },
     {
       "company": "",
@@ -66,7 +66,7 @@
         "Built HIPPA compliant persistence models, migration and data cacheing strategies: postgres, mongoDB, mysql",
         "Designed single page, client/server, serverless, JAMStack and service oriented architectures: React, NextJS"
       ],
-      "skills": ""
+      "skills": []
     },
     {
       "company": "Thinkful",
@@ -81,7 +81,7 @@
         "Integrated token based authentication and authorization systems with appropriate hash and salt mechanisms",
         "Developed single page applications with frontend frameworks: React"
       ],
-      "skills": "fullstack development, react"
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
     },
     {
       "company": "Target",
@@ -96,7 +96,7 @@
         "Grew online sales by 47% and improved gross margins by 38%",
         "Managed a team with 50+ direct reports achieving in highest number of promotions and cultural satisfaction"
       ],
-      "skills": "operational excellence, management, recruitment, p/l"
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
     },
     {
       "company": "Apple",
@@ -111,7 +111,7 @@
         "Verify and audit technical repairs, hardware upgrades, and data recovery and migrations",
         "Train and develop peers and new employees "
       ],
-      "skills": "hardware repairs, software debugging, mentoring"
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
     },
     {
       "company": "FIU Dept. of Biology",
@@ -125,11 +125,12 @@
         "Plan, build and present curriculum covering topics in physics, biology and chemistry",
         "Collaborate with staff and faculty to assess and improve student engagement and performance"
       ],
-      "skills": "lecturing, presenting, research"
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
     }
   ],
   "biography": {
-    "description": "I build software. My work requires discussing the scope and goal of each solution, sharing tradeoffs between different implementations, establishing milestones, and deploying high-quality code. A typical day involves optimizing algorithmic and network performance, deploying servers, migrating databases, integrating APIs, building machine learning models, interviewing candidates, collaborating with designers, presenting to management, and researching standardized specifications. When I'm not working on products, I'm leading teams, managing talent, and driving operations. Common tools include JavaScript, Python, Typescript, React, Node, AWS, GraphQL, Postgres, SQL, MongoDB, Docker, Git, HTML, CSS, and more. My experience includes web and native projects; government and commercial clients. In my personal life, I'm always curious about mathematics, algorithms, machine learning, and electrical engineering. Current projects include building an image classifier with neural networks and a recommendation engine for matching similar users. When I'm not in front of the computer, I'm likely in front of a smaller computer I refer to as my phone. Pursuing a Master of Science in Electrical Engineering. If your project involves improving economic opportunity, public health, access to education, climate, food and resources, or alternative currencies"
+    "0": "I build software. My work requires discussing the scope and goal of each solution, sharing tradeoffs between different implementations, establishing milestones, and deploying high-quality code. A typical day involves optimizing algorithmic and network performance, deploying servers, migrating databases, integrating APIs, building machine learning models, interviewing candidates, collaborating with designers, presenting to management, and researching standardized specifications. Common tools include JavaScript, Python, Typescript, React, Node, AWS, GraphQL, Postgres, SQL, MongoDB, Docker, Git, HTML, CSS, and more. My experience includes web and native projects; government and commercial clients.",
+    "1": "In my personal life, I'm always curious about mathematics, algorithms, machine learning, and electrical engineering. Current projects include building an image classifier with neural networks and a recommendation engine for matching similar users. When I'm not in front of the computer, I'm likely in front of a smaller computer I refer to as my phone. Pursuing a Master of Science in Electrical Engineering. If your project involves improving economic opportunity, public health, access to education, climate, food and resources, or alternative currencies contact me!"
   },
   "education": [
     {
@@ -153,7 +154,7 @@
   "assets": {
     "resume": "link"
   },
-  "skills": "typescript, javascript, python, rust, node.js, postgres, sql, mongodb, jenkins, cypress, jest, react, next.js, solid.js, unix, docker, npm, git, html, css, graphql, amazon web services, s3, cognitodb, vercel, heroku, strapi, contentful, data analytics, data science, testing, object oriented, frontend development, backend development, mobile development",
+  "skills":  ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"],
   "quiz": {
     "question": "You can update the page content by manipulating the DOM.",
     "options":[
@@ -171,5 +172,17 @@
           }
       ],    
     "category":"True or False"
+  },
+  "links":{
+    "home":"/",
+    "bio":"/#bio",
+    "xp":"/#experience",
+    "github":"https://www.github.com/petercorrea",
+    "in":"https://www.linkedin.com/in/petercorrea",
+    "email":"mailto:pmcorrea@me.com?subject=PeterCorrea.com: reaching out...",
+     "afk":"/afk"
+  },
+  "contactMe":{
+    "text": "Wether you're looking for specialty in web development, "    
   }
 }

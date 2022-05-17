@@ -1,57 +1,64 @@
 import { styled } from "../../stitches.config"
 
 const Box = styled("div", {
-  display: "block",
   width: "100%",
-  color: "black",
+  color: "$black",
 
   variants: {
+    hide: {
+      true: {
+        display: "none"
+      }
+    },
     row: {
       true: {
         display: "flex",
         flexFlow: "row nowrap",
-        alignItems: "center",
-        "& > *": {
-          height: "100%",
-        },
-      },
+        alignItems: "center"
+      }
     },
     column: {
       true: {
         display: "flex",
-        flexFlow: "column nowrap",
-      },
-    },
-    right: {
-      true: {
-        justifyContent: "right",
-        alignItems: "flex-end",
-      },
+        flexFlow: "column nowrap"
+      }
     },
     left: {
       true: {
         justifyContent: "left",
-        alignItems: "flex-start",
-      },
+        alignItems: "flex-start"
+      }
+    },
+    center: {
+      true: {
+        justifyContent: "center",
+        alignItems: "center"
+      }
+    },
+    right: {
+      true: {
+        justifyContent: "right",
+        alignItems: "flex-end"
+      }
     },
     "space-between": {
       true: {
-        justifyContent: "space-between",
-      },
+        justifyContent: "space-between"
+      }
     },
     "space-evenly": {
       true: {
-        justifyContent: "space-evenly",
-      },
+        justifyContent: "space-evenly"
+      }
     },
     full: {
       true: {
         "& > *": {
           flexBasis: "100%",
           width: "100%",
-          minHeight: "content",
-        },
-      },
+          minHeight: "content"
+        }
+      }
     },
     viewport: {
       true: {
@@ -61,22 +68,35 @@ const Box = styled("div", {
         display: "flex",
         flexFlow: "column nowrap",
         justifyContent: "center",
-        alignItems: "center",
-      },
+        alignItems: "center"
+      }
     },
     border: {
       true: {
-        border: "solid red 2px",
-      },
+        "@bp1": {
+          border: "$border-red"
+        },
+        "@bp2": {
+          border: "$border-blue"
+        },
+        "@bp3": {
+          border: "$border-green"
+        }
+      }
     },
     "border-child": {
       true: {
         "& > *": {
-          border: "blue solid 2px",
-        },
-      },
+          border: "$border-red"
+        }
+      }
     },
-  },
+    bg: {
+      true: {
+        backgroundColor: "$bg"
+      }
+    }
+  }
 })
 
 export default (props) => {

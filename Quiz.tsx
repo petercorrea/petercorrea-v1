@@ -1,11 +1,11 @@
-import { styled } from "../../../stitches.config"
-import Box from "../../layout/Box"
-import { useState, useEffect } from "react"
-import Question from "./Question"
-import Options from "./Options"
-import Explanation from "./Explanation"
 import { keyframes } from "@stitches/core"
-import fireworks from "./Fireworks"
+import { useEffect, useState } from "react"
+import Box from "./components/layout/Box"
+import Explanation from "./components/ui/quiz/Explanation"
+import fireworks from "./components/ui/quiz/Fireworks"
+import Options from "./components/ui/quiz/Options"
+import Question from "./components/ui/quiz/Question"
+import { styled } from "./stitches.config"
 
 const slideUp = keyframes({
   "0%": { transform: "translateY(20px)", opacity: 0 },
@@ -19,12 +19,12 @@ const Container = styled(Box, {
 
 const QuizWrapper = styled(Box, {
   width: "500px",
-  border: "#0c0c0c26 solid 1px",
+  border: "$border-light",
   borderRadius: "10px",
   margin: "auto",
   padding: "20px",
-  boxShadow: "10px 10px 10px 1px #0c0c0c26",
-  backgroundColor: "#f0f0f04d",
+  boxShadow: "$light",
+  backgroundColor: "$white",
 })
 
 const SubmitButtonWrapper = styled("div", {
@@ -34,19 +34,17 @@ const SubmitButtonWrapper = styled("div", {
     height: "40px",
     marginBottom: "20px",
     borderRadius: "10px",
-    border: "solid black 1px",
-    backgroundColor: "#000000",
-    color: "white",
-    fontSize: "1.1rem",
+    border: "$border-dark",
+    backgroundColor: "$black",
+    color: "$white",
     transition: "transform 80ms ease-in",
-    boxShadow: "0px 0px 15px 2px #5c5c5ca6",
+    boxShadow: "$dark",
     textAlign: "center",
     verticalAlign: "middle",
-    fontWeight: "300",
 
     "&:hover": {
-      backgroundColor: "#000000",
-      color: "white",
+      backgroundColor: "$black",
+      color: "$white",
       transform: "translateY(-3px)",
     },
   },
@@ -108,6 +106,7 @@ export default ({ content }) => {
         />
         <SubmitButton onClick={handleSubmit} />
         <Explanation
+          options={options}
           submitted={submitted}
           correct={correct}
           selection={selection}

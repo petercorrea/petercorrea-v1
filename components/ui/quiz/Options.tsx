@@ -2,12 +2,12 @@ import { keyframes, styled } from "@stitches/react"
 import Box from "../../layout/Box"
 
 const shake = keyframes({
-  "0%": { transform: "translateX(10px)", },
-  "20%": { transform: "translateX(-10px)", },
-  "40%": { transform: "translateX(10px)", },
-  "60%": { transform: "translateX(-10px)", },
-  "80%": { transform: "translateX(10px)", },
-  "100%": { transform: "translateX(0px)", },
+  "0%": { transform: "translateX(10px)" },
+  "20%": { transform: "translateX(-10px)" },
+  "40%": { transform: "translateX(10px)" },
+  "60%": { transform: "translateX(-10px)" },
+  "80%": { transform: "translateX(10px)" },
+  "100%": { transform: "translateX(0px)" }
 })
 
 const abcInterator = () => {
@@ -26,8 +26,6 @@ const abcInterator = () => {
 }
 
 const OptionsButton = styled(Box, {
-  //   border: "solid red 2px",
-
   button: {
     width: "100%",
     minWidth: "200px",
@@ -35,51 +33,48 @@ const OptionsButton = styled(Box, {
     padding: "5px 20px",
     marginBottom: "20px",
     borderRadius: "10px",
-    border: "solid #0c0c0c26 1px",
-    backgroundColor: "#ffffff",
-    fontSize: "1.1rem",
+    border: "$border-light",
+    backgroundColor: "$white",
     textAlign: "left",
-    fontWeight: "300",
 
     "&:hover ": {
-      // backgroundColor: "#008cff65",
-      color: "black",
-      boxShadow: "0px 0px 15px 2px #008cff65",
-    },
+      color: "$black",
+      boxShadow: "$lightblue"
+    }
   },
   variants: {
     active: {
       true: {
         button: {
           border: "none",
-          backgroundColor: "#008cff",
-          color: "white",
-          boxShadow: "0px 0px 15px 2px #008cff65",
+          backgroundColor: "$blue",
+          color: "$white",
+          boxShadow: "$lightblue",
 
           "&:hover": {
-            color: "white",
-            boxShadow: "0px 0px 15px 2px #008cff65",
-          },
-        },
-      },
+            color: "$white",
+            boxShadow: "$lightblue"
+          }
+        }
+      }
     },
     wrong: {
       true: {
         "& button": {
-          backgroundColor: "#fa4646",
-          color: "white",
+          backgroundColor: "$red",
+          color: "$white",
           animation: `${shake} 500ms`,
 
           "&:hover": {
-            color: "white",
-          },
-        },
-      },
-    },
-  },
+            color: "$white"
+          }
+        }
+      }
+    }
+  }
 })
 
-export default ({ options, selection, handleSelect, correct, submitted, }) => {
+export default ({ options, selection, handleSelect, correct, submitted }) => {
   let choicesHtml = []
   let abcIterate = abcInterator()
 

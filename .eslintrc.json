@@ -1,12 +1,17 @@
 {
-  "extends": ["next", "prettier"],
+  "extends": ["eslint:recommended", "next", "prettier"],
    "rules": {
     "react/no-unescaped-entities": "off",
     "react/display-name": "off",
+     "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "import/no-anonymous-default-export": ["off"],
+    "import/no-unresolved": ["error"],
+    "no-console": ["error"],
+    "no-var": "error",   
     "comma-dangle": ["warn", {
         "arrays": "never",
-        "objects": "always",
+        "objects": "only-multiline",
         "imports": "never",
         "exports": "never",
         "functions": "never"

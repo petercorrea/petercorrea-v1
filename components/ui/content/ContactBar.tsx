@@ -1,6 +1,6 @@
-import { styled } from "../../stitches.config"
-import Box from "../layout/Box"
-import Href from "./atomics/Href"
+import { styled } from "../../../stitches.config"
+import Box from "../../layout/Box"
+import Href from "../components/Href"
 
 const ContactBar = styled("div", {
   ul: {
@@ -10,9 +10,9 @@ const ContactBar = styled("div", {
 
     li: {
       display: "block",
-      marginRight: "25px",
-    },
-  },
+      marginRight: "25px"
+    }
+  }
 })
 
 export default () => {

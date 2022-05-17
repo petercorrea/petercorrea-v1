@@ -1,9 +1,9 @@
 import Image from "next/image"
 import { useEffect } from "react"
-import { useAppContext } from "../../context/AppContext"
-import hamburger from "../../public/design/hamburger.png"
-import { styled } from "../../stitches.config"
-import Box from "./Box"
+import { useAppContext } from "../../../context/AppContext"
+import hamburger from "../../../public/design/hamburger.png"
+import { styled } from "../../../stitches.config"
+import Box from "../../layout/Box"
 
 // Outside Drawer Component
 const OutsideDrawer = styled(Box, {
@@ -13,21 +13,19 @@ const OutsideDrawer = styled(Box, {
   position: "fixed",
   top: "0px",
   bottom: "0px",
-  // border: "green solid 4px",
-  // zIndex: 100,
 
   variants: {
     show: {
       true: {
-        display: "block",
-      },
+        display: "block"
+      }
     },
     hidden: {
       true: {
-        display: "none",
-      },
-    },
-  },
+        display: "none"
+      }
+    }
+  }
 })
 
 // Drawer Component
@@ -46,30 +44,30 @@ const Wrapper = styled(Box, {
   variants: {
     open: {
       true: {
-        transform: "translateX(0px)",
-      },
+        transform: "translateX(0px)"
+      }
     },
     close: {
       true: {
-        transform: "translateX(300px)",
-      },
-    },
+        transform: "translateX(300px)"
+      }
+    }
   },
 
   button: {
-    marginTop: "100px",
-  },
+    marginTop: "100px"
+  }
 })
 
 export const Drawer = (props) => {
-  let { appContext, setAppContext, } = useAppContext()
+  let { appContext, setAppContext } = useAppContext()
 
   useEffect(() => {
     // console.log("Drawer was rendered")
   }, [])
 
   const closeDrawer = () => {
-    setAppContext({ show: false, })
+    setAppContext({ show: false })
   }
 
   return appContext.show ? (
@@ -99,15 +97,15 @@ const ButtonWrapper = styled("button", {
   backgroundColor: "transparent",
 
   ":hover": {
-    cursor: "pointer",
-  },
+    cursor: "pointer"
+  }
 })
 
 export const DrawerButton = () => {
-  let { appContext, setAppContext, } = useAppContext()
+  let { setAppContext } = useAppContext()
 
   const openDrawer = () => {
-    setAppContext({ show: true, })
+    setAppContext({ show: true })
   }
 
   return (
