@@ -13,10 +13,15 @@ const Wrapper = styled(Box, {
   "& > svg": {
     position: "relative",
     right: "-2px",
-    top: "0px",
+    top: "-6px",
     color: "$active",
     minWidth: "30px",
     minHeight: "30px",
+  },
+
+  p: {
+    lineHeight: "$xs",
+    marginBottom: "$s",
   },
 })
 

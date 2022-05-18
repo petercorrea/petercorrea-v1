@@ -5,7 +5,7 @@ let Wrapper = styled("div", {
   flex: "row",
   justifyContent: "left",
   flexWrap: "wrap",
-  margin: "$m 0px",
+  margin: "0px 0px 20px 0px",
 })
 
 let Item = styled("div", {
@@ -16,15 +16,15 @@ let Item = styled("div", {
   margin: "0px 5px 5px 0px",
 
   p: {
-    fontSize: "$s",
-    fontWeight: "600",
+    fontSize: "$xs",
+    fontWeight: "400",
     color: "$white",
   },
 
   variants: {
     blue: {
       true: {
-        border: "$blue solid 2px",
+        border: "$blue solid 1px",
         p: {
           color: "$blue",
         },

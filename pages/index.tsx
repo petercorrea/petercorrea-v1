@@ -14,8 +14,8 @@ export default function Home() {
       <MobileNavbar />
       <Navbar />
       <Landing />
-      {/* <Typography></Typography> */}
       <LogosBar />
+      {/* <Typography></Typography> */}
       <Bio />
       <Experience></Experience>
       <Portfolio items={content.portfolio}></Portfolio>

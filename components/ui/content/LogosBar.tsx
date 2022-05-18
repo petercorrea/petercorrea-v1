@@ -1,15 +1,15 @@
 import Image from "next/image"
 import AppleLogo from "../../../public/logos/apple.png"
-import CoinbaseLogo from "../../../public/logos/coinbase.png"
+import CoinbaseLogo from "../../../public/logos/coinbase.svg"
 import PaypalLogo from "../../../public/logos/paypal.png"
 import TargetLogo from "../../../public/logos/target.png"
-import ThinkfulLogo from "../../../public/logos/thinkful.jpg"
+import ThinkfulLogo from "../../../public/logos/thinkful_t.svg"
 import { styled } from "../../../stitches.config"
 import Box from "../../layout/Box"
 import Padding from "../../layout/Padding"
 
 const BlackBox = styled(Box, {
-  backgroundColor: "black"
+  backgroundColor: "black",
 })
 
 const LogosBar = styled(Box, {
@@ -21,10 +21,23 @@ const LogosBar = styled(Box, {
     color: "$white",
     textAlign: "center",
     margin: "$s",
-    marginBottom: "$xl"
+    marginBottom: "$xl",
   },
   ul: {
-    display: "flex"
+    display: "flex",
+  },
+
+  img: {
+    filter: "grayscale(100%) contrast(100%) invert(100%) brightness(120%)",
+    maxHeight: "100%",
+  },
+
+  "#appleLogo, #targetLogo": {
+    maxWidth: "50px",
+  },
+
+  "#thinkfulLogo": {
+    maxWidth: "100px",
   },
 
   "@bp1": {
@@ -42,17 +55,14 @@ const LogosBar = styled(Box, {
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        flexBasis: "50%"
-      },
+        flexBasis: "50%",
+        margin: "10px 20px",
 
-      img: {
-        display: "block",
-        filter: "grayscale(100%) contrast(100%) invert(100%) brightness(120%)",
-        maxHeight: "50px",
-        maxWidth: "50px",
-        width: "100px"
-      }
-    }
+        span: {
+          maxHeight: "100%",
+        },
+      },
+    },
   },
 
   "@bp2": {
@@ -61,30 +71,8 @@ const LogosBar = styled(Box, {
       flexFlow: "row",
       justifyContent: "space-evenly",
       alignItems: "center",
-
-      li: {
-        width: "100px"
-        // flexBasis: "100%",
-      }
     },
-
-    img: {
-      filter: "grayscale(100%) contrast(100%) invert(100%) brightness(120%)",
-      width: "200px",
-      height: "200px",
-      maxHeight: "100px"
-    }
   },
-
-  "@bp3": {
-    ul: {
-      display: "flex",
-      // border: "red solid 2px",
-      flexDirection: "row",
-      justifyContent: "space-evenly",
-      alignItems: "center"
-    }
-  }
 })
 
 export default (props) => {
@@ -92,8 +80,8 @@ export default (props) => {
     <BlackBox>
       <Padding l>
         <LogosBar {...props} column>
-          <Box row full>
-            <h3 style={{ color: "white" }}>I've Worked At</h3>
+          <Box row center>
+            <h1 style={{ color: "white" }}>TL;DR</h1>
           </Box>
 
           <Box>
@@ -102,40 +90,40 @@ export default (props) => {
                 <Image
                   src={PaypalLogo}
                   alt="company logo of paypal"
-                  // width={150}
-                  // height={50}
+                  width={250}
+                  height={250}
                 ></Image>
               </li>
-              <li key="LogosBar_1">
+              <li key="LogosBar_1" id="appleLogo">
                 <Image
                   src={AppleLogo}
                   alt="company logo of Apple"
-                  // width={60}
-                  // height={60}
+                  width={250}
+                  height={250}
                 ></Image>
               </li>
               <li key="LogosBar_3">
                 <Image
                   src={CoinbaseLogo}
                   alt="company logo of  coinbase"
-                  // width={100}
-                  // height={100}
+                  width={250}
+                  height={250}
                 ></Image>
               </li>
-              <li key="LogosBar_2">
+              <li key="LogosBar_2" id="targetLogo">
                 <Image
                   src={TargetLogo}
                   alt="company logo of target"
-                  // width={60}
-                  // height={60}
+                  width={250}
+                  height={250}
                 ></Image>
               </li>
-              <li key="LogosBar_0">
+              <li key="LogosBar_0" id="thinkfulLogo">
                 <Image
                   src={ThinkfulLogo}
                   alt="company logo of thinkful"
-                  // width={150}
-                  // height={50}
+                  width={250}
+                  height={250}
                 ></Image>
               </li>
             </ul>

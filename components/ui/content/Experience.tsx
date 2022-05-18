@@ -10,6 +10,9 @@ const Wrapper = styled(Box, {
   display: "flex",
   "flex-direction": "row",
   "align-items": "flex-start",
+  h6: {
+    marginBottom: "$s",
+  },
 
   "@bp1": {
     "flex-direction": "column",
@@ -36,7 +39,7 @@ export default () => {
         <Column>
           <h2>{items[idx].company}</h2>
           <h3>{items[idx].title}</h3>
-          <h6>{items[idx].years}</h6>
+          {/* <h6>{items[idx].years}</h6> */}
           <Tags list={items[idx].skills} blue />
         </Column>
 

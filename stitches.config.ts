@@ -50,9 +50,9 @@ export const { config, createTheme, css, getCssText, styled, theme } =
         xxl: "5rem",
         xl: "3rem",
         l: "2rem",
-        m: "1.2rem",
+        m: "1rem",
         s: "1rem",
-        xs: ".6rem",
+        xs: ".8rem",
       },
       fonts: {
         untitled: "Untitled Sans, apple-system, sans-serif",
@@ -60,6 +60,7 @@ export const { config, createTheme, css, getCssText, styled, theme } =
       },
       fontWeights: {},
       lineHeights: {
+        xs: "1.4rem",
         s: "1.8rem",
         m: "4rem",
         l: "11rem",
@@ -119,7 +120,7 @@ export const globalStyles = globalCss({
   },
   h3: {
     fontSize: "$l",
-    fontWeight: "600",
+    fontWeight: "300",
     display: "block",
   },
   h4: {
@@ -133,7 +134,7 @@ export const globalStyles = globalCss({
     display: "block",
   },
   h6: {
-    fontSize: "$m",
+    fontSize: "$s",
     fontWeight: "400",
     display: "block",
     color: "$gray",

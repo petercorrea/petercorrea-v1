@@ -9,11 +9,20 @@ import Tags from "./Tags"
 const Wrapper = styled(Box, {
   color: "$white",
   paddingBottom: "$xl",
+
   "& > *": {
     color: "$white",
     "& > *": {
       color: "$white",
     },
+  },
+
+  "#contactMeText": {
+    marginBottom: "$s",
+  },
+
+  "@bp2": {
+    maxWidth: "66%",
   },
 })
 
@@ -53,12 +62,12 @@ export default () => {
   return (
     <BlackBox>
       <Padding l>
-        <Wrapper column className="bio">
+        <Wrapper column>
           <h1>contact</h1>
           <br></br>
 
           <Box>
-            <Box>
+            <Box id="contactMeText">
               <p>{content.contactMe.text}</p>
             </Box>
 
@@ -77,7 +86,7 @@ export default () => {
                   "sequalize",
                   "ui design",
                   "html",
-                  "css"
+                  "css",
                 ]}
               />
               <Padding>

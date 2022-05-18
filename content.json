@@ -209,30 +209,30 @@
         "type": "repo",
         "url": "https://github.com/petercorrea/IndependentNews",
         "title": "Independent News",
-        "description": "An quick project to test ut a few NextJS features."
+        "description": "An quick project to test out a few NextJS features such as server side rendering, hydration, Link components, optimize image processing and file based routing."
       },
        {
         "type": "repo",
         "url": "https://github.com/petercorrea/petercorrea",
-        "title": "Personal Site",
-        "description": "This website! A React/NextJS project that uses an agnostic css-in-js library."
+        "title": "PeterCorrea.com",
+        "description": "This website! A React/NextJS project that uses an agnostic css-in-js library. This project features modern ES6 syntax, typescript, react hooks, ssg/ssr, progressive enhancements, all integrated with a style system."
       },
       {
         "type": "presentation",
         "url": "https://youtu.be/BKSnLuXu_dc",
         "title": "The Thinkful Experience.",
-        "description": "An online interview of my experience through the Thinkful Bootcamp."
+        "description": "An online interview of my experience through the Thinkful Bootcamp"
       },
        {
         "type": "presentation",
         "url": "https://youtu.be/x1kp0y_-zp8",
-        "title": "Inheritance and Object Oriented Programming in JavaScript.",
+        "title": "Inheritance and Object Oriented Programming in JavaScript",
         "description": "A presentation of a few design patterns and object oriented features of JavaScript."
       },
        {
         "type": "presentation",
         "url": "https://youtu.be/9uAosfffLKc",
-        "title": "A look inside the JavaScript runtime engine.",
+        "title": "A look inside the JavaScript runtime engine",
         "description": "A presentation of the JavaScript runtime, execution context and async programming."
       }
     ]

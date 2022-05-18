@@ -30,10 +30,12 @@ const Item = styled(Box, {
 
   "#description": {
     color: "$black",
+    marginBottom: "$m",
+    lineHeight: "$xs",
   },
   "#title": {
     color: "$blue",
-    // fontSize: "$l",
+    fontSize: "20px",
   },
   "#url": {
     // color: "red",
@@ -53,7 +55,7 @@ const Item = styled(Box, {
     },
 
     p: {
-      lineHeight: "20px",
+      lineHeight: "$s",
     },
   },
   "@bp2": {
@@ -66,7 +68,7 @@ const Item = styled(Box, {
     },
 
     p: {
-      lineHeight: "20px",
+      lineHeight: "$s",
     },
   },
   "@bp3": {
@@ -79,12 +81,14 @@ const Item = styled(Box, {
     },
 
     p: {
-      lineHeight: "20px",
+      lineHeight: "$s",
     },
   },
 })
 
 const Icon = styled(Box, {
+  display: "flex",
+  marginBottom: "$s",
   svg: { width: "50px", height: "50px", color: "$gray" },
 })
 
@@ -93,7 +97,7 @@ export default ({ items }) => {
     return (
       <Item key={idx}>
         <a href={item.url}>
-          <Icon>
+          <Icon right>
             {item.type == "presentation" ? (
               <VideoIcon></VideoIcon>
             ) : (
@@ -115,7 +119,7 @@ export default ({ items }) => {
   })
 
   return (
-    <Padding>
+    <Padding l>
       <h1>portfolio</h1>
       <Wrapper>{html}</Wrapper>
     </Padding>
