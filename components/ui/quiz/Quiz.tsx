@@ -9,12 +9,12 @@ import Question from "./Question"
 
 const slideUp = keyframes({
   "0%": { transform: "translateY(20px)", opacity: 0 },
-  "100%": { transform: "translateY(0)", opacity: 1 }
+  "100%": { transform: "translateY(0)", opacity: 1 },
 })
 
 const Container = styled(Box, {
   padding: " 80px",
-  animation: `${slideUp} 1000ms`
+  animation: `${slideUp} 1000ms`,
 })
 
 const QuizWrapper = styled(Box, {
@@ -24,7 +24,7 @@ const QuizWrapper = styled(Box, {
   margin: "auto",
   padding: "20px",
   boxShadow: "$light",
-  backgroundColor: "$lightgray"
+  backgroundColor: "$lightgray",
 })
 
 const SubmitButtonWrapper = styled("div", {
@@ -45,9 +45,9 @@ const SubmitButtonWrapper = styled("div", {
     "&:hover": {
       backgroundColor: "$black",
       color: "$white",
-      transform: "translateY(-3px)"
-    }
-  }
+      transform: "translateY(-3px)",
+    },
+  },
 })
 
 const SubmitButton = ({ onClick }) => {
@@ -62,8 +62,8 @@ export default ({ content }) => {
   const { question, category, options } = content
   // Set state
   let [submitted, setSubmit] = useState(false)
-  let [selection, setSelection] = useState(null)
-  let [correct, setCorrect] = useState()
+  let [selection, setSelection] = useState(0)
+  let [correct, setCorrect] = useState(false)
 
   // set correct answer
   let [answer, setAnswer] = useState(undefined)

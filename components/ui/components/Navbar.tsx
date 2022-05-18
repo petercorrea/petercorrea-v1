@@ -61,7 +61,7 @@ export default () => {
           <StyledLink href="https://www.google.com">linkedin</StyledLink>
           <Button onClick={() => {}}>
             <a download href="./Peter Correa CV.pdf">
-              resume
+              resume.pdf
             </a>
           </Button>
         </Navbar>

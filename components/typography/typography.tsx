@@ -7,7 +7,7 @@ import Href from "../ui/components/Href"
 
 const Wrapper = styled("div", {
   width: "100%",
-  margin: "auto"
+  margin: "auto",
 })
 
 export default () => {
@@ -37,7 +37,7 @@ export default () => {
         <Href href="https://www.google.com">This is a Link</Href>
         <Href href="https://www.google.com">Link</Href>
 
-        <Button>Submit</Button>
+        <Button onClick={() => {}}>Submit</Button>
         <br />
         <br />
         <Box border row right>

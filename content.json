@@ -183,6 +183,57 @@
      "afk":"/afk"
   },
   "contactMe":{
-    "text": "Wether you're looking for specialty in web development, "    
-  }
+    "text": "If you're looking for specialty in web development, software engineering, single page applications, mobile or native development then let's connect!"    
+  },
+  "portfolio": 
+    [
+      {
+        "type": "repo",
+        "url": "https://github.com/petercorrea/DesignPatterns",
+        "title": "Gang of Four Design Patterns",
+        "description": "A collection of design patterns as described by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides."
+      },
+      {
+        "type": "repo",
+        "url": "https://github.com/petercorrea/Data-Structures-And-Algorithms",
+        "title": "Data Structures and Algorithms",
+        "description": "A collection of interview styled questions about data structures and algorithmns. Read over concepts like dynamic programming, recursion, graph theory and more."
+      },
+       {
+        "type": "repo",
+        "url": "https://github.com/petercorrea/DataScience",
+        "title": "Data Science and Machine Learning",
+        "description": "A collection of questions, examples, notes, and use cases from DataCamp.com's Data Scientist learning track. Concepts includes data wrangling, sanitation, imputation, statistical modeling, supervised and unsupervised machine learning."
+      },
+      {
+        "type": "repo",
+        "url": "https://github.com/petercorrea/IndependentNews",
+        "title": "Independent News",
+        "description": "An quick project to test ut a few NextJS features."
+      },
+       {
+        "type": "repo",
+        "url": "https://github.com/petercorrea/petercorrea",
+        "title": "Personal Site",
+        "description": "This website! A React/NextJS project that uses an agnostic css-in-js library."
+      },
+      {
+        "type": "presentation",
+        "url": "https://youtu.be/BKSnLuXu_dc",
+        "title": "The Thinkful Experience.",
+        "description": "An online interview of my experience through the Thinkful Bootcamp."
+      },
+       {
+        "type": "presentation",
+        "url": "https://youtu.be/x1kp0y_-zp8",
+        "title": "Inheritance and Object Oriented Programming in JavaScript.",
+        "description": "A presentation of a few design patterns and object oriented features of JavaScript."
+      },
+       {
+        "type": "presentation",
+        "url": "https://youtu.be/9uAosfffLKc",
+        "title": "A look inside the JavaScript runtime engine.",
+        "description": "A presentation of the JavaScript runtime, execution context and async programming."
+      }
+    ]
 }

@@ -2,6 +2,7 @@ import content from "../../../content.json"
 import { styled } from "../../../stitches.config"
 import Box from "../../layout/Box"
 import Padding from "../../layout/Padding"
+import Bullets from "./Bullets"
 import Tags from "./Tags"
 
 const Wrapper = styled(Box, {
@@ -14,7 +15,7 @@ const Wrapper = styled(Box, {
     "flex-direction": "column",
   },
   "@bp2": { "flex-direction": "column" },
-  "@bp3": { "flex-direction": "row" },
+  "@bp3": { "flex-direction": "column" },
 })
 
 const Column = styled("div", {
@@ -22,7 +23,6 @@ const Column = styled("div", {
   flexDirection: "column",
   justifyContent: "flex-start",
   flexBasis: "80%",
-  marginBottom: "$m",
 })
 
 export default () => {
@@ -37,12 +37,12 @@ export default () => {
           <h2>{items[idx].company}</h2>
           <h3>{items[idx].title}</h3>
           <h6>{items[idx].years}</h6>
-          <Tags list={items[idx].skills} />
+          <Tags list={items[idx].skills} blue />
         </Column>
 
         <Box column>
           <h6>{items[idx].team}</h6>
-          <p>{items[idx]["bullet-points"].join(". ") + "."}</p>
+          <Bullets items={items[idx]["bullet-points"]}></Bullets>
         </Box>
       </Wrapper>
     )

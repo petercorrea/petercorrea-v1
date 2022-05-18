@@ -13,6 +13,8 @@ export default () => {
         <p>{content.biography["0"]}</p>
         <br></br>
         <p>{content.biography["1"]}</p>
+        <br></br>
+        <br></br>
       </Wrapper>
     </Padding>
   )

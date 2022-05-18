@@ -9,23 +9,36 @@ let Wrapper = styled("div", {
 })
 
 let Item = styled("div", {
-  border: "$black solid 1px",
+  border: "$white solid 2px",
   borderRadius: "5px",
   color: "$white",
   padding: "1px 10px",
-  margin: "5px 5px 5px 0px",
+  margin: "0px 5px 5px 0px",
+
   p: {
-    fontSize: "$x",
-    color: "$black",
+    fontSize: "$s",
+    fontWeight: "600",
+    color: "$white",
+  },
+
+  variants: {
+    blue: {
+      true: {
+        border: "$blue solid 2px",
+        p: {
+          color: "$blue",
+        },
+      },
+    },
   },
 })
 
-export default ({ list }) => {
+export default ({ list, blue }) => {
   if (list.length == 0) return
 
   let html = list.map((item, idx) => {
     return (
-      <Item key={idx}>
+      <Item key={idx} blue={blue}>
         <p>{item}</p>
       </Item>
     )

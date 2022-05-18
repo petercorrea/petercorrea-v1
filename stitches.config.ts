@@ -69,7 +69,7 @@ export const { config, createTheme, css, getCssText, styled, theme } =
       borderWidths: {},
       borderStyles: {},
       radii: {
-        borderRadius: "10px",
+        borderRadius: "5px",
       },
       shadows: {
         dark: "0px 0px 15px 2px #5c5c5ca6",
@@ -168,17 +168,21 @@ export const globalStyles = globalCss({
     textDecoration: "none",
     display: "block",
     padding: "10px",
-    border: "$border-blue",
+    border: "$border-blue solid 1px",
     borderRadius: "$borderRadius",
     color: "$white",
     transition: "transform 100ms ease",
     transform: "translateY(0px)",
     backgroundColor: "$active",
-    boxShadow: "$lightblue",
+
+    "&>*": {
+      color: "white",
+    },
 
     "&:hover": {
       transform: "translateY(-10px)",
       transition: "transform 100ms ease",
+      boxShadow: "$lightblue",
     },
   },
 

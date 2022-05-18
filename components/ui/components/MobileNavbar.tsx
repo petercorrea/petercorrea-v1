@@ -15,6 +15,7 @@ const MobileNavbar = styled(Box, {
   backgroundColor: "#ffffffd5",
   backdropFilter: "blur(4px)",
   overflow: "hidden",
+  transition: "top 200ms ease",
 
   "@bp1": {
     display: "flex",
@@ -37,10 +38,11 @@ const MobileNavbar = styled(Box, {
 
   "#resume": {
     fontSize: "$m",
+    color: "$white",
   },
 
   a: {
-    color: "$black",
+    color: "$blue",
     fontSize: "$xxl",
   },
 
@@ -53,6 +55,7 @@ const MobileNavbar = styled(Box, {
 
   li: {
     width: "fit-content",
+    a: { color: "$black" },
   },
 
   variants: {
@@ -121,13 +124,12 @@ export default () => {
   return (
     <MobileNavbar
       show={scrollDirection === "down" ? false : true}
-      border
       open={isOpen}
     >
       <TopBar row>
         <Button onClick={() => {}}>
           <a download href="./Peter Correa CV.pdf" id="resume">
-            resume
+            resume.pdf
           </a>
         </Button>
 
@@ -143,10 +145,14 @@ export default () => {
             <StyledLink href="/#experience">xp</StyledLink>
           </li>
           <li onClick={closeMenu}>
-            <StyledLink href="https://www.google.com">github</StyledLink>
+            <StyledLink href="https://www.github.com/petercorrea">
+              github
+            </StyledLink>
           </li>
           <li onClick={closeMenu}>
-            <StyledLink href="https://www.google.com">linkedin</StyledLink>
+            <StyledLink href="https://www.linkedin.com/in/petercorrea">
+              linkedin
+            </StyledLink>
           </li>
         </ul>
       </Links>
