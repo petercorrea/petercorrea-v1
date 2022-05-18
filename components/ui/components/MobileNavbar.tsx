@@ -138,18 +138,18 @@ export default () => {
 
       <Links show={isVisible} right>
         <ul>
-          <li onClick={closeMenu}>
+          <li onClick={closeMenu} key="bio">
             <StyledLink href="/#bio">bio</StyledLink>
           </li>
-          <li onClick={closeMenu}>
+          <li onClick={closeMenu} key="experience">
             <StyledLink href="/#experience">xp</StyledLink>
           </li>
-          <li onClick={closeMenu}>
+          <li onClick={closeMenu} key="github">
             <StyledLink href="https://www.github.com/petercorrea">
               github
             </StyledLink>
           </li>
-          <li onClick={closeMenu}>
+          <li onClick={closeMenu} key="linkedin">
             <StyledLink href="https://www.linkedin.com/in/petercorrea">
               linkedin
             </StyledLink>

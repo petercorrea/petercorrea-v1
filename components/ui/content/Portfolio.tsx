@@ -7,8 +7,6 @@ const Wrapper = styled(Box, {
   display: "flex",
   flexDirection: "row",
   flexWrap: "wrap",
-  //   justifyContent: "flex-start",
-  //   alignItems: "flex-start",
 })
 
 const Item = styled(Box, {
@@ -37,9 +35,7 @@ const Item = styled(Box, {
     color: "$blue",
     fontSize: "20px",
   },
-  "#url": {
-    // color: "red",
-  },
+  "#url": {},
 
   video: {
     maxWidth: "100%",

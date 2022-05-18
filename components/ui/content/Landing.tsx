@@ -8,11 +8,8 @@ const Wrapper = styled(Box, {
   display: "flex",
   flexDirection: "column",
   justifyContent: "flex-end",
-  // height: "70vh",
 
-  h1: {
-    // lineHeight: "200px",
-  },
+  h1: {},
   h3: {
     color: "$gray",
   },
@@ -35,7 +32,6 @@ const scaleUp = keyframes({
 })
 
 const Pointer = styled(CaretDownIcon, {
-  // border: "red solid 2px",
   width: "5vh",
   height: "5vh",
   animation: `${scaleUp} 3s infinite`,

@@ -42,14 +42,12 @@ const LogosBar = styled(Box, {
 
   "@bp1": {
     ul: {
-      // border: "blue solid 2px",
       flexFlow: "row wrap",
       justifyContent: "space-evenly",
       alignItems: "center",
 
       li: {
         display: "flex",
-        // border: "red dotted 2px",
         width: "50%",
         height: "100px",
         flexDirection: "row",
@@ -67,7 +65,6 @@ const LogosBar = styled(Box, {
 
   "@bp2": {
     ul: {
-      // border: "yellow solid 2px",
       flexFlow: "row",
       justifyContent: "space-evenly",
       alignItems: "center",

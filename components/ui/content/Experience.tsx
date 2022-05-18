@@ -39,7 +39,6 @@ export default () => {
         <Column>
           <h2>{items[idx].company}</h2>
           <h3>{items[idx].title}</h3>
-          {/* <h6>{items[idx].years}</h6> */}
           <Tags list={items[idx].skills} blue />
         </Column>
 
