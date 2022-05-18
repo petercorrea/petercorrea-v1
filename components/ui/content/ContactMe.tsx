@@ -86,7 +86,7 @@ export default () => {
                   "sequalize",
                   "ui design",
                   "html",
-                  "css",
+                  "css"
                 ]}
               />
               <Padding>
