@@ -46,7 +46,7 @@ const Navbar = styled(Box, {
 
 export default () => {
   const scrollDirection = useScrollDirection({
-    initialDirection: "down",
+    initialDirection: "up",
     thresholdPixels: 50,
     off: false,
   })
