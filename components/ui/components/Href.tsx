@@ -1,4 +1,4 @@
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 
 const Wrapper = styled("a", {
   fontSize: "1.1rem",

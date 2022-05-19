@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Headshot from "../../../public/design/headshot.png"
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 import Padding from "../../layout/Padding"
 

@@ -1,4 +1,4 @@
-import { styled } from "../../stitches.config"
+import { styled } from "../../styles/stitches.config"
 
 const Box = styled("div", {
   width: "100%",

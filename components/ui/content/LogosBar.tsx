@@ -4,7 +4,7 @@ import CoinbaseLogo from "../../../public/logos/coinbase.svg"
 import PaypalLogo from "../../../public/logos/paypal.png"
 import TargetLogo from "../../../public/logos/target.png"
 import ThinkfulLogo from "../../../public/logos/thinkful_t.svg"
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 import Padding from "../../layout/Padding"
 

@@ -1,4 +1,4 @@
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 
 // Marketing
@@ -9,8 +9,8 @@ const Container = styled(Box, {
   "& > * ": {
     width: "100%",
     height: "400px",
-    margin: "15px 15px"
-  }
+    margin: "15px 15px",
+  },
 })
 
 const ContactStyle = styled(Box, {
@@ -21,8 +21,8 @@ const ContactStyle = styled(Box, {
   color: "$white",
 
   "& > * ": {
-    color: "$white"
-  }
+    color: "$white",
+  },
 })
 
 const ContactMe = () => {
@@ -46,12 +46,12 @@ const FooterLinkWrapper = styled(Box, {
   "& > a": {
     height: "50px",
     border: "$border-red",
-    color: "$black"
+    color: "$black",
   },
 
   "a:hover": {
-    color: "$black"
-  }
+    color: "$black",
+  },
 })
 
 const FooterLink = (props) => {

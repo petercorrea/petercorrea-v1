@@ -1,6 +1,6 @@
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons"
 import content from "../../../content.json"
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 import Padding from "../../layout/Padding"
 import Button from "../components/Button"
@@ -86,7 +86,7 @@ export default () => {
                   "sequalize",
                   "ui design",
                   "html",
-                  "css"
+                  "css",
                 ]}
               />
               <Padding>

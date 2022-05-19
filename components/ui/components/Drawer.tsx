@@ -2,7 +2,7 @@ import Image from "next/image"
 import { useEffect } from "react"
 import { useAppContext } from "../../../context/AppContext"
 import hamburger from "../../../public/design/hamburger.png"
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 
 // Outside Drawer Component
@@ -17,15 +17,15 @@ const OutsideDrawer = styled(Box, {
   variants: {
     show: {
       true: {
-        display: "block"
-      }
+        display: "block",
+      },
     },
     hidden: {
       true: {
-        display: "none"
-      }
-    }
-  }
+        display: "none",
+      },
+    },
+  },
 })
 
 // Drawer Component
@@ -44,19 +44,19 @@ const Wrapper = styled(Box, {
   variants: {
     open: {
       true: {
-        transform: "translateX(0px)"
-      }
+        transform: "translateX(0px)",
+      },
     },
     close: {
       true: {
-        transform: "translateX(300px)"
-      }
-    }
+        transform: "translateX(300px)",
+      },
+    },
   },
 
   button: {
-    marginTop: "100px"
-  }
+    marginTop: "100px",
+  },
 })
 
 export const Drawer = (props) => {
@@ -97,8 +97,8 @@ const ButtonWrapper = styled("button", {
   backgroundColor: "transparent",
 
   ":hover": {
-    cursor: "pointer"
-  }
+    cursor: "pointer",
+  },
 })
 
 export const DrawerButton = () => {

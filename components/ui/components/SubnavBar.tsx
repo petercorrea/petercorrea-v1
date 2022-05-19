@@ -1,8 +1,8 @@
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 
 const SubnavBar = styled(Box, {
-  width: "min-content"
+  width: "min-content",
 })
 
 export default () => {

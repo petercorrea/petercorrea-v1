@@ -1,5 +1,5 @@
 import { GitHubLogoIcon, VideoIcon } from "@radix-ui/react-icons"
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 import Padding from "../../layout/Padding"
 

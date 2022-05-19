@@ -1,5 +1,5 @@
 import useScrollDirection from "../../../hooks/useScrollDirection"
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 import Padding from "../../layout/Padding"
 import Button from "./Button"

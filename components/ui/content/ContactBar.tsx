@@ -1,4 +1,4 @@
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 import Href from "../components/Href"
 

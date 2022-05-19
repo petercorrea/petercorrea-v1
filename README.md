@@ -1,5 +1,5 @@
 # About
-This is the repo for PeterCorrea.com. This site is a personal project build on  NextJS, React, Stitches and deployed on Vercel. Under the hood features include ssr/ssg, css-in-js, accessibility, responsiveness,  and more.
+This is the repo for PeterCorrea.com. This site is a personal project build on  NextJS, React, Stitches and deployed on Vercel. Features include ssr/ssg, css-in-js, accessibility, responsiveness, pre-commit hooks and scripts for linting and formatting.
 
 ## Photos
 ### Mobile

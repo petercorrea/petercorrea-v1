@@ -1,4 +1,4 @@
-import { globalStyles } from "../stitches.config"
+import { globalStyles } from "../styles/stitches.config"
 import { AppContextWrapper } from "./AppContext"
 
 export default (props) => {

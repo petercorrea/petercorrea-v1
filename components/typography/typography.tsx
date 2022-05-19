@@ -1,4 +1,4 @@
-import { styled } from "../../stitches.config"
+import { styled } from "../../styles/stitches.config"
 import Block from "../layout/Block"
 import Box from "../layout/Box"
 import Padding from "../layout/Padding"

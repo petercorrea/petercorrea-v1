@@ -1,7 +1,7 @@
 import { HamburgerMenuIcon } from "@radix-ui/react-icons"
 import { useState } from "react"
 import useScrollDirection from "../../../hooks/useScrollDirection"
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 import Button from "./Button"
 import StyledLink from "./StyledLink"

@@ -1,4 +1,4 @@
-import { styled } from "../../../stitches.config"
+import { styled } from "../../../styles/stitches.config"
 
 let Wrapper = styled("div", {
   display: "flex",
