@@ -213,7 +213,7 @@
       },
        {
         "type": "repo",
-        "url": "https://github.com/petercorrea/petercorrea",
+        "url": "https://github.com/petercorrea/petercorrea-nextjs",
         "title": "PeterCorrea.com",
         "description": "This website! A React/NextJS project that uses an agnostic css-in-js library. This project features modern ES6 syntax, typescript, react hooks, ssg/ssr, progressive enhancements, all integrated with a style system."
       },
