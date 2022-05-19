@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About
+This is the repo for PeterCorrea.com. This site is a personal project build on  NextJS, React, Stitches and deployed on Vercel. Under the hood features include ssr/ssg, css-in-js, accessibility, responsiveness,  and more.
 
-## Getting Started
 
-First, run the development server:
+### Usage
+This repo is being made available as a modern portfolio template. 
 
-```bash
-npm run dev
-# or
-yarn dev
+### 📋 Prerequisites & Installation
+```
+# install node via homebrew
+brew install node
+
+# ensure latest versions
+node -v
+npm -v
+
+# download this repo and within root install dependencies
+npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Running Development Build
+```npm dev```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🚀 Build for Production
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+``` npm build```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Layout Components
+To simplify and speed up development this repo contains simple layouts that serve as the foundation of layout decisions. These include: Box, Block, Padding.
 
-## Learn More
+## Typography Component
+To facilitate a design system, this components works to provide a basic preview of ones typography and other styles.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## UI Components
+These components are specific to the project.

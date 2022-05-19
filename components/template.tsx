@@ -1,6 +1,6 @@
-import Box from "./components/layout/Box"
-import Padding from "./components/layout/Padding"
-import { styled } from "./stitches.config"
+import { styled } from "../stitches.config"
+import Box from "./layout/Box"
+import Padding from "./layout/Padding"
 
 const Wrapper = styled(Box, {
   "@bp1": {},
