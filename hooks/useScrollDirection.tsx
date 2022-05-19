@@ -1,6 +1,3 @@
-const SCROLL_UP = "up"
-const SCROLL_DOWN = "down"
-
 import { useEffect, useState } from "react"
 
 const useScrollDirection = ({ initialDirection, thresholdPixels, off }) => {
@@ -17,7 +14,7 @@ const useScrollDirection = ({ initialDirection, thresholdPixels, off }) => {
       // reach threshold
       if (Math.abs(scrollY - lastScrollY) > threshold) {
         // determine direction
-        setScrollDir(scrollY > lastScrollY ? SCROLL_DOWN : SCROLL_UP)
+        setScrollDir(scrollY > lastScrollY ? "down" : "up")
         // set last scroll position
         lastScrollY = scrollY > 0 ? scrollY : 0
       }

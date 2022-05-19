@@ -1,6 +1,21 @@
 # About
 This is the repo for PeterCorrea.com. This site is a personal project build on  NextJS, React, Stitches and deployed on Vercel. Under the hood features include ssr/ssg, css-in-js, accessibility, responsiveness,  and more.
 
+## Photos
+### Mobile
+<img src="/public/previews/mobile_1.png" width="200">
+<img src="/public/previews/mobile_2.png" width="200">
+<img src="/public/previews/mobile_3.png" width="200">
+
+
+
+
+
+### Tablet
+<img src="/public/previews/tablet_1.png" width="300">
+<img src="/public/previews/tablet_2.png" width="300">
+<img src="/public/previews/tablet_3.png" width="300">
+
 
 ### Usage
 This repo is being made available as a modern portfolio template. 
