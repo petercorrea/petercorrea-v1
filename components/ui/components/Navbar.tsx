@@ -57,8 +57,12 @@ export default () => {
         <Navbar row>
           <StyledLink href="/#bio">bio</StyledLink>
           <StyledLink href="/#experience">xp</StyledLink>
-          <StyledLink href="https://www.google.com">github</StyledLink>
-          <StyledLink href="https://www.google.com">linkedin</StyledLink>
+          <StyledLink href="https://www.github.com/petercorrea">
+            github
+          </StyledLink>
+          <StyledLink href="https://www.linkedin.com/in/petercorrea">
+            linkedin
+          </StyledLink>
           <Button onClick={() => {}}>
             <a download href="./Peter Correa CV.pdf">
               resume.pdf
