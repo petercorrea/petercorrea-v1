@@ -1,92 +1,99 @@
-import { createStitches, globalCss } from "@stitches/react"
+import { createStitches } from "@stitches/react"
 
-export const { config, createTheme, css, getCssText, styled, theme } =
-  createStitches({
-    theme: {
-      colors: {
-        // neutrals
-        black: "#000000",
-        charcoal: "#2F2F2F",
-        gray: "#A4A4A4",
-        lightgray: "#0c0c0c26",
-        white: "#ffffff",
+export const {
+  config,
+  globalCss,
+  createTheme,
+  css,
+  getCssText,
+  styled,
+  theme,
+} = createStitches({
+  theme: {
+    colors: {
+      // neutrals
+      black: "#000000",
+      charcoal: "#2F2F2F",
+      gray: "#A4A4A4",
+      lightgray: "#0c0c0c26",
+      white: "#ffffff",
 
-        // primaries
-        red: "#9B0606",
-        yellow: "#FFE176",
-        green: "#72ECB8",
-        cyan: "#1ADBE6",
-        lightblue: "#008cff8f",
-        blue: "#008cff",
-        magenta: "#D077D3",
+      // primaries
+      red: "#9B0606",
+      yellow: "#FFE176",
+      green: "#72ECB8",
+      cyan: "#1ADBE6",
+      lightblue: "#008cff8f",
+      blue: "#008cff",
+      magenta: "#D077D3",
 
-        // active, secondary, disabled
-        active: "$blue",
-        secondary: "$black",
-        disabled: "$gray",
-        bg: "#37005c",
+      // active, secondary, disabled
+      active: "$blue",
+      secondary: "$black",
+      disabled: "$gray",
+      bg: "#37005c",
 
-        // border styles
-        "border-light": "solid $lightgray 1px",
-        "border-white": "solid $white 1px",
-        "border-dark": "solid $black 1px",
-        "border-red": "solid red 5px",
-        "border-yellow": "solid $yellow 5px",
-        "border-green": "solid $green 5px",
-        "border-blue": "solid $blue 1px",
-      },
-      space: {
-        xxxs: "1px",
-        xxs: "2px",
-        xs: "5px",
-        s: "10px",
-        m: "15px",
-        l: "20px",
-        xl: "40px",
-        xxl: "80px",
-        xxxl: "100px",
-      },
-      fontSizes: {
-        xxl: "5rem",
-        xl: "3rem",
-        l: "2rem",
-        m: "1rem",
-        s: "1rem",
-        xs: ".8rem",
-      },
-      fonts: {
-        untitled: "Untitled Sans, apple-system, sans-serif",
-        mono: "Söhne Mono, menlo, monospace",
-      },
-      fontWeights: {},
-      lineHeights: {
-        xs: "1.4rem",
-        s: "1.8rem",
-        m: "4rem",
-        l: "11rem",
-      },
-      letterSpacings: {},
-      sizes: {},
-      borderWidths: {},
-      borderStyles: {},
-      radii: {
-        borderRadius: "5px",
-      },
-      shadows: {
-        dark: "0px 0px 15px 2px #5c5c5ca6",
-        light: "10px 10px 10px 1px #0c0c0c26",
-        blue: "0px 0px 10px 2px #008cff8f",
-        lightblue: "0px 0px 15px 2px #008cff65",
-      },
-      zIndices: {},
-      transitions: {},
+      // border styles
+      "border-light": "solid $lightgray 1px",
+      "border-white": "solid $white 1px",
+      "border-dark": "solid $black 1px",
+      "border-red": "solid red 5px",
+      "border-yellow": "solid $yellow 5px",
+      "border-green": "solid $green 5px",
+      "border-blue": "solid $blue 1px",
     },
-    media: {
-      bp1: "(min-width: 0px)",
-      bp2: "(min-width: 512px)",
-      bp3: "(min-width: 768px)",
+    space: {
+      xxxs: "1px",
+      xxs: "2px",
+      xs: "5px",
+      s: "10px",
+      m: "15px",
+      l: "20px",
+      xl: "40px",
+      xxl: "80px",
+      xxxl: "100px",
     },
-  })
+    fontSizes: {
+      xxl: "5rem",
+      xl: "3rem",
+      l: "2rem",
+      m: "1rem",
+      s: "1rem",
+      xs: ".8rem",
+    },
+    fonts: {
+      untitled: "Untitled Sans, apple-system, sans-serif",
+      mono: "Söhne Mono, menlo, monospace",
+    },
+    fontWeights: {},
+    lineHeights: {
+      xs: "1.4rem",
+      s: "1.8rem",
+      m: "4rem",
+      l: "11rem",
+    },
+    letterSpacings: {},
+    sizes: {},
+    borderWidths: {},
+    borderStyles: {},
+    radii: {
+      borderRadius: "5px",
+    },
+    shadows: {
+      dark: "0px 0px 15px 2px #5c5c5ca6",
+      light: "10px 10px 10px 1px #0c0c0c26",
+      blue: "0px 0px 10px 2px #008cff8f",
+      lightblue: "0px 0px 15px 2px #008cff65",
+    },
+    zIndices: {},
+    transitions: {},
+  },
+  media: {
+    bp1: "(min-width: 0px)",
+    bp2: "(min-width: 512px)",
+    bp3: "(min-width: 768px)",
+  },
+})
 
 export const globalStyles = globalCss({
   // layout // layout // layout // layout // layout // layout // layout // layout

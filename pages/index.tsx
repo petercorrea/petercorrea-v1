@@ -8,15 +8,6 @@ import LogosBar from "../components/ui/content/LogosBar"
 import Portfolio from "../components/ui/content/Portfolio"
 import content from "../content.json"
 
-export async function getStaticProps() {
-  // Get todo list from an API
-  // or from anything like a JSON file etc.
-
-  return {
-    props: {},
-  }
-}
-
 export default function Home() {
   return (
     <div>
