@@ -11,19 +11,30 @@
     "test": "mocha 'Tests/**/*.js'",
     "eslint": "eslint --fix --ext .js,.jsx .",
     "pre-commit": "pretty-quick --staged",
-    "pretty": "prettier --write \"./**/*.{js,jsx,json,css, ts, tsx}\"",
-    "prepare": "husky install"
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,css, ts, tsx, graphql}\"",
+    "prepare": "husky install",
+    "generate": "graphql-codegen"
   },
   "dependencies": {
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/typed-document-node": "^2.2.11",
+    "@graphql-codegen/typescript": "^2.4.11",
+    "@graphql-codegen/typescript-operations": "^2.4.0",
     "@radix-ui/react-icons": "^1.1.1",
     "@stitches/core": "^1.2.8",
     "@stitches/react": "^1.2.8",
+    "canvas-confetti": "^1.5.1",
     "eslint-config-next": "^12.1.6",
     "eslint-plugin-react-hooks": "^4.5.0",
     "framer-motion": "^6.3.3",
+    "graphql": "^15.8.0",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-code-blocks": "^0.0.9-0",
+    "react-dom": "18.1.0",
+    "react-latex": "^2.0.0",
+    "url": "^0.11.0",
+    "urql": "^2.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.9",

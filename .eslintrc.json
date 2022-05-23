@@ -10,7 +10,7 @@
     "no-console": ["error"],
     "no-var": "error",   
     "comma-dangle": ["warn", {
-        "arrays": "never",
+        "arrays": "only-multiline",
         "objects": "only-multiline",
         "imports": "never",
         "exports": "never",

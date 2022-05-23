@@ -1,12 +1,12 @@
-import MobileNavbar from "../components/ui/components/MobileNavbar"
-import Navbar from "../components/ui/components/Navbar"
-import Bio from "../components/ui/content/Bio"
-import ContactMe from "../components/ui/content/ContactMe"
-import Experience from "../components/ui/content/Experience"
-import Landing from "../components/ui/content/Landing"
-import LogosBar from "../components/ui/content/LogosBar"
-import Portfolio from "../components/ui/content/Portfolio"
-import content from "../content.json"
+import Bio from "../components/content/Bio"
+import ContactMe from "../components/content/ContactMe"
+import Experience from "../components/content/Experience"
+import Landing from "../components/content/Landing"
+import LogosBar from "../components/content/LogosBar"
+import Portfolio from "../components/content/Portfolio"
+import MobileNavbar from "../components/ui/MobileNavbar"
+import Navbar from "../components/ui/Navbar"
+import content from "../constants/content.json"
 
 export default function Home() {
   return (

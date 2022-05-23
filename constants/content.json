@@ -1,0 +1,239 @@
+{
+  "experience": [
+    {
+      "company": "PayPal",
+      "industry": "FinTech",
+      "team": "Growth Team",
+      "years": "2021 - now",
+      "title": "Software Engineer ||",
+      "bullet-points": [
+        "Implemented new cash products resulting in 18% increased engagement",
+        "Migrated legacy backend environments to support service architectures reducing P0, P1 issues by 10%",
+        "Support acquisitions of other services by integrating across platforms through a unified data layer using GraphQL",
+        "Conducted benchmark and stress tests on enterprise systems and network controls",
+        "Research failures and bottlenecks to determine appropriate solution",
+        "Present to senior developers, technical managers and stakeholders about the state of technology and practices",
+        "Conduct hands on workshops regarding software engineering and web design",
+        "Monitored deployments on cloud hosting environments for usage and high availability"
+      ],
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+    },
+    {
+      "company": "",
+      "industry": "FinTech",
+      "team": "Product Team",
+      "years": "",
+      "title": "",
+      "bullet-points": [
+        "Focused on building out an in-house content management system to support all teams",
+        "Developed AI/ML personalization platform for user promotions increasing transactions per capita by 30%",
+        "Collaborated with managers, product designers and legal partners to develop features and architectures",
+        "Built custom content management system and distributed applications with high throughput and low latency",
+        "Interviewed candidates, mentored trainees, and hosted monthly Tech Talks to sr developers and managers on technical topics and industry trends",
+        "Facilitate forum discussions on object oriented code, data structure and algorithms and testing",
+        "Built for a variety of target devices including web and native platforms"
+      ],
+      "skills": []
+    },
+    {
+      "company": "Coinbase",
+      "industry": "FinTech",
+      "team": "Data Science Team",
+      "years": "2020 - 2021",
+      "title": "Software Engineer",
+      "bullet-points": [
+        "Conduct statistical analysis, data modeling, sanitation, imputation and standardization with pandas and numpy",
+        "Develop dashboards and visualizations with seaborn and ggplot",
+        "Develop supervised machine learning models using scikit-learn",
+        "Conduct hypothesis testing, regression analysis and predictive analysis",
+        "Develop web scraping scripts and automated testing ",
+        "Rearchitect multipage web apps into single page to improve performance by 17%"
+      ],
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+    },
+    {
+      "company": "",
+      "industry": "FinTech",
+      "team": "Product Team",
+      "years": "",
+      "title": "",
+      "bullet-points": [
+        "Worked on improving frontend experience by implementing automated testing in Datadog",
+        "Migrated flagship product from monorepos to microservices reduced bundle size by 26% ",
+        "Develop a systematic content management strategy using Contently ",
+        "Collaborate with legal and financial authorities to ensure compliance and corporate responsibility",
+        "Revamp corporate site to improve accessibility and increase lighthouse metrics by 45%",
+        "Built HIPPA compliant persistence models, migration and data cacheing strategies: postgres, mongoDB, mysql",
+        "Designed single page, client/server, serverless, JAMStack and service oriented architectures: React, NextJS"
+      ],
+      "skills": []
+    },
+    {
+      "company": "Thinkful",
+      "industry": "FinTech",
+      "team": "Engineering Team",
+      "years": "2019",
+      "title": "Software Engineer",
+      "bullet-points": [
+        "Integrated persistence with relational or document/object-based database systems: postgres, mysql, mongoDB",
+        "Designed responsive and accessible views with CSS and style preprocessors: CSS, SASS, styled-components",
+        "Implemented security best practices with cross site scripting, request forgery, input sanitization and CORS",
+        "Integrated token based authentication and authorization systems with appropriate hash and salt mechanisms",
+        "Developed single page applications with frontend frameworks: React"
+      ],
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+    },
+    {
+      "company": "Target",
+      "industry": "Retail",
+      "team": "Management Team",
+      "years": "2014 - 2019",
+      "title": "Senior Manager",
+      "bullet-points": [
+        "Piloted technological initiatives such as online ordering, same-day delivery, self checkout and RFID operations",
+        "Improved operations over 10% and reduced liabilities over 15%",
+        "Managed retail operations of over $75M in annual volume",
+        "Grew online sales by 47% and improved gross margins by 38%",
+        "Managed a team with 50+ direct reports achieving in highest number of promotions and cultural satisfaction"
+      ],
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+    },
+    {
+      "company": "Apple",
+      "industry": "Retail",
+      "team": "Retail Team",
+      "years": "2010 - 2012",
+      "title": "Software & Hardware Specialist",
+      "bullet-points": [
+        "Triage software and hardware issues",
+        "Perform testing and analysis of critical electrical components and modules",
+        "Managed technical appointments and traffic",
+        "Verify and audit technical repairs, hardware upgrades, and data recovery and migrations",
+        "Train and develop peers and new employees "
+      ],
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+    },
+    {
+      "company": "FIU Dept. of Biology",
+      "industry": "Education",
+      "team": "Peer Leader",
+      "years": "2013 - 2014",
+      "title": "Team Leader",
+      "bullet-points": [
+        "Lecture undergraduate pre-med students in Biology I & II ",
+        "Administer testing and practice a variety of active learning pedagogies ",
+        "Plan, build and present curriculum covering topics in physics, biology and chemistry",
+        "Collaborate with staff and faculty to assess and improve student engagement and performance"
+      ],
+      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+    }
+  ],
+  "biography": {
+    "0": "I build software. My work requires discussing the scope and goal of each solution, sharing tradeoffs between different implementations, establishing milestones, and deploying high-quality code. A typical day involves optimizing algorithmic and network performance, deploying servers, migrating databases, integrating APIs, building machine learning models, interviewing candidates, collaborating with designers, presenting to management, and researching standardized specifications. Common tools include JavaScript, Python, Typescript, React, Node, AWS, GraphQL, Postgres, SQL, MongoDB, Docker, Git, HTML, CSS, and more. My experience includes web and native projects; government and commercial clients.",
+    "1": "In my personal life, I'm always curious about mathematics, algorithms, machine learning, and electrical engineering. Current projects include building an image classifier with neural networks and a recommendation engine for matching similar users. When I'm not in front of the computer, I'm likely in front of a smaller computer I refer to as my phone. Pursuing a Master of Science in Electrical Engineering. If your project involves improving economic opportunity, public health, access to education, climate, food and resources, or alternative currencies contact me!"
+  },
+  "education": [
+    {
+      "school": "Florida International University",
+      "degree": "Bachelor of Arts, Liberal Studies & Biology",
+      "year": 2014
+    },
+    {
+      "school": "University of Colorado, Boulder",
+      "degree": "Master of Science, Electrical Engineering",
+      "year": 2024
+    }
+  ],
+  "contact": {
+    "name": "Peter Correa",
+    "title": "Senior Software Engineer",
+    "email": "pmcorrea@me.com",
+    "linkedin": "linkedin.com/in/petercorrea",
+    "github": "github.com/petercorrea"
+  },
+  "assets": {
+    "resume": "./Peter Correa CV.pdf"
+  },
+  "skills":  ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"],
+  "quiz": {
+    "question": "You can update the page content by manipulating the DOM.",
+    "options":[
+          { 
+             "id": 1, 
+            "text": "True", 
+            "correct": true, 
+            "explanation":"Yes. Because its, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense."
+          },
+          { 
+             "id": 0, 
+            "text": "False", 
+            "correct": false, 
+            "explanation":"No. Because its, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense."
+          }
+      ],    
+    "category":"True or False"
+  },
+  "links":{
+    "home":"/",
+    "bio":"/#bio",
+    "xp":"/#experience",
+    "github":"https://www.github.com/petercorrea",
+    "in":"https://www.linkedin.com/in/petercorrea",
+    "email":"mailto:contact@petercorrea.com?subject=PeterCorrea.com: reaching out...",
+     "afk":"/afk"
+  },
+  "contactMe":{
+    "text": "If you're looking for specialty in web development, software engineering, single page applications, mobile or native development then let's connect!"    
+  },
+  "portfolio": 
+    [
+      {
+        "type": "repo",
+        "url": "https://github.com/petercorrea/DesignPatterns",
+        "title": "Gang of Four Design Patterns",
+        "description": "A collection of design patterns as described by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides."
+      },
+      {
+        "type": "repo",
+        "url": "https://github.com/petercorrea/Data-Structures-And-Algorithms",
+        "title": "Data Structures and Algorithms",
+        "description": "A collection of interview styled questions about data structures and algorithmns. Read over concepts like dynamic programming, recursion, graph theory and more."
+      },
+       {
+        "type": "repo",
+        "url": "https://github.com/petercorrea/DataScience",
+        "title": "Data Science and Machine Learning",
+        "description": "A collection of questions, examples, notes, and use cases from DataCamp.com's Data Scientist learning track. Concepts includes data wrangling, sanitation, imputation, statistical modeling, supervised and unsupervised machine learning."
+      },
+      {
+        "type": "repo",
+        "url": "https://github.com/petercorrea/IndependentNews",
+        "title": "Independent News",
+        "description": "An quick project to test out a few NextJS features such as server side rendering, hydration, Link components, optimize image processing and file based routing."
+      },
+       {
+        "type": "repo",
+        "url": "https://github.com/petercorrea/petercorrea-nextjs",
+        "title": "PeterCorrea.com",
+        "description": "This website! A React/NextJS project that uses an agnostic css-in-js library. This project features modern ES6 syntax, typescript, react hooks, ssg/ssr, progressive enhancements, all integrated with a style system."
+      },
+      {
+        "type": "presentation",
+        "url": "https://youtu.be/BKSnLuXu_dc",
+        "title": "The Thinkful Experience.",
+        "description": "An online interview of my experience through the Thinkful Bootcamp"
+      },
+       {
+        "type": "presentation",
+        "url": "https://youtu.be/x1kp0y_-zp8",
+        "title": "Inheritance and Object Oriented Programming in JavaScript",
+        "description": "A presentation of a few design patterns and object oriented features of JavaScript."
+      },
+       {
+        "type": "presentation",
+        "url": "https://youtu.be/9uAosfffLKc",
+        "title": "A look inside the JavaScript runtime engine",
+        "description": "A presentation of the JavaScript runtime, execution context and async programming."
+      }
+    ]
+}

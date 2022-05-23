@@ -2,8 +2,8 @@ import { styled } from "../../styles/stitches.config"
 import Block from "../layout/Block"
 import Box from "../layout/Box"
 import Padding from "../layout/Padding"
-import Button from "../ui/components/Button"
-import Href from "../ui/components/Href"
+import Button from "../ui/Button"
+import Href from "../ui/Href"
 
 const Wrapper = styled("div", {
   width: "100%",

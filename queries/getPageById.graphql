@@ -1,0 +1,111 @@
+query getPageById($id: ID!) {
+  page(id: $id) {
+    data { 
+      attributes {
+        title
+        description
+        date
+        content {
+    			...on ComponentContentHeading {
+            __typename
+           text
+          }
+          
+          	...on ComponentContentSubheading {
+            __typename
+           text
+          }
+          
+
+          
+            ...on ComponentContentVideo {
+              __typename
+              caption
+            video {
+              data {
+                attributes {
+                    url
+                  }
+              }
+              }
+            }
+            
+                   ...on ComponentContentImages {
+            __typename
+           caption
+            images {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
+        	}
+          
+          ...on ComponentContentParagraph {
+            __typename
+           text
+          }
+          
+          ...on ComponentContentLatex {
+            __typename
+           latex
+          }
+
+           ...on ComponentContentCode {
+            __typename
+           code
+          }
+
+        	...on ComponentContentQuestion {
+            __typename
+            question
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
+            video {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
+            
+            answer {
+              correct
+              text
+              explanation
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              code
+              latex
+            }
+            choices {
+              correct
+              text
+              latex
+              code
+              explanation
+              image {
+                data{
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

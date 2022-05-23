@@ -16,6 +16,7 @@ export const {
       charcoal: "#2F2F2F",
       gray: "#A4A4A4",
       lightgray: "#0c0c0c26",
+      verylightgray: "#0c0c0c05",
       white: "#ffffff",
 
       // primaries
@@ -188,9 +189,9 @@ export const globalStyles = globalCss({
     },
 
     "&:hover": {
-      transform: "translateY(-10px)",
-      transition: "transform 100ms ease",
       boxShadow: "$lightblue",
+      transform: "translateY(-5px)",
+      transition: "transform 100ms ease-in",
     },
   },
 

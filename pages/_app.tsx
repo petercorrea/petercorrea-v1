@@ -1,4 +1,4 @@
-import Provider from "../context/Provider"
+import Provider from "../providers/Provider"
 
 function MyApp({ Component, pageProps }) {
   return (
