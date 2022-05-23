@@ -24,7 +24,11 @@ const Wrapper = styled(Box, {
   },
 })
 
-export default ({ items }) => {
+type BulletsProps = {
+  items: string[],
+}
+
+export default ({ items }: BulletsProps) => {
   let html = items.map((item, idx) => {
     return (
       <Wrapper key={idx}>

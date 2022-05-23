@@ -73,7 +73,6 @@ export default () => {
 
             <Box column>
               <Tags
-                blue="false"
                 list={[
                   "javascript",
                   "typescript",

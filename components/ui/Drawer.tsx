@@ -59,7 +59,7 @@ const Wrapper = styled(Box, {
   },
 })
 
-export const Drawer = (props) => {
+export const Drawer = () => {
   let { appContext, setAppContext } = useAppContext()
 
   useEffect(() => {}, [])
@@ -71,7 +71,7 @@ export const Drawer = (props) => {
   return appContext.show ? (
     <>
       <OutsideDrawer show onClick={closeDrawer}></OutsideDrawer>
-      <Wrapper {...props} open border>
+      <Wrapper open border>
         <button onClick={closeDrawer}>Close</button>
         <p>This is a drawer</p>
       </Wrapper>
@@ -79,7 +79,7 @@ export const Drawer = (props) => {
   ) : (
     <>
       <OutsideDrawer hidden onClick={closeDrawer}></OutsideDrawer>
-      <Wrapper {...props} close>
+      <Wrapper close>
         <button onClick={closeDrawer}>Close</button>
         <p>This is a drawer</p>
       </Wrapper>

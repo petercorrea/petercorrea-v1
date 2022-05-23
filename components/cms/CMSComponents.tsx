@@ -19,7 +19,7 @@ export default (component, idx) => {
       return parseIntoLatexComponents(component, idx)
 
     case "ComponentContentImages":
-      return generateImages(component, idx)
+      return generateImages(component)
 
     case "ComponentContentVideo":
       return generateVideo(component, idx)

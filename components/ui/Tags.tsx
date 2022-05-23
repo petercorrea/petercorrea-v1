@@ -33,12 +33,17 @@ let Item = styled("div", {
   },
 })
 
-export default ({ list, blue }) => {
+interface TagsProps {
+  list: string[];
+  blue?: boolean;
+}
+
+export default ({ list }: TagsProps) => {
   if (list.length == 0) return
 
   let html = list.map((item, idx) => {
     return (
-      <Item key={idx} blue={blue}>
+      <Item key={idx}>
         <p>{item}</p>
       </Item>
     )

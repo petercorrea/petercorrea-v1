@@ -8,7 +8,12 @@ const Wrapper = styled(Box, {
   },
 })
 
-export default ({ onClick, children }) => {
+type ButtonProps = {
+  onClick: () => void,
+  children: any,
+}
+
+export default ({ onClick, children }: ButtonProps) => {
   return (
     <Wrapper row>
       <button onClick={onClick}>{children}</button>
