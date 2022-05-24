@@ -3,7 +3,7 @@ import { styled } from "../../styles/stitches.config"
 import Box from "../layout/Box"
 
 const Wrapper = styled(Box, {
-  marginBottom: "0px",
+  marginBottom: "$z",
   display: "flex",
   flexFlow: "row nowrap",
   justifyContent: "flex-start",
@@ -11,21 +11,23 @@ const Wrapper = styled(Box, {
 
   "& > svg": {
     position: "relative",
-    right: "-2px",
-    top: "-6px",
+    right: "-$xxs",
+    top: "1px",
     color: "$active",
-    minWidth: "30px",
-    minHeight: "30px",
+    minWidth: "$l",
+    minHeight: "$l",
   },
 
   p: {
+    // maxWidth: "800px",
+    // fontSize: "$m",
+    // fontWeight: "$m",
     lineHeight: "$xs",
-    marginBottom: "$s",
   },
 })
 
 type BulletsProps = {
-  items: string[],
+  items: string[]
 }
 
 export default ({ items }: BulletsProps) => {

@@ -2,7 +2,7 @@ import { styled } from "../../styles/stitches.config"
 import Box from "../layout/Box"
 
 const Wrapper = styled(Box, {
-  maxWidth: "150px",
+  maxWidth: "1$xl",
   button: {
     width: "100%",
   },

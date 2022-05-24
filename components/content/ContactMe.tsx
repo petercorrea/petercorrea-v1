@@ -32,14 +32,13 @@ const BlackBox = styled(Box, {
 
 const Icon = styled(Box, {
   svg: {
-    width: "30px",
-    height: "30px",
+    width: "$xl",
+    height: "$xl",
     color: "$blue",
     marginRight: "$l",
-    transform: "translateY(0px)",
     "&:hover": {
-      transform: "translateY(-10px)",
-      transition: "transform 100ms ease",
+      transform: "translateY(-5px)",
+      transition: "transform 200ms ease",
     },
   },
 })
@@ -78,14 +77,22 @@ export default () => {
                   "typescript",
                   "graphql",
                   "react",
+                  "NextJs",
+                  "SolidJs",
+                  "Svelte",
+                  "html",
+                  "css",
+                  "sass",
+                  "styled-components",
                   "strapi",
+                  "NodeJs",
                   "express",
                   "postgres",
                   "sql",
                   "sequalize",
-                  "ui design",
-                  "html",
-                  "css",
+                  "jest",
+                  "webpack",
+                  "babel",
                 ]}
               />
               <Padding>

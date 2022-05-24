@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <use id="Background" xlink:href="#_Image1" x="35.63" y="45.24" width="54px" height="54px"/>
+    <g>
+        <g id="Background" transform="matrix(2.35054,0,0,2.35054,0.427423,0.641547)">
+            <use xlink:href="#_Image1" x="0" y="0" width="54px" height="54px"/>
+        </g>
+        <g transform="matrix(3.33704,0,0,0.16611,16.387,101.193)">
+            <rect x="7.16" y="72.975" width="10.584" height="14.828" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.234922,0,0,2.36849,111.416,-172.157)">
+            <rect x="7.16" y="72.975" width="10.584" height="14.828" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.234922,0,0,1.00988,88.0492,-73.7894)">
+            <rect x="7.16" y="72.975" width="10.584" height="14.828" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.234922,0,0,1.47513,10.5093,-93.4946)">
+            <rect x="7.16" y="72.975" width="10.584" height="14.828" style="fill:white;"/>
+        </g>
+        <g transform="matrix(3.78913,0,0,0.16611,48.3688,23.656)">
+            <rect x="7.16" y="72.975" width="10.584" height="14.828" style="fill:white;"/>
+        </g>
+        <g transform="matrix(7.38544,0,0,0.16611,-40.675,0.313929)">
+            <rect x="7.16" y="72.975" width="10.584" height="14.828" style="fill:white;"/>
+        </g>
+        <g transform="matrix(8.43198,0,0,0.313456,-59.9427,-22.2036)">
+            <rect x="7.16" y="72.975" width="10.584" height="14.828"/>
+        </g>
+        <g transform="matrix(1.13277,0,0,0.16611,32.1612,77.8904)">
+            <rect x="7.16" y="72.975" width="10.584" height="14.828" style="fill:white;"/>
+        </g>
+        <g transform="matrix(3.77951,0,0,0.16611,-14.8899,23.6585)">
+            <rect x="7.16" y="72.975" width="10.584" height="14.828" style="fill:white;"/>
+        </g>
+    </g>
     <defs>
         <image id="_Image1" width="54px" height="54px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA7klEQVRoge2ZMQ7CMAxFf1C6oC5swMDCYTgPR+QCLNyAAYmZFQkGNpSgILtRv/Wf1CVyHb82bSM3AbhhnhwAXBriRgCP78EMYONdkROD5eSFVxVzQ2Js5Mr4CcC5ZyEF7tYEr8JxtCbtyIiCQ9ilKDE2JMaGxNgIK1bbeawA7Iy5r41xe+M8y9JgwudLPQWpMW6S+cMuRYmxEVYso/0h/4X3C2AA8LQkCHvHJMaGxNiQGBsSY0NibEiMDYmxEVas1n77l61TnlCUfjyaL3jYpSgxNiTGhsTYCCvmtfNYO+Vxw6NvD6h33w+JsRFW7A0NCxzpPCc0LwAAAABJRU5ErkJggg=="/>
     </defs>

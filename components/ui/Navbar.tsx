@@ -9,20 +9,20 @@ import StyledLink from "./StyledLink"
 
 const Wrapper = styled(Box, {
   position: "fixed",
-  top: "-150px",
-  right: "0px",
-  left: "0px",
+  top: "-$xxxl",
+  right: "$z",
+  left: "$z",
   width: "100%",
   zIndex: "10",
   backgroundColor: "#ffffffd5",
-  backdropFilter: "blur(4px)",
+  backdropFilter: "blur($xs)",
   borderShadow: "$dark",
   transition: "top 200ms ease",
 
   variants: {
     show: {
       true: {
-        top: "0px",
+        top: "$z",
         transition: "top 200ms ease",
       },
     },
@@ -42,7 +42,7 @@ const Wrapper = styled(Box, {
 const Navbar = styled(Box, {
   alignItems: "center",
   justifyContent: "right",
-  "&>*": { marginRight: "20px" },
+  "&>*": { marginRight: "$l" },
   background: "transparent",
 })
 
@@ -50,15 +50,13 @@ const Icon = styled(Box, {
   maxWidth: "fit-content",
   marginRight: "$l",
   svg: {
-    width: "30px",
-    height: "30px",
+    width: "$xl",
+    height: "$xl",
     color: "$black",
-    margin: "0px",
-    transform: "translateY(0px)",
     "&:hover": {
       color: "$blue",
       transform: "translateY(-5px)",
-      transition: "transform 100ms ease-in",
+      transition: "transform 200ms ease",
     },
   },
 })
@@ -91,7 +89,7 @@ export default () => {
           <>
             <StyledLink href="/#bio">bio</StyledLink>
             <StyledLink href="/#experience">xp</StyledLink>
-            <StyledLink href="/posts">posts</StyledLink>
+            {/* <StyledLink href="/posts">posts</StyledLink> */}
             <StyledLink href="/afk">afk</StyledLink>
             <Button
               onClick={() => {

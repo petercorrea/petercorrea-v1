@@ -3,13 +3,17 @@ import { styled } from "../../styles/stitches.config"
 import Box from "../layout/Box"
 import Padding from "../layout/Padding"
 import Bullets from "../ui/Bullets"
+import Image from "../ui/Image"
 import Tags from "../ui/Tags"
 
 const Wrapper = styled(Box, {
-  marginBottom: "$xxl",
+  marginBottom: "$xl",
   display: "flex",
   "flex-direction": "row",
   "align-items": "flex-start",
+  h3: {
+    color: "$black",
+  },
   h6: {
     marginBottom: "$s",
   },
@@ -22,10 +26,32 @@ const Wrapper = styled(Box, {
 })
 
 const Column = styled("div", {
+  minWidth: "100%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "flex-start",
   flexBasis: "80%",
+})
+
+const CompanyTitle = styled(Box, {
+  // border: "red solid 1px",
+  display: "flex",
+  flexFlow: "row nowrap",
+  alignItems: "flex-end",
+  justifyContent: "space-between",
+  marginBottom: "$s",
+  "& > *": {
+    // marginRight: "$l",
+  },
+})
+
+const ImageContainer = styled(Box, {
+  width: "fit-content",
+  position: "relative",
+  img: {
+    width: "100px",
+    height: "100px",
+  },
 })
 
 export default () => {
@@ -37,8 +63,21 @@ export default () => {
     html.push(
       <Wrapper key={idx}>
         <Column>
-          <h2>{items[idx].company}</h2>
-          <h3>{items[idx].title}</h3>
+          <CompanyTitle>
+            <h3>{items[idx].title}</h3>
+            {items[idx].logo ? (
+              <ImageContainer>
+                <Image
+                  src={items[idx].logo}
+                  objectFit="contain"
+                  // size="m"
+                  alt="logo"
+                ></Image>
+              </ImageContainer>
+            ) : (
+              ""
+            )}
+          </CompanyTitle>
           <Tags list={items[idx].skills} blue />
         </Column>
 

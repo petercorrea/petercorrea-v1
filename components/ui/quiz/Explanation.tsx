@@ -1,26 +1,29 @@
 import { styled } from "@stitches/react"
-import Image from "next/image"
 import Check from "../../../public/design/check.png"
 import Wrong from "../../../public/design/wrong.png"
 import Box from "../../layout/Box"
+import Image from "../Image"
 
 const AttachedModal = styled(Box, {
   width: "100%",
-  minHeight: "200px",
-  borderRadius: "10px",
-  padding: "20px",
+  minHeight: "$200",
+  borderRadius: "$s",
+  padding: "$l",
   justifyContent: "center",
   alignItems: "center",
 
   "& > * ": {
     "& > * ": {
-      margin: "0px 10px",
+      margin: "$z $s",
     },
   },
 
   ".explanation": {
     color: "$black",
-    margin: "10px 0px",
+    margin: "$s $z",
+    fontWeight: "$m",
+    fontSize: "$m",
+    lineHeight: "$xs",
   },
 
   variants: {
@@ -50,10 +53,10 @@ export default ({ submitted, selection }) => {
       <AttachedModal show correct>
         <Box row>
           <Image
+            size="xs"
             src={Check}
             alt="image of a checkmark"
-            width="20px"
-            height="20px"
+            objectFit="contain"
           ></Image>
           <p>Correct!</p>
         </Box>
@@ -65,10 +68,10 @@ export default ({ submitted, selection }) => {
       <AttachedModal show>
         <Box row>
           <Image
+            size="xs"
             src={Wrong}
             alt="image of a incorrect answer"
-            width="20px"
-            height="20px"
+            objectFit="contain"
           ></Image>
           <p>That's not right...</p>
         </Box>

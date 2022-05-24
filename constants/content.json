@@ -2,108 +2,137 @@
   "experience": [
     {
       "company": "PayPal",
+      "logo": "/logos/paypal.png",
       "industry": "FinTech",
       "team": "Growth Team",
       "years": "2021 - now",
       "title": "Software Engineer ||",
       "bullet-points": [
-        "Implemented new cash products resulting in 18% increased engagement",
-        "Migrated legacy backend environments to support service architectures reducing P0, P1 issues by 10%",
-        "Support acquisitions of other services by integrating across platforms through a unified data layer using GraphQL",
-        "Conducted benchmark and stress tests on enterprise systems and network controls",
         "Research failures and bottlenecks to determine appropriate solution",
-        "Present to senior developers, technical managers and stakeholders about the state of technology and practices",
+        "Implemented new cash products resulting in 18% increased engagement",
         "Conduct hands on workshops regarding software engineering and web design",
-        "Monitored deployments on cloud hosting environments for usage and high availability"
+        "Conducted benchmark and stress tests on enterprise systems and network controls",
+        "Monitored deployments on cloud hosting environments for usage and high availability",
+        "Migrated legacy backend environments to support service architectures reducing P0, P1 issues by 10%",
+        "Present to senior developers and technical managers about the state of technology and practices",
+        "Support acquisitions of other services by integrating across platforms through a unified data layer using GraphQL"
       ],
-      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+      "skills": [
+        "backend development",
+        "typescript",
+        "graphql",
+        "apollo",
+        "nodejs",
+        "postman"
+      ]
     },
     {
       "company": "",
+      "logo": "",
       "industry": "FinTech",
       "team": "Product Team",
       "years": "",
       "title": "",
       "bullet-points": [
         "Focused on building out an in-house content management system to support all teams",
-        "Developed AI/ML personalization platform for user promotions increasing transactions per capita by 30%",
-        "Collaborated with managers, product designers and legal partners to develop features and architectures",
-        "Built custom content management system and distributed applications with high throughput and low latency",
-        "Interviewed candidates, mentored trainees, and hosted monthly Tech Talks to sr developers and managers on technical topics and industry trends",
         "Facilitate forum discussions on object oriented code, data structure and algorithms and testing",
-        "Built for a variety of target devices including web and native platforms"
+        "Collaborated with managers, product designers and legal partners to develop features and architectures",
+        "Built for a variety of target devices including web and native platforms",
+        "Interviewed candidates, mentored trainees, and hosted monthly Tech Talks to sr developers and managers on technical topics and industry trends",
+        "Built performant custom content management system and distributed applications",
+        "Developed AI/ML personalization platform for user promotions increasing transactions per capita by 30%"
       ],
       "skills": []
     },
     {
       "company": "Coinbase",
+      "logo": "/logos/coinbase.svg",
       "industry": "FinTech",
       "team": "Data Science Team",
       "years": "2020 - 2021",
       "title": "Software Engineer",
       "bullet-points": [
-        "Conduct statistical analysis, data modeling, sanitation, imputation and standardization with pandas and numpy",
-        "Develop dashboards and visualizations with seaborn and ggplot",
+        "Develop web scraping scripts and automated testing",
         "Develop supervised machine learning models using scikit-learn",
+        "Develop dashboards and visualizations",
         "Conduct hypothesis testing, regression analysis and predictive analysis",
-        "Develop web scraping scripts and automated testing ",
-        "Rearchitect multipage web apps into single page to improve performance by 17%"
+        "Rearchitect multipage web apps into single page to improve performance by 17%",
+        "Conduct statistical analysis, data modeling, sanitation, imputation and standardization"
       ],
-      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+      "skills": [
+        "frontend",
+        "react",
+        "typescript",
+        "datadog",
+        "contently",
+        "codeflow"
+      ]
     },
     {
       "company": "",
+      "logo": "",
       "industry": "FinTech",
       "team": "Product Team",
       "years": "",
       "title": "",
       "bullet-points": [
-        "Worked on improving frontend experience by implementing automated testing in Datadog",
-        "Migrated flagship product from monorepos to microservices reduced bundle size by 26% ",
-        "Develop a systematic content management strategy using Contently ",
-        "Collaborate with legal and financial authorities to ensure compliance and corporate responsibility",
+        "Develop a systematic content management strategy using Contently",
         "Revamp corporate site to improve accessibility and increase lighthouse metrics by 45%",
-        "Built HIPPA compliant persistence models, migration and data cacheing strategies: postgres, mongoDB, mysql",
-        "Designed single page, client/server, serverless, JAMStack and service oriented architectures: React, NextJS"
+        "Migrated flagship product from monorepos to microservices reduced bundle size by 26%",
+        "Worked on improving frontend experience by implementing automated testing in Datadog",
+        "Collaborate with legal and financial authorities to ensure compliance and corporate responsibility",
+        "Built HIPPA compliant persistence models, migration and data cacheing strategies",
+        "Designed single page, client/server, serverless, JAMStack and service oriented architectures"
       ],
       "skills": []
     },
     {
       "company": "Thinkful",
+      "logo": "/logos/thinkful_t.svg",
       "industry": "FinTech",
       "team": "Engineering Team",
       "years": "2019",
       "title": "Software Engineer",
       "bullet-points": [
-        "Integrated persistence with relational or document/object-based database systems: postgres, mysql, mongoDB",
-        "Designed responsive and accessible views with CSS and style preprocessors: CSS, SASS, styled-components",
-        "Implemented security best practices with cross site scripting, request forgery, input sanitization and CORS",
-        "Integrated token based authentication and authorization systems with appropriate hash and salt mechanisms",
-        "Developed single page applications with frontend frameworks: React"
+        "Developed single page applications with frontend frameworks",
+        "Implemented security best practices with cross site scripting, request forgery, input sanitization",
+        "Integrated persistence with relational or document/object-based database systems",
+        "Designed responsive and accessible views with CSS and style preprocessors",
+        "Integrated token based authentication and authorization systems with appropriate hash and salt mechanisms"
       ],
-      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+      "skills": ["html", "css", "javascript", "graphql", "nodejs", "jest"]
     },
     {
       "company": "Target",
+      "logo": "/logos/target.png",
       "industry": "Retail",
       "team": "Management Team",
       "years": "2014 - 2019",
       "title": "Senior Manager",
       "bullet-points": [
-        "Piloted technological initiatives such as online ordering, same-day delivery, self checkout and RFID operations",
+        "Piloted technological initiatives: online ordering, same-day delivery, self checkout and RFID operations",
         "Improved operations over 10% and reduced liabilities over 15%",
         "Managed retail operations of over $75M in annual volume",
         "Grew online sales by 47% and improved gross margins by 38%",
-        "Managed a team with 50+ direct reports achieving in highest number of promotions and cultural satisfaction"
+        "Managed a team with 50+ direct reports",
+        "Achieved highest number of promotions and internal cultural satisfaction"
       ],
-      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+      "skills": [
+        "management",
+        "operations",
+        "mentoring",
+        "leading",
+        "sales",
+        "logistics"
+      ]
     },
     {
       "company": "Apple",
+      "logo": "/logos/apple.png",
       "industry": "Retail",
       "team": "Retail Team",
       "years": "2010 - 2012",
-      "title": "Software & Hardware Specialist",
+      "title": "Technical Specialist",
       "bullet-points": [
         "Triage software and hardware issues",
         "Perform testing and analysis of critical electrical components and modules",
@@ -111,21 +140,28 @@
         "Verify and audit technical repairs, hardware upgrades, and data recovery and migrations",
         "Train and develop peers and new employees "
       ],
-      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+      "skills": ["iOS", "Mac", "iPhone", "iPad", "terminal", "hardware"]
     },
     {
-      "company": "FIU Dept. of Biology",
+      "company": "FIU",
+      "logo": "/logos/fiu.png",
       "industry": "Education",
-      "team": "Peer Leader",
+      "team": "Department of Biology",
       "years": "2013 - 2014",
       "title": "Team Leader",
       "bullet-points": [
-        "Lecture undergraduate pre-med students in Biology I & II ",
-        "Administer testing and practice a variety of active learning pedagogies ",
+        "Lecture undergraduate pre-med students in Biology I & II",
+        "Administer testing and practice a variety of active learning pedagogies",
         "Plan, build and present curriculum covering topics in physics, biology and chemistry",
         "Collaborate with staff and faculty to assess and improve student engagement and performance"
       ],
-      "skills": ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"]
+      "skills": [
+        "biology",
+        "undergrad",
+        "presenting",
+        "communication",
+        "collaboration"
+      ]
     }
   ],
   "biography": {
@@ -154,86 +190,92 @@
   "assets": {
     "resume": "./Peter Correa CV.pdf"
   },
-  "skills":  ["backend development", "typescript", "graphql", "apollo", "nodejs", "jenkins"],
+  "skills": [
+    "backend development",
+    "typescript",
+    "graphql",
+    "apollo",
+    "nodejs",
+    "jenkins"
+  ],
   "quiz": {
     "question": "You can update the page content by manipulating the DOM.",
-    "options":[
-          { 
-             "id": 1, 
-            "text": "True", 
-            "correct": true, 
-            "explanation":"Yes. Because its, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense."
-          },
-          { 
-             "id": 0, 
-            "text": "False", 
-            "correct": false, 
-            "explanation":"No. Because its, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense."
-          }
-      ],    
-    "category":"True or False"
-  },
-  "links":{
-    "home":"/",
-    "bio":"/#bio",
-    "xp":"/#experience",
-    "github":"https://www.github.com/petercorrea",
-    "in":"https://www.linkedin.com/in/petercorrea",
-    "email":"mailto:contact@petercorrea.com?subject=PeterCorrea.com: reaching out...",
-     "afk":"/afk"
-  },
-  "contactMe":{
-    "text": "If you're looking for specialty in web development, software engineering, single page applications, mobile or native development then let's connect!"    
-  },
-  "portfolio": 
-    [
+    "options": [
       {
-        "type": "repo",
-        "url": "https://github.com/petercorrea/DesignPatterns",
-        "title": "Gang of Four Design Patterns",
-        "description": "A collection of design patterns as described by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides."
+        "id": 1,
+        "text": "True",
+        "correct": true,
+        "explanation": "Yes. Because its, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense."
       },
       {
-        "type": "repo",
-        "url": "https://github.com/petercorrea/Data-Structures-And-Algorithms",
-        "title": "Data Structures and Algorithms",
-        "description": "A collection of interview styled questions about data structures and algorithmns. Read over concepts like dynamic programming, recursion, graph theory and more."
-      },
-       {
-        "type": "repo",
-        "url": "https://github.com/petercorrea/DataScience",
-        "title": "Data Science and Machine Learning",
-        "description": "A collection of questions, examples, notes, and use cases from DataCamp.com's Data Scientist learning track. Concepts includes data wrangling, sanitation, imputation, statistical modeling, supervised and unsupervised machine learning."
-      },
-      {
-        "type": "repo",
-        "url": "https://github.com/petercorrea/IndependentNews",
-        "title": "Independent News",
-        "description": "An quick project to test out a few NextJS features such as server side rendering, hydration, Link components, optimize image processing and file based routing."
-      },
-       {
-        "type": "repo",
-        "url": "https://github.com/petercorrea/petercorrea-nextjs",
-        "title": "PeterCorrea.com",
-        "description": "This website! A React/NextJS project that uses an agnostic css-in-js library. This project features modern ES6 syntax, typescript, react hooks, ssg/ssr, progressive enhancements, all integrated with a style system."
-      },
-      {
-        "type": "presentation",
-        "url": "https://youtu.be/BKSnLuXu_dc",
-        "title": "The Thinkful Experience.",
-        "description": "An online interview of my experience through the Thinkful Bootcamp"
-      },
-       {
-        "type": "presentation",
-        "url": "https://youtu.be/x1kp0y_-zp8",
-        "title": "Inheritance and Object Oriented Programming in JavaScript",
-        "description": "A presentation of a few design patterns and object oriented features of JavaScript."
-      },
-       {
-        "type": "presentation",
-        "url": "https://youtu.be/9uAosfffLKc",
-        "title": "A look inside the JavaScript runtime engine",
-        "description": "A presentation of the JavaScript runtime, execution context and async programming."
+        "id": 0,
+        "text": "False",
+        "correct": false,
+        "explanation": "No. Because its, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense. Because its wrong, this is some lorem ipsum text that doesnt make any sense."
       }
-    ]
+    ],
+    "category": "True or False"
+  },
+  "links": {
+    "home": "/",
+    "bio": "/#bio",
+    "xp": "/#experience",
+    "github": "https://www.github.com/petercorrea",
+    "in": "https://www.linkedin.com/in/petercorrea",
+    "email": "mailto:contact@petercorrea.com?subject=PeterCorrea.com: reaching out...",
+    "afk": "/afk"
+  },
+  "contactMe": {
+    "text": "If you're looking for specialty in web development, software engineering, single page applications, mobile or native development then let's connect!"
+  },
+  "portfolio": [
+    {
+      "type": "repo",
+      "url": "https://github.com/petercorrea/DesignPatterns",
+      "title": "Gang of Four Design Patterns",
+      "description": "A collection of design patterns as described by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides."
+    },
+    {
+      "type": "repo",
+      "url": "https://github.com/petercorrea/Data-Structures-And-Algorithms",
+      "title": "Data Structures and Algorithms",
+      "description": "A collection of interview styled questions about data structures and algorithmns. Read over concepts like dynamic programming, recursion, graph theory and more."
+    },
+    {
+      "type": "repo",
+      "url": "https://github.com/petercorrea/DataScience",
+      "title": "Data Science and Machine Learning",
+      "description": "A collection of questions, examples, notes, and use cases from DataCamp.com's Data Scientist learning track. Concepts includes data wrangling, sanitation, imputation, statistical modeling, supervised and unsupervised machine learning."
+    },
+    {
+      "type": "repo",
+      "url": "https://github.com/petercorrea/IndependentNews",
+      "title": "Independent News",
+      "description": "An quick project to test out a few NextJS features such as server side rendering, hydration, Link components, optimize image processing and file based routing."
+    },
+    {
+      "type": "repo",
+      "url": "https://github.com/petercorrea/petercorrea-nextjs",
+      "title": "PeterCorrea.com",
+      "description": "This website! A React/NextJS project that uses an agnostic css-in-js library. This project features modern ES6 syntax, typescript, react hooks, ssg/ssr, progressive enhancements, all integrated with a style system."
+    },
+    {
+      "type": "presentation",
+      "url": "https://youtu.be/BKSnLuXu_dc",
+      "title": "The Thinkful Experience.",
+      "description": "An online interview of my experience through the Thinkful Bootcamp"
+    },
+    {
+      "type": "presentation",
+      "url": "https://youtu.be/x1kp0y_-zp8",
+      "title": "Inheritance and Object Oriented Programming in JavaScript",
+      "description": "A presentation of a few design patterns and object oriented features of JavaScript."
+    },
+    {
+      "type": "presentation",
+      "url": "https://youtu.be/9uAosfffLKc",
+      "title": "A look inside the JavaScript runtime engine",
+      "description": "A presentation of the JavaScript runtime, execution context and async programming."
+    }
+  ]
 }

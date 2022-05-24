@@ -3,13 +3,21 @@ import { styled } from "../../styles/stitches.config"
 const Wrapper = styled("div", {
   width: "100%",
   margin: "auto",
-  maxWidth: "800px",
-  minWidth: "320px",
+  maxWidth: "$max",
+  minWidth: "3$l",
 
   variants: {
     border: {
       true: {
-        border: "red solid 5px",
+        border: "red solid $s",
+      },
+    },
+    top: {
+      true: {
+        paddingTop: "$s",
+        "@bp2": {
+          paddingTop: "$xxxl",
+        },
       },
     },
     xxxs: {

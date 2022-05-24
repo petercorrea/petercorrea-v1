@@ -10,11 +10,11 @@ import StyledLink from "./StyledLink"
 const MobileNavbar = styled(Box, {
   flexDirection: "column",
   position: "sticky",
-  top: "-150px",
-  bottom: "0px",
+  top: "-1$xl",
+  bottom: "$z",
   zIndex: 10,
   backgroundColor: "#ffffffd5",
-  backdropFilter: "blur(4px)",
+  backdropFilter: "blur($xs)",
   overflow: "hidden",
   transition: "top 200ms ease",
 
@@ -29,8 +29,8 @@ const MobileNavbar = styled(Box, {
   },
 
   "#hamburger": {
-    width: "40px",
-    height: "40px",
+    width: "$xl",
+    height: "$xl",
 
     "&:hover": {
       cursor: "pointer",
@@ -62,7 +62,7 @@ const MobileNavbar = styled(Box, {
   variants: {
     show: {
       true: {
-        top: "0px",
+        top: "$z",
         transition: "top 200ms ease",
       },
     },
@@ -70,8 +70,8 @@ const MobileNavbar = styled(Box, {
     open: {
       true: {
         height: "100vh",
-        bottom: "0px",
-        top: "0px",
+        bottom: "$z",
+        top: "$z",
       },
     },
   },
@@ -88,7 +88,7 @@ const TopBar = styled(Box, {
 
 const Links = styled(Box, {
   display: "none",
-  height: "calc(100vh - 50px)",
+  height: "calc(100vh - $xl)",
 
   variants: {
     show: {
@@ -149,9 +149,9 @@ export default () => {
           <li onClick={closeMenu} key="experience">
             <StyledLink href="/#experience">xp</StyledLink>
           </li>
-          <li onClick={closeMenu} key="posts">
+          {/* <li onClick={closeMenu} key="posts">
             <StyledLink href="/posts">posts</StyledLink>
-          </li>
+          </li> */}
           <li onClick={closeMenu} key="afk">
             <StyledLink href="/afk">afk</StyledLink>
           </li>

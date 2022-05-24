@@ -2,12 +2,12 @@ import { keyframes, styled } from "@stitches/react"
 import Box from "../../layout/Box"
 
 const shake = keyframes({
-  "0%": { transform: "translateX(10px)" },
-  "20%": { transform: "translateX(-10px)" },
-  "40%": { transform: "translateX(10px)" },
-  "60%": { transform: "translateX(-10px)" },
-  "80%": { transform: "translateX(10px)" },
-  "100%": { transform: "translateX(0px)" },
+  "0%": { transform: "translateX($s)" },
+  "20%": { transform: "translateX(-$s)" },
+  "40%": { transform: "translateX($s)" },
+  "60%": { transform: "translateX(-$s)" },
+  "80%": { transform: "translateX($s)" },
+  "100%": { transform: "translateX($z)" },
 })
 
 const abcInterator = () => {
@@ -28,15 +28,18 @@ const abcInterator = () => {
 const OptionsButton = styled(Box, {
   button: {
     width: "100%",
-    minWidth: "200px",
-    height: "40px",
-    padding: "5px 20px",
-    marginBottom: "20px",
-    borderRadius: "10px",
+    minWidth: "$200",
+    height: "fit-content",
+    padding: "$l $l",
+    marginBottom: "$l",
+    borderRadius: "$s",
     border: "$border-light",
     backgroundColor: "$white",
     textAlign: "left",
     color: "$black",
+    fontWeight: "$m",
+    fontSize: "$m",
+    lineHeight: "$xs",
 
     "&:hover ": {
       color: "$black",

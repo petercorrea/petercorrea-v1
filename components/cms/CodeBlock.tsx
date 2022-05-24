@@ -7,10 +7,10 @@ import Padding from "../layout/Padding"
 const CodeWrapper = styled(Box, {
   "&>*": {
     width: "80%",
-    maxWidth: "800px",
-    border: "$lightgray solid 1px",
-    borderRadius: "$borderRadius",
+    maxWidth: "$max",
+    border: "$border-light",
     boxShadow: "$light",
+    fontFamily: "Fira Code",
   },
 })
 

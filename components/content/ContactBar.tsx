@@ -11,7 +11,7 @@ const ContactBar = styled("div", {
 
     li: {
       display: "block",
-      marginRight: "25px",
+      marginRight: "$l",
     },
   },
 })

@@ -1,10 +1,10 @@
 import { styled } from "../../styles/stitches.config"
 
 const Wrapper = styled("div", {
-  height: "100px",
-  width: "100px",
-  minHeight: "100px",
-  minWidth: "100px",
+  height: "$xxxl",
+  width: "$xxxl",
+  minHeight: "$xxxl",
+  minWidth: "$xxxl",
   backgroundColor: "$lightgray",
   border: "$border-dark",
 })

@@ -11,8 +11,8 @@ const OutsideDrawer = styled(Box, {
   width: "100%",
   height: "100%",
   position: "fixed",
-  top: "0px",
-  bottom: "0px",
+  top: "$z",
+  bottom: "$z",
 
   variants: {
     show: {
@@ -30,13 +30,13 @@ const OutsideDrawer = styled(Box, {
 
 // Drawer Component
 const Wrapper = styled(Box, {
-  width: "300px",
+  width: "$300",
   "min-height": "100vh",
   height: "100%",
   position: "fixed",
-  top: "0px",
-  right: "0px",
-  bottom: "0px",
+  top: "$z",
+  right: "$z",
+  bottom: "$z",
   backgroundColor: "blue",
   transition: "transform 750ms cubic-bezier(.03,0,.51,1)",
   "will- change": "transform",
@@ -44,18 +44,18 @@ const Wrapper = styled(Box, {
   variants: {
     open: {
       true: {
-        transform: "translateX(0px)",
+        transform: "translateX($z)",
       },
     },
     close: {
       true: {
-        transform: "translateX(300px)",
+        transform: "translateX($300)",
       },
     },
   },
 
   button: {
-    marginTop: "100px",
+    marginTop: "$xxxl",
   },
 })
 
@@ -91,8 +91,8 @@ export const Drawer = () => {
 
 // Drawer Button Component
 const ButtonWrapper = styled("button", {
-  width: "50px",
-  height: "50px",
+  width: "$xl",
+  height: "$xl",
   border: "none",
   backgroundColor: "transparent",
 

@@ -9,21 +9,22 @@ import Options from "./Options"
 import Question from "./Question"
 
 const slideUp = keyframes({
-  "0%": { transform: "translateY(20px)", opacity: 0 },
+  "0%": { transform: "translateY($l)", opacity: 0 },
   "100%": { transform: "translateY(0)", opacity: 1 },
 })
 
 const Container = styled(Box, {
-  padding: " 80px",
+  padding: "$s",
   animation: `${slideUp} 1000ms`,
+  justifyContent: "flex-start",
 })
 
 const QuizWrapper = styled(Box, {
-  width: "500px",
+  maxWidth: "$400",
   border: "$border-light",
-  borderRadius: "10px",
+  borderRadius: "$s",
   margin: "auto",
-  padding: "20px",
+  padding: "$l",
   boxShadow: "$light",
   backgroundColor: "$verylightgray",
 })
@@ -31,14 +32,14 @@ const QuizWrapper = styled(Box, {
 const SubmitButtonWrapper = styled("div", {
   button: {
     display: "block",
-    minWidth: "200px",
-    height: "40px",
-    marginBottom: "20px",
-    borderRadius: "10px",
+    minWidth: "$200",
+    height: "$xl",
+    // marginBottom: "$l",
+    borderRadius: "$s",
     border: "$border-black",
     backgroundColor: "$black",
     color: "$white",
-    transition: "transform 80ms ease-in",
+    transition: "transform 80ms ease",
     boxShadow: "$dark",
     textAlign: "center",
     verticalAlign: "middle",
@@ -46,7 +47,7 @@ const SubmitButtonWrapper = styled("div", {
     "&:hover": {
       backgroundColor: "$black",
       color: "$white",
-      transform: "translateY(-3px)",
+      transform: "translateY(-$xxxs)",
     },
   },
 })
@@ -92,7 +93,7 @@ export default ({ content }) => {
   // randomize sort
 
   return (
-    <Container>
+    <Container column>
       <QuizWrapper column>
         <Question question={question} category={category} />
         <Options

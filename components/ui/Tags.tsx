@@ -5,28 +5,30 @@ const Wrapper = styled("div", {
   flex: "row",
   justifyContent: "left",
   flexWrap: "wrap",
-  margin: "0px 0px 20px 0px",
+  margin: "$z $z $l $z",
 })
 
 const Item = styled("div", {
-  border: "$white solid 2px",
-  borderRadius: "5px",
+  border: "$border-white",
+  borderRadius: "$s",
   color: "$white",
-  padding: "1px 10px",
-  margin: "0px 5px 5px 0px",
+  padding: "0px $xs ",
+  margin: "$z $s $s $z",
 
   p: {
+    // fontFamily: "monospace",
     fontSize: "$xs",
-    fontWeight: "400",
+    fontWeight: "$l",
     color: "$white",
   },
 
   variants: {
     blue: {
       true: {
-        border: "$blue solid 1px",
+        border: "$border-black",
+        borderRadius: "$s",
         p: {
-          color: "$blue",
+          color: "$black",
         },
       },
     },
@@ -38,12 +40,12 @@ interface TagsProps {
   blue?: boolean
 }
 
-export default ({ list }: TagsProps) => {
+export default ({ list, blue }: TagsProps) => {
   if (list.length == 0) return
 
   const html = list.map((item, idx) => {
     return (
-      <Item key={idx} data-testid="tags-test">
+      <Item key={idx} blue={blue}>
         <p>{item}</p>
       </Item>
     )

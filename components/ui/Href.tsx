@@ -4,11 +4,11 @@ const Wrapper = styled("a", {
   fontSize: "1.1rem",
   color: "$black",
   textDecoration: "none",
-  width: "100px",
+  width: "$xxxl",
 
   ".link_underline": {
-    border: "$active solid 1px",
-    width: "0px",
+    border: "$active solid $xxxs",
+    width: "$z",
     transition: "width ease 200ms, opacity ease 300ms",
     opacity: "0",
   },
@@ -16,7 +16,7 @@ const Wrapper = styled("a", {
   "&:hover": {
     ".link_underline": {
       maxWidth: "100%",
-      border: "$active solid 1px",
+      border: "$active solid $xxxs",
       transition: "width ease 200ms",
       width: "100%",
       opacity: "1",

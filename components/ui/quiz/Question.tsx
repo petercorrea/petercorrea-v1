@@ -1,18 +1,27 @@
 import { styled } from "../../../styles/stitches.config"
 import Box from "../../layout/Box"
 
-const CategoryLabel = styled("p", {
-  minWidth: "fit-content",
-  marginRight: "20px",
+const Wrapper = styled(Box, {
+  marginBottom: "$l",
 })
 
-const QuestionLabel = styled("p", { fontSize: "1.1rem" })
+const CategoryLabel = styled("p", {
+  minWidth: "fit-content",
+  marginRight: "$l",
+  // marginBottom: "$l",
+})
+
+const QuestionLabel = styled("p", {
+  fontWeight: "$m",
+  fontSize: "$m",
+  lineHeight: "$xs",
+})
 
 export default ({ question, category }) => {
   return (
-    <Box column>
+    <Wrapper column>
       <CategoryLabel>{category}</CategoryLabel>
       <QuestionLabel>{question}</QuestionLabel>
-    </Box>
+    </Wrapper>
   )
 }

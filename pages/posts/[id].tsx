@@ -27,7 +27,7 @@ const DynamicRoute = () => {
     <>
       <Navbar></Navbar>
       <MobileNavbar></MobileNavbar>
-      <Padding>
+      <Padding border top l>
         {content
           ? content.map((item, idx) => {
               return generateCMSComponents(item, idx)

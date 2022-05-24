@@ -1,4 +1,10 @@
 import Latex from "react-latex"
+import { styled } from "../../styles/stitches.config"
+import Box from "../layout/Box"
+
+const LatexWrapper = styled(Box, {
+  margin: "$xl auto",
+})
 
 export const generateBlockLatex = (comp, idx) => {
   const latex = comp.latex
@@ -8,8 +14,10 @@ export const generateBlockLatex = (comp, idx) => {
   }
 
   return (
-    <Latex displayMode={true} key={idx}>
-      {latex}
-    </Latex>
+    <LatexWrapper>
+      <Latex displayMode={true} key={idx}>
+        {latex}
+      </Latex>
+    </LatexWrapper>
   )
 }
