@@ -1,0 +1,18 @@
+query getPages {
+  pages {
+    data { 
+      attributes {
+        title
+        description
+        date
+        image {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}

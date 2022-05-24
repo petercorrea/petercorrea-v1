@@ -1,36 +1,40 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import { useQuery } from "urql"
 import generateCMSComponents from "../../components/cms/CMSComponents"
 import Padding from "../../components/layout/Padding"
-import { GetPageByIdDocument } from "../../generated"
+import MobileNavbar from "../../components/ui/MobileNavbar"
+import Navbar from "../../components/ui/Navbar"
+import { useGetPageByIdQuery } from "../../generated"
 
 const DynamicRoute = () => {
   const router = useRouter()
   const [content, setContent] = useState(null)
 
-  const [result] = useQuery({
-    query: GetPageByIdDocument,
-    variables: {
-      id: router.query.id,
-    },
+  const [result] = useGetPageByIdQuery({
+    variables: { id: `${router.query.id}` },
   })
   const { data, fetching, error } = result
 
   useEffect(() => {
-    setContent(data?.page.data.attributes.content)
-  }, [data])
+    // console.log("fired")
+
+    setContent(data?.page?.data?.attributes?.content)
+  }, [data, router.query.id])
 
   if (fetching) return <p>Loading...</p>
   if (error) return <p>Oh no... {error.message}</p>
   return (
-    <Padding>
-      {content
-        ? content.map((item, idx) => {
-            return generateCMSComponents(item, idx)
-          })
-        : ""}
-    </Padding>
+    <>
+      <Navbar></Navbar>
+      <MobileNavbar></MobileNavbar>
+      <Padding>
+        {content
+          ? content.map((item, idx) => {
+              return generateCMSComponents(item, idx)
+            })
+          : ""}
+      </Padding>
+    </>
   )
 }
 
