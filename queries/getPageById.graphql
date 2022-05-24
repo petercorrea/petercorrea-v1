@@ -1,38 +1,36 @@
 query getPageById($id: ID!) {
   page(id: $id) {
-    data { 
+    data {
       attributes {
         title
         description
         date
         content {
-    			...on ComponentContentHeading {
+          ... on ComponentContentHeading {
             __typename
-           text
+            text
           }
-          
-          	...on ComponentContentSubheading {
-            __typename
-           text
-          }
-          
 
-          
-            ...on ComponentContentVideo {
-              __typename
-              caption
+          ... on ComponentContentSubheading {
+            __typename
+            text
+          }
+
+          ... on ComponentContentVideo {
+            __typename
+            caption
             video {
               data {
                 attributes {
-                    url
-                  }
-              }
+                  url
+                }
               }
             }
-            
-                   ...on ComponentContentImages {
+          }
+
+          ... on ComponentContentImages {
             __typename
-           caption
+            caption
             images {
               data {
                 attributes {
@@ -40,24 +38,24 @@ query getPageById($id: ID!) {
                 }
               }
             }
-        	}
-          
-          ...on ComponentContentParagraph {
-            __typename
-           text
-          }
-          
-          ...on ComponentContentLatex {
-            __typename
-           latex
           }
 
-           ...on ComponentContentCode {
+          ... on ComponentContentParagraph {
             __typename
-           code
+            text
           }
 
-        	...on ComponentContentQuestion {
+          ... on ComponentContentLatex {
+            __typename
+            latex
+          }
+
+          ... on ComponentContentCode {
+            __typename
+            code
+          }
+
+          ... on ComponentContentQuestion {
             __typename
             question
             image {
@@ -74,7 +72,7 @@ query getPageById($id: ID!) {
                 }
               }
             }
-            
+
             answer {
               correct
               text
@@ -96,7 +94,7 @@ query getPageById($id: ID!) {
               code
               explanation
               image {
-                data{
+                data {
                   attributes {
                     url
                   }

@@ -1,6 +1,6 @@
 query getPages {
   pages {
-    data { 
+    data {
       attributes {
         title
         description
