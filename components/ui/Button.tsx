@@ -9,8 +9,8 @@ const Wrapper = styled(Box, {
 })
 
 type ButtonProps = {
-  onClick: () => void,
-  children: any,
+  onClick: () => void
+  children?: React.ReactNode
 }
 
 export default ({ onClick, children }: ButtonProps) => {

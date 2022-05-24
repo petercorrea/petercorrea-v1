@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div
+  className="c-kXKDxY"
+>
+  <div
+    className="c-gatyjV"
+    data-testid="tags-test"
+  >
+    <p>
+      item1
+    </p>
+  </div>
+  <div
+    className="c-gatyjV"
+    data-testid="tags-test"
+  >
+    <p>
+      item2
+    </p>
+  </div>
+</div>
+`;

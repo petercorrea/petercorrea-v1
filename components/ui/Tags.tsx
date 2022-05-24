@@ -34,8 +34,8 @@ const Item = styled("div", {
 })
 
 interface TagsProps {
-  list: string[];
-  blue?: boolean;
+  list: string[]
+  blue?: boolean
 }
 
 export default ({ list }: TagsProps) => {
@@ -43,7 +43,7 @@ export default ({ list }: TagsProps) => {
 
   const html = list.map((item, idx) => {
     return (
-      <Item key={idx}>
+      <Item key={idx} data-testid="tags-test">
         <p>{item}</p>
       </Item>
     )
