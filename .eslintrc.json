@@ -1,5 +1,10 @@
-{
-  "extends": ["eslint:recommended", "next", "prettier"],
+{  
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended", "next", "prettier", "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"],
    "rules": {
     "react/no-unescaped-entities": "off",
     "react/display-name": "off",

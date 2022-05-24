@@ -37,7 +37,13 @@ export default () => {
         <Href href="https://www.google.com">This is a Link</Href>
         <Href href="https://www.google.com">Link</Href>
 
-        <Button onClick={() => {}}>Submit</Button>
+        <Button
+          onClick={() => {
+            return
+          }}
+        >
+          Submit
+        </Button>
         <br />
         <br />
         <Box border row right>

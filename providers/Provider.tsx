@@ -1,7 +1,7 @@
 import { Provider } from "urql"
 import { client } from "../clients/gql"
+import { AppContextWrapper } from "../contexts/AppContext"
 import { globalStyles } from "../styles/stitches.config"
-import { AppContextWrapper } from "./AppContext"
 
 export default (props) => {
   globalStyles()

@@ -29,7 +29,7 @@ type BulletsProps = {
 }
 
 export default ({ items }: BulletsProps) => {
-  let html = items.map((item, idx) => {
+  const html = items.map((item, idx) => {
     return (
       <Wrapper key={idx}>
         <CaretRightIcon></CaretRightIcon>

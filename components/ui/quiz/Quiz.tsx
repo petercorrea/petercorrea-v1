@@ -62,16 +62,15 @@ const SubmitButton = ({ onClick }) => {
 export default ({ content }) => {
   // get props
   const { question, answer, choices, category } = content
-  let [sortedChoices, setSortedChoices] = useState([])
+  const [sortedChoices, setSortedChoices] = useState([])
 
   // set state
-  let [submitted, setSubmit] = useState(false)
-  let [selection, setSelection] = useState(undefined)
+  const [submitted, setSubmit] = useState(false)
+  const [selection, setSelection] = useState(undefined)
 
   useEffect(() => {
     // eslint-disable-next-line
-    sortedChoices = shuffle([answer, ...choices])
-    setSortedChoices(sortedChoices)
+    setSortedChoices(shuffle([answer, ...choices]))
   }, [])
 
   // select handler

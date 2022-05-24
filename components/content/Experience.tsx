@@ -29,11 +29,11 @@ const Column = styled("div", {
 })
 
 export default () => {
-  let items = content.experience
-  let html = []
+  const items = content.experience
+  const html = []
 
   // generate each row
-  for (let idx in items) {
+  for (const idx in items) {
     html.push(
       <Wrapper key={idx}>
         <Column>

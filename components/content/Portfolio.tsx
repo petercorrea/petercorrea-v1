@@ -89,7 +89,7 @@ const Icon = styled(Box, {
 })
 
 export default ({ items }) => {
-  let html = items.map((item, idx) => {
+  const html = items.map((item, idx) => {
     return (
       <Item key={idx}>
         <a href={item.url}>

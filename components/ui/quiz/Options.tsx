@@ -17,7 +17,7 @@ const abcInterator = () => {
     if (abc.length == 0) {
       abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     }
-    let char = abc[0]
+    const char = abc[0]
     abc = abc.substring(1)
     return char
   }
@@ -76,11 +76,11 @@ const OptionsButton = styled(Box, {
 })
 
 export default ({ choices, selection, handleSelect, submitted }) => {
-  let choicesHtml = []
-  let abcIterate = abcInterator()
+  const choicesHtml = []
+  const abcIterate = abcInterator()
 
   // render different button states
-  for (let idx in choices) {
+  for (const idx in choices) {
     if (choices[idx] == selection && !choices[idx].correct && submitted) {
       choicesHtml.push(
         <OptionsButton wrong key={idx}>

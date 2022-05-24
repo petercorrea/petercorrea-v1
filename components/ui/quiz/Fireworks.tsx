@@ -1,7 +1,7 @@
 import confetti from "canvas-confetti"
 
-let count = 200
-let defaults = {
+const count = 200
+const defaults = {
   origin: { y: 0.5, x: 0.5 }
 }
 

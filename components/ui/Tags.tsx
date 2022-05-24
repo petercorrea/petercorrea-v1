@@ -1,6 +1,6 @@
 import { styled } from "../../styles/stitches.config"
 
-let Wrapper = styled("div", {
+const Wrapper = styled("div", {
   display: "flex",
   flex: "row",
   justifyContent: "left",
@@ -8,7 +8,7 @@ let Wrapper = styled("div", {
   margin: "0px 0px 20px 0px",
 })
 
-let Item = styled("div", {
+const Item = styled("div", {
   border: "$white solid 2px",
   borderRadius: "5px",
   color: "$white",
@@ -41,7 +41,7 @@ interface TagsProps {
 export default ({ list }: TagsProps) => {
   if (list.length == 0) return
 
-  let html = list.map((item, idx) => {
+  const html = list.map((item, idx) => {
     return (
       <Item key={idx}>
         <p>{item}</p>

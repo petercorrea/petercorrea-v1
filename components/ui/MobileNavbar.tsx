@@ -128,7 +128,11 @@ export default () => {
       open={isOpen}
     >
       <TopBar row>
-        <Button onClick={() => {}}>
+        <Button
+          onClick={() => {
+            return
+          }}
+        >
           <a download href="./Peter Correa CV.pdf" id="resume">
             resume.pdf
           </a>

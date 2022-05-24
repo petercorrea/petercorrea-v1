@@ -48,7 +48,7 @@ const ImageContainer = styled(Box, {
 })
 
 export default function route() {
-  let html = []
+  const html = []
 
   for (let i = 0; i < 151; i++) {
     html.push(

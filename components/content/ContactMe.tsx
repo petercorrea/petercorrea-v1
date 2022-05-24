@@ -104,7 +104,11 @@ export default () => {
                     </Icon>
                   </div>
 
-                  <Button onClick={() => {}}>
+                  <Button
+                    onClick={() => {
+                      return
+                    }}
+                  >
                     <a href={content.links.email}>Contact Me</a>
                   </Button>
                 </IconGroup>

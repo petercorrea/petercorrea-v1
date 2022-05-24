@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { useEffect } from "react"
-import { useAppContext } from "../../providers/AppContext"
+import { useAppContext } from "../../contexts/AppContext"
 import hamburger from "../../public/design/hamburger.png"
 import { styled } from "../../styles/stitches.config"
 import Box from "../layout/Box"
@@ -60,9 +60,11 @@ const Wrapper = styled(Box, {
 })
 
 export const Drawer = () => {
-  let { appContext, setAppContext } = useAppContext()
+  const { appContext, setAppContext } = useAppContext()
 
-  useEffect(() => {}, [])
+  useEffect(() => {
+    return
+  }, [])
 
   const closeDrawer = () => {
     setAppContext({ show: false })
@@ -100,7 +102,7 @@ const ButtonWrapper = styled("button", {
 })
 
 export const DrawerButton = () => {
-  let { setAppContext } = useAppContext()
+  const { setAppContext } = useAppContext()
 
   const openDrawer = () => {
     setAppContext({ show: true })

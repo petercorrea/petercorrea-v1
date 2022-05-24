@@ -93,7 +93,11 @@ export default () => {
             <StyledLink href="/#experience">xp</StyledLink>
             <StyledLink href="/posts">posts</StyledLink>
             <StyledLink href="/afk">afk</StyledLink>
-            <Button onClick={() => {}}>
+            <Button
+              onClick={() => {
+                return
+              }}
+            >
               <a download href="./Peter Correa CV.pdf">
                 resume.pdf
               </a>
