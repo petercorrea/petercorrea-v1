@@ -16,10 +16,9 @@ const Item = styled("div", {
   margin: "$z $s $s $z",
 
   p: {
-    // fontFamily: "monospace",
-    fontSize: "$xs",
+    fontFamily: "monospace",
+    fontSize: "$s",
     fontWeight: "$l",
-    color: "$white",
   },
 
   variants: {
