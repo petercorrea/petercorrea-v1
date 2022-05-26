@@ -52,6 +52,9 @@ type ImageProps = {
   priority?: boolean
 }
 
+// for custom sizing, wrap this components within a Box and set it's dimensions
+// as this Image component will conform to the size
+
 export default ({ src, alt, size, objectFit, priority }: ImageProps) => {
   return (
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment

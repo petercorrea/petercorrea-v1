@@ -46,12 +46,9 @@ const CompanyTitle = styled(Box, {
 })
 
 const ImageContainer = styled(Box, {
-  width: "fit-content",
   position: "relative",
-  img: {
-    width: "100px",
-    height: "100px",
-  },
+  width: "100px",
+  height: "50px",
 })
 
 export default () => {
