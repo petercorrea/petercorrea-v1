@@ -4,6 +4,7 @@ import generateCMSComponents from "../../components/cms/CMSComponents"
 import Padding from "../../components/layout/Padding"
 import MobileNavbar from "../../components/ui/MobileNavbar"
 import Navbar from "../../components/ui/Navbar"
+import Thread from "../../components/ui/Thread/Thread"
 import { useGetPageByIdQuery } from "../../generated"
 
 const DynamicRoute = () => {
@@ -33,6 +34,7 @@ const DynamicRoute = () => {
               return generateCMSComponents(item, idx)
             })
           : ""}
+        <Thread></Thread>
       </Padding>
     </>
   )

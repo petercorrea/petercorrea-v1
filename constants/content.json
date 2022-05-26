@@ -6,7 +6,7 @@
       "industry": "FinTech",
       "team": "Growth Team",
       "years": "2021 - now",
-      "title": "Software Engineer ||",
+      "title": "Software Engineer II",
       "bullet-points": [
         "Research failures and bottlenecks to determine appropriate solution",
         "Implemented new cash products resulting in 18% increased engagement",
@@ -263,19 +263,22 @@
       "type": "presentation",
       "url": "https://youtu.be/BKSnLuXu_dc",
       "title": "The Thinkful Experience.",
-      "description": "An online interview of my experience through the Thinkful Bootcamp"
+      "description": "An online interview of my experience through the Thinkful Bootcamp",
+      "image": "/video posters/thinkful.png"
     },
     {
       "type": "presentation",
       "url": "https://youtu.be/x1kp0y_-zp8",
       "title": "Inheritance and Object Oriented Programming in JavaScript",
-      "description": "A presentation of a few design patterns and object oriented features of JavaScript."
+      "description": "A presentation of a few design patterns and object oriented features of JavaScript.",
+      "image": "/video posters/oojs.png"
     },
     {
       "type": "presentation",
       "url": "https://youtu.be/9uAosfffLKc",
       "title": "A look inside the JavaScript runtime engine",
-      "description": "A presentation of the JavaScript runtime, execution context and async programming."
+      "description": "A presentation of the JavaScript runtime, execution context and async programming.",
+      "image": "/video posters/async.png"
     }
   ]
 }

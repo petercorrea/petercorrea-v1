@@ -2,6 +2,7 @@ import { GitHubLogoIcon, VideoIcon } from "@radix-ui/react-icons"
 import { styled } from "../../styles/stitches.config"
 import Box from "../layout/Box"
 import Padding from "../layout/Padding"
+import Image from "../ui/Image"
 
 const Wrapper = styled(Box, {
   display: "flex",
@@ -34,11 +35,6 @@ const Item = styled(Box, {
   "#title": {
     color: "$blue",
     fontSize: "$m",
-  },
-  "#url": {},
-
-  video: {
-    maxWidth: "100%",
   },
 
   "@bp1": {
@@ -88,6 +84,10 @@ const Icon = styled(Box, {
   svg: { width: "$xl", height: "$xl", color: "$gray" },
 })
 
+const ImageWrapper = styled(Box, {
+  height: "150px",
+})
+
 export default ({ items }) => {
   const html = items.map((item, idx) => {
     return (
@@ -105,7 +105,14 @@ export default ({ items }) => {
           <p id="description">{item.description}</p>
 
           {item.type == "presentation" ? (
-            <video id="video" src={item.url} controls></video>
+            <ImageWrapper>
+              <Image
+                src={item.image}
+                alt="thumbnail of video"
+                objectFit="cover"
+                priority
+              ></Image>
+            </ImageWrapper>
           ) : (
             ""
           )}

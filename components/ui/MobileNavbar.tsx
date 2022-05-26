@@ -10,7 +10,7 @@ import StyledLink from "./StyledLink"
 const MobileNavbar = styled(Box, {
   flexDirection: "column",
   position: "sticky",
-  top: "-1$xl",
+  top: "-$xxl",
   bottom: "$z",
   zIndex: 10,
   backgroundColor: "#ffffffd5",

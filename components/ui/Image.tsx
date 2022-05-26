@@ -4,8 +4,8 @@ import Box from "../layout/Box"
 
 const ImageWrapper = styled(Box, {
   position: "relative",
-  width: "200px",
-  height: "50px",
+  width: "100%",
+  height: "100%",
   overflow: "hidden",
 
   img: {
@@ -49,14 +49,21 @@ type ImageProps = {
   alt: string
   size?: "xxs" | "xs" | "s" | "m" | "l" | "xl" | "xxl"
   objectFit: "contain" | "cover"
+  priority?: boolean
 }
 
-export default ({ src, alt, size, objectFit }: ImageProps) => {
+export default ({ src, alt, size, objectFit, priority }: ImageProps) => {
   return (
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     //@ts-ignore
     <ImageWrapper size={size}>
-      <Image src={src} alt={alt} layout="fill" objectFit={objectFit}></Image>
+      <Image
+        src={src}
+        alt={alt}
+        layout="fill"
+        objectFit={objectFit}
+        priority={priority}
+      ></Image>
     </ImageWrapper>
   )
 }
