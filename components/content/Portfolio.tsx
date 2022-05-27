@@ -6,12 +6,11 @@ import Image from "../ui/Image"
 
 const Wrapper = styled(Box, {
   display: "flex",
-  flexDirection: "row",
-  flexWrap: "wrap",
+  flexFlow: "row wrap",
+  justifyContent: "space-between",
 })
 
 const Item = styled(Box, {
-  marginRight: "$xl",
   border: "$border-thick",
   boxShadow: "$thick",
   marginBottom: "$xl",
@@ -51,29 +50,18 @@ const Item = styled(Box, {
     },
   },
   "@bp2": {
-    margin: "$l auto",
+    margin: "$l",
     flexBasis: "40%",
 
     h5: {
       fontSize: "$l",
       marginBottom: "$m",
     },
-
-    p: {
-      lineHeight: "$s",
-    },
   },
   "@bp3": {
-    margin: "$l auto",
-    flexBasis: "40%",
-
     h5: {
       fontSize: "$m",
       marginBottom: "$m",
-    },
-
-    p: {
-      lineHeight: "$s",
     },
   },
 })

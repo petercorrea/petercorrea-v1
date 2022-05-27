@@ -231,27 +231,21 @@
   "portfolio": [
     {
       "type": "repo",
-      "url": "https://github.com/petercorrea/DesignPatterns",
-      "title": "Gang of Four Design Patterns",
-      "description": "A collection of design patterns as described by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides."
-    },
-    {
-      "type": "repo",
       "url": "https://github.com/petercorrea/Data-Structures-And-Algorithms",
       "title": "Data Structures and Algorithms",
       "description": "A collection of interview styled questions about data structures and algorithmns. Read over concepts like dynamic programming, recursion, graph theory and more."
     },
     {
       "type": "repo",
-      "url": "https://github.com/petercorrea/DataScience",
-      "title": "Data Science and Machine Learning",
-      "description": "A collection of questions, examples, notes, and use cases from DataCamp.com's Data Scientist learning track. Concepts includes data wrangling, sanitation, imputation, statistical modeling, supervised and unsupervised machine learning."
+      "url": "https://github.com/petercorrea/DesignPatterns",
+      "title": "Gang of Four Design Patterns",
+      "description": "A collection of design patterns as described by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides."
     },
     {
       "type": "repo",
-      "url": "https://github.com/petercorrea/IndependentNews",
-      "title": "Independent News",
-      "description": "An quick project to test out a few NextJS features such as server side rendering, hydration, Link components, optimize image processing and file based routing."
+      "url": "https://github.com/petercorrea/DataScience",
+      "title": "Data Science and Machine Learning",
+      "description": "A collection of questions, examples, notes, and use cases from DataCamp.com's Data Scientist learning track. Concepts includes data wrangling, sanitation, imputation, statistical modeling, supervised and unsupervised machine learning."
     },
     {
       "type": "repo",
