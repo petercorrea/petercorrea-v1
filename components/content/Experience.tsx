@@ -69,6 +69,7 @@ export default () => {
                   objectFit="contain"
                   // size="m"
                   alt="logo"
+                  priority
                 ></Image>
               </ImageContainer>
             ) : (

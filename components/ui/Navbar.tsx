@@ -15,8 +15,8 @@ const Wrapper = styled(Box, {
   width: "100%",
   zIndex: "10",
   backgroundColor: "#ffffffd5",
-  backdropFilter: "blur($xs)",
-  borderShadow: "$dark",
+  backdropFilter: "blur(5px)",
+  boxShadow: "0px 0px 10px 5px #d9d9d9a6",
   transition: "top 200ms ease",
 
   variants: {

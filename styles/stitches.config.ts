@@ -112,7 +112,8 @@ export const {
     shadows: {
       thick: "10px 10px 0px 0px #0c0c0c26",
       dark: "0px 0px 15px 2px #5c5c5ca6",
-      light: "10px 10px 10px 1px #0c0c0c26",
+      light: "0px 0px 10px 5px #d9d9d9a6",
+      lightOffset: "10px 10px 10px 1px #0c0c0c26",
       blue: "0px 0px 10px 2px #008cff8f",
       lightblue: "0px 0px 15px 2px #008cff65",
     },

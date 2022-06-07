@@ -23,12 +23,12 @@ const Wrapper = styled(Box, {
 })
 
 const scaleUp = keyframes({
-  "0%": { transform: "translateY($z)" },
-  "10%": { transform: "translateY(-$l)" },
-  "40%": { transform: "translateY($z)" },
-  "60%": { transform: "translateY($z)" },
-  "80%": { transform: "translateY($z)" },
-  "100%": { transform: "translateY($z)" },
+  "0%": { transform: "translateY(0)" },
+  "10%": { transform: "translateY(-10px)" },
+  "40%": { transform: "translateY(0)" },
+  "60%": { transform: "translateY(0)" },
+  "80%": { transform: "translateY(0)" },
+  "100%": { transform: "translateY(0)" },
 })
 
 const Pointer = styled(CaretDownIcon, {

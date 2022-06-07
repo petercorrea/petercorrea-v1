@@ -68,7 +68,6 @@ const LogosBar = styled(Box, {
 export default (props) => {
   return (
     <BlackBox>
-      {/* <Padding l> */}
       <LogosBar {...props} column>
         <Box row center>
           <h1 style={{ color: "white", marginBottom: "60px" }}>TL;DR</h1>
@@ -82,6 +81,7 @@ export default (props) => {
                 alt="company logo of paypal"
                 objectFit="contain"
                 size="l"
+                priority
               ></Image>
             </li>
             <li key="LogosBar_1" id="appleLogo">
@@ -90,6 +90,7 @@ export default (props) => {
                 alt="company logo of Apple"
                 objectFit="contain"
                 size="s"
+                priority
               ></Image>
             </li>
 
@@ -99,6 +100,7 @@ export default (props) => {
                 alt="company logo of target"
                 objectFit="contain"
                 size="s"
+                priority
               ></Image>
             </li>
             <li key="LogosBar_0" id="thinkfulLogo">
@@ -107,6 +109,7 @@ export default (props) => {
                 alt="company logo of thinkful"
                 objectFit="contain"
                 size="s"
+                priority
               ></Image>
             </li>
             <li key="LogosBar_3">
@@ -115,12 +118,12 @@ export default (props) => {
                 alt="company logo of  coinbase"
                 objectFit="contain"
                 size="l"
+                priority
               ></Image>
             </li>
           </ul>
         </Box>
       </LogosBar>
-      {/* </Padding> */}
     </BlackBox>
   )
 }

@@ -9,7 +9,7 @@ const CodeWrapper = styled(Box, {
     width: "80%",
     maxWidth: "$max",
     border: "$border-light",
-    boxShadow: "$light",
+    boxShadow: "$lightOffset",
     fontFamily: "Fira Code",
   },
 })

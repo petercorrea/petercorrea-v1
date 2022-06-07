@@ -237,13 +237,13 @@
     },
     {
       "type": "repo",
-      "url": "https://github.com/petercorrea/DesignPatterns",
+      "url": "https://github.com/petercorrea/Design-Patterns",
       "title": "Gang of Four Design Patterns",
       "description": "A collection of design patterns as described by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides."
     },
     {
       "type": "repo",
-      "url": "https://github.com/petercorrea/DataScience",
+      "url": "https://github.com/petercorrea/Data-Science",
       "title": "Data Science and Machine Learning",
       "description": "A collection of questions, examples, notes, and use cases from DataCamp.com's Data Scientist learning track. Concepts includes data wrangling, sanitation, imputation, statistical modeling, supervised and unsupervised machine learning."
     },

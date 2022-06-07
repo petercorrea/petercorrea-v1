@@ -25,7 +25,7 @@ const QuizWrapper = styled(Box, {
   borderRadius: "$s",
   margin: "auto",
   padding: "$l",
-  boxShadow: "$light",
+  boxShadow: "$lightOffset",
   backgroundColor: "$verylightgray",
 })
 
