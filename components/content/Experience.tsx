@@ -6,8 +6,13 @@ import Bullets from "../ui/Bullets"
 import Image from "../ui/Image"
 import Tags from "../ui/Tags"
 
+const OuterWrapper = styled(Box, {
+  "scroll-snap-align": "start",
+  marginTop: "80px",
+})
+
 const Wrapper = styled(Box, {
-  marginBottom: "$xl",
+  marginBottom: "$xxxl",
   display: "flex",
   "flex-direction": "row",
   "align-items": "flex-start",
@@ -18,6 +23,11 @@ const Wrapper = styled(Box, {
     marginBottom: "$s",
   },
 
+  p: {
+    color: "black",
+    fontWeight: "300",
+  },
+
   "@bp1": {
     "flex-direction": "column",
   },
@@ -25,8 +35,7 @@ const Wrapper = styled(Box, {
   "@bp3": { "flex-direction": "column" },
 })
 
-const Column = styled("div", {
-  minWidth: "100%",
+const Column = styled(Box, {
   display: "flex",
   flexDirection: "column",
   justifyContent: "flex-start",
@@ -59,25 +68,28 @@ export default () => {
   for (const idx in items) {
     html.push(
       <Wrapper key={idx}>
-        <Column>
-          <CompanyTitle>
-            <h3>{items[idx].title}</h3>
-            {items[idx].logo ? (
-              <ImageContainer>
-                <Image
-                  src={items[idx].logo}
-                  objectFit="contain"
-                  // size="m"
-                  alt="logo"
-                  priority
-                ></Image>
-              </ImageContainer>
-            ) : (
-              ""
-            )}
-          </CompanyTitle>
-          <Tags list={items[idx].skills} blue />
-        </Column>
+        <Box row>
+          <Column>
+            <CompanyTitle>
+              <h3>{items[idx].title}</h3>
+            </CompanyTitle>
+            <Tags list={items[idx].skills} blue />
+          </Column>
+
+          {items[idx].logo ? (
+            <ImageContainer>
+              <Image
+                src={items[idx].logo}
+                objectFit="contain"
+                // size="m"
+                alt="logo"
+                priority
+              ></Image>
+            </ImageContainer>
+          ) : (
+            ""
+          )}
+        </Box>
 
         <Box column>
           <h6>{items[idx].team}</h6>
@@ -88,11 +100,13 @@ export default () => {
   }
 
   return (
-    <Padding id="experience" l>
-      <Box column>
-        <h1>work</h1>
-        {html}
-      </Box>
-    </Padding>
+    <OuterWrapper>
+      <Padding id="experience" l>
+        <Box column>
+          <h1>work</h1>
+          {html}
+        </Box>
+      </Padding>
+    </OuterWrapper>
   )
 }

@@ -4,7 +4,6 @@ const Wrapper = styled("a", {
   fontSize: "1.1rem",
   color: "$black",
   textDecoration: "none",
-  width: "$xxxl",
 
   ".link_underline": {
     border: "$active solid $xxxs",
@@ -24,14 +23,21 @@ const Wrapper = styled("a", {
   },
 })
 
-export default (props) => {
+type Props = {
+  target?: string
+  href: string
+  download?: boolean
+  children?: React.ReactNode
+}
+
+export default ({ target, href, download, ...props }: Props) => {
   return (
     <>
       <Wrapper
-        target={props.target || "_blank"}
+        target={target || "_blank"}
         rel="noopener noreferrer"
-        href={props.href}
-        download={props.download}
+        href={href}
+        download={download}
         {...props}
       >
         {props.children}

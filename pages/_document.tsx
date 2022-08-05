@@ -1,7 +1,6 @@
 import NextDocument, { Head, Html, Main, NextScript } from "next/document"
-import React from "react"
-import { getCssText } from "../styles/stitches.config"
 
+import { getCssText } from "../styles/stitches.config"
 export default class Document extends NextDocument {
   render() {
     return (
@@ -56,7 +55,7 @@ export default class Document extends NextDocument {
         </Head>
         <body>
           <Main />
-          <NextScript />
+          <NextScript />       
         </body>
       </Html>
     )

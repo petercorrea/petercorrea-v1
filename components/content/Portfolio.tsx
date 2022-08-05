@@ -4,6 +4,11 @@ import Box from "../layout/Box"
 import Padding from "../layout/Padding"
 import Image from "../ui/Image"
 
+const OuterWrapper = styled(Box, {
+  "scroll-snap-align": "start",
+  marginTop: "80px",
+})
+
 const Wrapper = styled(Box, {
   display: "flex",
   flexFlow: "row wrap",
@@ -11,8 +16,7 @@ const Wrapper = styled(Box, {
 })
 
 const Item = styled(Box, {
-  border: "$border-thick",
-  boxShadow: "$thick",
+  boxShadow: "$light",
   marginBottom: "$xl",
   padding: "$l",
   transition: "transform ease 200ms",
@@ -110,9 +114,11 @@ export default ({ items }) => {
   })
 
   return (
-    <Padding l>
-      <h1>portfolio</h1>
-      <Wrapper>{html}</Wrapper>
-    </Padding>
+    <OuterWrapper>
+      <Padding l>
+        <h1>portfolio</h1>
+        <Wrapper>{html}</Wrapper>
+      </Padding>
+    </OuterWrapper>
   )
 }

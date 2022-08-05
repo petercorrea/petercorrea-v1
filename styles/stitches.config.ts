@@ -27,12 +27,12 @@ export const {
       lightblue: "#008cff8f",
       blue: "#008cff",
       magenta: "#D077D3",
+      sepia: "#f5deae",
 
       // active, secondary, disabled
       active: "$blue",
       secondary: "$black",
       disabled: "$gray",
-      bg: "#37005c",
 
       // border styles
       "border-light": "solid $lightgray 1px",
@@ -47,7 +47,7 @@ export const {
     },
     sizes: {
       z: "0px",
-      max: "800px",
+      max: "900px",
       xxxs: "1px",
       xxs: "2px",
       xs: "5px",
@@ -78,6 +78,11 @@ export const {
       200: "200px",
       300: "300px",
       400: "400px",
+      500: "500px",
+      600: "600px",
+      700: "700px",
+      800: "800px",
+      900: "900px",
     },
     fontSizes: {
       xxl: "5rem",
@@ -85,7 +90,7 @@ export const {
       l: "2rem",
       m: "1rem",
       s: "1rem",
-      xs: "5px",
+      xs: "10px",
     },
     fontWeights: {
       s: "100",
@@ -143,6 +148,8 @@ export const globalStyles = globalCss({
     maxWidth: "100vw",
     minHeight: "fit-content",
     "overflow-x": "hidden",
+    "overflow-y": "scroll",
+     "scroll-snap-type": "y mandatory",
   },
 
   // typography // typography // typography // typography // typography // typography

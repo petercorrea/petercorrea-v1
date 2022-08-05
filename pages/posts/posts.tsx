@@ -1,12 +1,12 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import Box from "../components/layout/Box"
-import Padding from "../components/layout/Padding"
-import Card from "../components/ui/Card"
-import MobileNavbar from "../components/ui/MobileNavbar"
-import Navbar from "../components/ui/Navbar"
-import { Page, useGetPagesQuery } from "../generated"
-import { styled } from "../styles/stitches.config"
+import Box from "../../components/layout/Box"
+import Padding from "../../components/layout/Padding"
+import Card from "../../components/ui/Card"
+import MobileNavbar from "../../components/ui/MobileNavbar"
+import Navbar from "../../components/ui/Navbar"
+import { Page, useGetPagesQuery } from "../../generated"
+import { styled } from "../../styles/stitches.config"
 
 const Wrapper = styled(Box, {
   display: "flex",

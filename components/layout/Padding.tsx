@@ -4,7 +4,7 @@ const Wrapper = styled("div", {
   width: "100%",
   margin: "auto",
   maxWidth: "$max",
-  minWidth: "3$l",
+  minWidth: "$l",
 
   variants: {
     border: {
