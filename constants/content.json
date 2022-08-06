@@ -76,24 +76,6 @@
       ]
     },
     {
-      "company": "",
-      "logo": "",
-      "industry": "FinTech",
-      "team": "Product Team",
-      "years": "",
-      "title": "",
-      "bullet-points": [
-        "Develop a systematic content management strategy using Contently",
-        "Revamp corporate site to improve accessibility and increase lighthouse metrics by 45%",
-        "Migrated flagship product from monorepos to microservices reduced bundle size by 26%",
-        "Worked on improving frontend experience by implementing automated testing in Datadog",
-        "Collaborate with legal and financial authorities to ensure compliance and corporate responsibility",
-        "Built HIPPA compliant persistence models, migration and data cacheing strategies",
-        "Designed single page, client/server, serverless, JAMStack and service oriented architectures"
-      ],
-      "skills": []
-    },
-    {
       "company": "Thinkful",
       "logo": "/logos/thinkful_t.svg",
       "industry": "FinTech",
@@ -172,8 +154,7 @@
     }
   ],
   "biography": {
-    "0": "I build software. My work requires discussing the scope and goal of each solution, sharing tradeoffs between different implementations, establishing milestones, testing and deploying high-quality code. A typical day involves optimizing algorithmic and network performance, deploying servers, migrating databases, integrating APIs, building machine learning models, interviewing candidates, collaborating with designers, presenting to management, and researching standardized specifications. When I'm not working on products, I'm leading teams, managing talent, and driving operations. Currently studying electrical engineering, systems programming, and embedded development.",
-    "1": "Away from work I'm often reading up on topics in advance metamathematics and engineering, developing software in memory constraint environments, teaching others how to code, and finding ways to improve education, health and sustainability."
+    "0": "I build software. My work requires discussing the scope and goal of each solution, sharing tradeoffs between different implementations, establishing milestones, testing and deploying high-quality code. A typical day involves optimizing algorithmic and network performance, deploying servers, migrating databases, integrating APIs, building machine learning models, interviewing candidates, collaborating with designers, presenting to management, and researching standardized specifications. When I'm not working on products, I'm leading teams, managing talent, and driving operations. Currently studying electrical engineering, systems programming, and embedded development. Away from work I'm often reading up on topics in advance metamathematics and engineering, developing software in memory constraint environments, teaching others how to code, and finding ways to improve education, health and sustainability."
   },
   "education": [
     {

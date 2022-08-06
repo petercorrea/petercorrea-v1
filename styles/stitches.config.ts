@@ -149,7 +149,7 @@ export const globalStyles = globalCss({
     minHeight: "fit-content",
     "overflow-x": "hidden",
     "overflow-y": "scroll",
-     "scroll-snap-type": "y mandatory",
+    "scroll-snap-type": "y mandatory",
   },
 
   // typography // typography // typography // typography // typography // typography
@@ -187,7 +187,7 @@ export const globalStyles = globalCss({
   },
   p: {
     display: "inline",
-    fontSize: "$m",
+    fontSize: "20px",
     fontWeight: "300",
     lineHeight: "$s",
     "letter-spacing": "0px",

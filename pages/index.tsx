@@ -6,7 +6,6 @@ import { LeftOrRight } from "../components/content/LeftOrRight"
 import Portfolio from "../components/content/Portfolio"
 import MobileNavbar from "../components/ui/MobileNavbar"
 import Navbar from "../components/ui/Navbar"
-
 import content from "../constants/content.json"
 
 export default function Home() {
@@ -16,9 +15,9 @@ export default function Home() {
       <Navbar />
       <Landing />
       <Bio />
-      <Experience></Experience>
-      <Portfolio items={content.portfolio}></Portfolio>
-      <LeftOrRight></LeftOrRight>
+      <Experience />
+      <Portfolio items={content.portfolio} />
+      <LeftOrRight />
       <ContactMe />
     </div>
   )

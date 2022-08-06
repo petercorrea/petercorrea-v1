@@ -1,6 +1,7 @@
 import { styled } from "../../styles/stitches.config"
 
 const Wrapper = styled("div", {
+  position: "relative",
   width: "100%",
   margin: "auto",
   maxWidth: "$max",

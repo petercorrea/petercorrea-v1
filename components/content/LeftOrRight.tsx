@@ -50,8 +50,8 @@ const Wrapper = styled(Box, {
 })
 const ImageWrapper = styled(Box, {
   //   position: "absolute",
-  width: "200px",
-  height: "200px",
+  width: "100px",
+  height: "100px",
   //   left: "40%",
 })
 

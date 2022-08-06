@@ -6,16 +6,13 @@ import Bullets from "../ui/Bullets"
 import Image from "../ui/Image"
 import Tags from "../ui/Tags"
 
-const OuterWrapper = styled(Box, {
-  "scroll-snap-align": "start",
-  marginTop: "80px",
-})
-
 const Wrapper = styled(Box, {
+  height: "100vh",
   marginBottom: "$xxxl",
   display: "flex",
   "flex-direction": "row",
   "align-items": "flex-start",
+  "scroll-snap-align": "start",
   h3: {
     color: "$black",
   },
@@ -26,6 +23,10 @@ const Wrapper = styled(Box, {
   p: {
     color: "black",
     fontWeight: "300",
+  },
+  "#section-work": {
+    // position: "absolute",
+    // top: "-180px",
   },
 
   "@bp1": {
@@ -42,18 +43,6 @@ const Column = styled(Box, {
   flexBasis: "80%",
 })
 
-const CompanyTitle = styled(Box, {
-  // border: "red solid 1px",
-  display: "flex",
-  flexFlow: "row nowrap",
-  alignItems: "flex-end",
-  justifyContent: "space-between",
-  marginBottom: "$s",
-  "& > *": {
-    // marginRight: "$l",
-  },
-})
-
 const ImageContainer = styled(Box, {
   position: "relative",
   width: "100px",
@@ -63,16 +52,16 @@ const ImageContainer = styled(Box, {
 export default () => {
   const items = content.experience
   const html = []
-
-  // generate each row
+  // generate each work experience
   for (const idx in items) {
     html.push(
-      <Wrapper key={idx}>
+      <Wrapper key={idx} center>
         <Box row>
           <Column>
-            <CompanyTitle>
-              <h3>{items[idx].title}</h3>
-            </CompanyTitle>
+            {idx === "0" ? <h1 id="section-work">work</h1> : ""}
+            <h3>{items[idx].title}</h3>
+            <h3>{items[idx].company}</h3>
+            <p>{items[idx].years}</p>
             <Tags list={items[idx].skills} blue />
           </Column>
 
@@ -90,9 +79,7 @@ export default () => {
             ""
           )}
         </Box>
-
         <Box column>
-          <h6>{items[idx].team}</h6>
           <Bullets items={items[idx]["bullet-points"]}></Bullets>
         </Box>
       </Wrapper>
@@ -100,13 +87,8 @@ export default () => {
   }
 
   return (
-    <OuterWrapper>
-      <Padding id="experience" l>
-        <Box column>
-          <h1>work</h1>
-          {html}
-        </Box>
-      </Padding>
-    </OuterWrapper>
+    <Padding id="experience" l>
+      {html}
+    </Padding>
   )
 }
