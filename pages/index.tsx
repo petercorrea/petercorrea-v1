@@ -1,7 +1,7 @@
 import Bio from "../components/content/Bio"
 import ContactMe from "../components/content/ContactMe"
 import Experience from "../components/content/Experience"
-import Landing from "../components/content/Landing"
+import Landing from "../components/content/landing/Landing"
 import { LeftOrRight } from "../components/content/LeftOrRight"
 import Portfolio from "../components/content/Portfolio"
 import MobileNavbar from "../components/ui/MobileNavbar"

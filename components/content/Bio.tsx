@@ -77,7 +77,7 @@ const BioWrapper = styled(Box, {
 
 export default () => {
   return (
-    <Wrapper className="bio" viewport>
+    <Wrapper className="bio">
       <Padding id="bio" l>
         <h1>bio</h1>
 

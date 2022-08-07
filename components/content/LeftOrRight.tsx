@@ -1,5 +1,5 @@
 import LeftArrow from "../../public/design/hand-drawn-arrows/back-drawn-arrow.png"
-import RightArrow from "../../public/design/hand-drawn-arrows/right-arrow-outline.png"
+import RightArrow from "../../public/design/hand-drawn-arrows/right-arrow.png"
 import { styled } from "../../styles/stitches.config"
 import Box from "../layout/Box"
 import Href from "../ui/Href"
@@ -7,11 +7,9 @@ import Image from "../ui/Image"
 
 const Wrapper = styled(Box, {
   width: "100%",
-  height: "300px",
   margin: "80px 0px",
 
   "#left-arrow-col": {
-    margin: "0px 80px",
     width: "min-content",
     "&:hover": {
       h2: {
@@ -24,8 +22,12 @@ const Wrapper = styled(Box, {
     },
   },
 
+  "#label": {
+    fontSize: "40px",
+    fontWeight: "600",
+  },
+
   "#right-arrow-col": {
-    margin: "0px 80px",
     width: "min-content",
     "&:hover": {
       h2: {
@@ -37,22 +39,14 @@ const Wrapper = styled(Box, {
       },
     },
   },
-
-  h2: {
-    display: "block",
-    position: "relative",
-    color: "$black",
-    "font-size": "50px",
-    textAlign: "center",
-    minWidth: "100%",
-    fontWeight: "900",
-  },
 })
 const ImageWrapper = styled(Box, {
-  //   position: "absolute",
-  width: "100px",
-  height: "100px",
-  //   left: "40%",
+  "@bp1": {
+    width: "100px",
+    height: "70px",
+  },
+  "@bp2": {},
+  "@bp3": {},
 })
 
 export const LeftOrRight = () => {
@@ -69,7 +63,7 @@ export const LeftOrRight = () => {
               objectFit="cover"
             />
           </ImageWrapper>
-          <h2>/posts</h2>
+          <p id="label">/posts</p>
         </Href>
       </Box>
 
@@ -84,7 +78,7 @@ export const LeftOrRight = () => {
               objectFit="cover"
             />
           </ImageWrapper>
-          <h2>/afk</h2>
+          <p id="label">/afk</p>
         </Href>
       </Box>
     </Wrapper>

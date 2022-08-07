@@ -1,4 +1,40 @@
 {
+  "education": [
+    {
+      "school": "Florida International University",
+      "degree": "Bachelor of Arts, Liberal Studies & Biology",
+      "year": 2014
+    },
+    {
+      "school": "University of Colorado, Boulder",
+      "degree": "Master of Science, Electrical Engineering",
+      "year": 2024
+    }
+  ],
+  "contact": {
+    "name": "Peter Correa",
+    "title": "Senior Software Engineer",
+    "email": "mailto:contact@petercorrea.com?subject=PeterCorrea.com: reaching out...",
+    "linkedin": "linkedin.com/in/petercorrea",
+    "github": "github.com/petercorrea"
+  },
+  "assets": {
+    "resume": "./Peter Correa CV.pdf"
+  },
+  "links": {
+    "home": "/",
+    "bio": "/#bio",
+    "xp": "/#experience",
+    "github": "https://www.github.com/petercorrea",
+    "in": "https://www.linkedin.com/in/petercorrea",
+    "email": "mailto:contact@petercorrea.com?subject=PeterCorrea.com: reaching out...",
+    "afk": "/afk",
+    "posts": "/posts"
+  },
+
+  "biography": {
+    "0": "I build software. My work requires discussing the scope and goal of each solution, sharing tradeoffs between different implementations, establishing milestones, testing and deploying high-quality code. A typical day involves optimizing algorithmic and network performance, deploying servers, migrating databases, integrating APIs, building machine learning models, interviewing candidates, collaborating with designers, presenting to management, and researching standardized specifications. When I'm not working on products, I'm leading teams, managing talent, and driving operations. Currently studying electrical engineering, systems programming, and embedded development. Away from work I'm often reading up on topics in advance metamathematics and engineering, developing software in memory constraint environments, teaching others how to code, and finding ways to improve education, health and sustainability."
+  },
   "experience": [
     {
       "company": "RoadRunner",
@@ -153,51 +189,6 @@
       ]
     }
   ],
-  "biography": {
-    "0": "I build software. My work requires discussing the scope and goal of each solution, sharing tradeoffs between different implementations, establishing milestones, testing and deploying high-quality code. A typical day involves optimizing algorithmic and network performance, deploying servers, migrating databases, integrating APIs, building machine learning models, interviewing candidates, collaborating with designers, presenting to management, and researching standardized specifications. When I'm not working on products, I'm leading teams, managing talent, and driving operations. Currently studying electrical engineering, systems programming, and embedded development. Away from work I'm often reading up on topics in advance metamathematics and engineering, developing software in memory constraint environments, teaching others how to code, and finding ways to improve education, health and sustainability."
-  },
-  "education": [
-    {
-      "school": "Florida International University",
-      "degree": "Bachelor of Arts, Liberal Studies & Biology",
-      "year": 2014
-    },
-    {
-      "school": "University of Colorado, Boulder",
-      "degree": "Master of Science, Electrical Engineering",
-      "year": 2024
-    }
-  ],
-  "contact": {
-    "name": "Peter Correa",
-    "title": "Senior Software Engineer",
-    "email": "pmcorrea@me.com",
-    "linkedin": "linkedin.com/in/petercorrea",
-    "github": "github.com/petercorrea"
-  },
-  "assets": {
-    "resume": "./Peter Correa CV.pdf"
-  },
-  "skills": [
-    "backend development",
-    "typescript",
-    "graphql",
-    "apollo",
-    "nodejs",
-    "jenkins"
-  ],
-  "links": {
-    "home": "/",
-    "bio": "/#bio",
-    "xp": "/#experience",
-    "github": "https://www.github.com/petercorrea",
-    "in": "https://www.linkedin.com/in/petercorrea",
-    "email": "mailto:contact@petercorrea.com?subject=PeterCorrea.com: reaching out...",
-    "afk": "/afk"
-  },
-  "contactMe": {
-    "text": "If you're looking for specialty in web development, software engineering, single page applications, mobile or native development then let's connect!"
-  },
   "portfolio": [
     {
       "type": "repo",
@@ -244,5 +235,8 @@
       "description": "A presentation of the JavaScript runtime, execution context and async programming.",
       "image": "/video posters/async.png"
     }
-  ]
+  ],
+  "contactMe": {
+    "text": "If you're looking for specialty in web development, software engineering, single page applications, mobile or native development then let's connect!"
+  }
 }

@@ -1,11 +1,11 @@
-import { styled } from "../../styles/stitches.config"
-import HeroText from "../content/HeroText"
-import Logos from "../content/Logos"
-import Box from "../layout/Box"
+import { styled } from "../../../styles/stitches.config"
+import Box from "../../layout/Box"
+import HeroText from "./HeroText"
+import Logos from "./Logos"
 
 const Wrapper = styled(Box, {
   "scroll-snap-align": "start",
-  minHeight: "100vh",
+  height: "100vh",
 })
 
 export default () => {

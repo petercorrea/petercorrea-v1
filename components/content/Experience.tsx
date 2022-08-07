@@ -7,7 +7,6 @@ import Image from "../ui/Image"
 import Tags from "../ui/Tags"
 
 const Wrapper = styled(Box, {
-  height: "100vh",
   marginBottom: "$xxxl",
   display: "flex",
   "flex-direction": "row",

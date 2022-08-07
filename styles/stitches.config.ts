@@ -154,10 +154,18 @@ export const globalStyles = globalCss({
 
   // typography // typography // typography // typography // typography // typography
   h1: {
-    fontSize: "$xxl",
-    fontWeight: "900",
     display: "block",
     "letter-spacing": "-3px",
+
+    "@bp1": {
+      fontSize: "15vw",
+    },
+
+    "@bp2": {
+      fontSize: "8vw",
+    },
+
+    "@bp3": {},
   },
   h2: {
     fontSize: "$xl",
