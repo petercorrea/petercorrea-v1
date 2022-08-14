@@ -17,7 +17,7 @@ const Item = styled("div", {
 
   p: {
     fontFamily: "monospace",
-    fontSize: "$s",
+    fontSize: "$xs",
     fontWeight: "$l",
   },
 

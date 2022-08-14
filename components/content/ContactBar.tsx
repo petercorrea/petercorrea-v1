@@ -37,7 +37,7 @@ export default () => {
             </Href>
           </li>
           <li key="ContactBar_3">
-            <Href href={content.assets.resume} download width={30} height={30}>
+            <Href href={content.assets.resume} download>
               <p>download_CV</p>
             </Href>
           </li>

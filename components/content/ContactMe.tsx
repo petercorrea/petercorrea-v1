@@ -7,6 +7,7 @@ import Button from "../ui/Button"
 import Tags from "../ui/Tags"
 
 const Wrapper = styled(Box, {
+  "scroll-snap-align": "start",
   color: "$white",
   paddingBottom: "$xl",
 

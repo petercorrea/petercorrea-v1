@@ -16,7 +16,7 @@ const Wrapper = styled(Box, {
   zIndex: "10",
   backgroundColor: "#ffffffd5",
   backdropFilter: "blur(5px)",
-  boxShadow: "0px 0px 10px 5px #d9d9d9a6",
+  borderBottom: "$black 2px solid",
   transition: "top 200ms ease",
 
   variants: {
@@ -48,7 +48,7 @@ const Navbar = styled(Box, {
 
 const Icon = styled(Box, {
   maxWidth: "fit-content",
-  marginRight: "$l",
+  marginRight: "$xl",
   svg: {
     width: "$xl",
     height: "$xl",

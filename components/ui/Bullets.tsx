@@ -3,7 +3,7 @@ import { styled } from "../../styles/stitches.config"
 import Box from "../layout/Box"
 
 const Wrapper = styled(Box, {
-  marginBottom: "$z",
+  marginBottom: "$m",
   display: "flex",
   flexFlow: "row nowrap",
   justifyContent: "flex-start",
@@ -19,8 +19,8 @@ const Wrapper = styled(Box, {
   },
 
   p: {
-    // maxWidth: "800px",
-    // fontSize: "$m",
+    maxWidth: "700px",
+    // fontSize: "$l",
     // fontWeight: "$m",
     lineHeight: "$xs",
   },

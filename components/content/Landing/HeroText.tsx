@@ -1,24 +1,34 @@
 import { CaretDownIcon } from "@radix-ui/react-icons"
 import { keyframes } from "@stitches/core"
-import { styled } from "../../styles/stitches.config"
-import Box from "../layout/Box"
-import Padding from "../layout/Padding"
+import { styled } from "../../../styles/stitches.config"
+import Box from "../../layout/Box"
 
 const Wrapper = styled(Box, {
   display: "flex",
   flexDirection: "column",
   justifyContent: "flex-end",
+  paddingTop: "100px",
+  paddingLeft: "20px",
 
-  h1: {},
   h3: {
     color: "$gray",
   },
-
   p: {},
-
   "#pointer": {
     maxWidth: "$xl",
     maxHeight: "$xl",
+  },
+
+  "@bp1": {},
+
+  "@bp2": {
+    paddingTop: "200px",
+    paddingLeft: "20px",
+  },
+
+  "@bp3": {
+    paddingTop: "200px",
+    paddingLeft: "20px",
   },
 })
 
@@ -32,31 +42,22 @@ const scaleUp = keyframes({
 })
 
 const Pointer = styled(CaretDownIcon, {
-  width: "5vh",
-  height: "5vh",
+  width: "3vh",
+  height: "3vh",
   animation: `${scaleUp} 3s infinite`,
 })
 
 export default () => {
   return (
-    <Box column center viewport>
-      <Padding l>
-        <Wrapper>
-          <h3> I'm Peter</h3>
-          <h1>I build web apps</h1>
-          <p>
-            As a software engineer I architect accessible digital experiences
-            for businesses. Currently, I'm building internal solutions at
-            PayPal.
-          </p>
+    <Wrapper>
+      <Box>
+        <h1 id="hero-text">I build digital experiences</h1>
+      </Box>
 
-          <br></br>
-          <Box row>
-            <p>Read more about me below!</p>
-            <Pointer id="pointer"></Pointer>
-          </Box>
-        </Wrapper>
-      </Padding>
-    </Box>
+      <Box row>
+        <p>Read more about me below!</p>
+        <Pointer id="pointer"></Pointer>
+      </Box>
+    </Wrapper>
   )
 }

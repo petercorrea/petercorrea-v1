@@ -7,15 +7,25 @@ import Image from "../ui/Image"
 import Tags from "../ui/Tags"
 
 const Wrapper = styled(Box, {
-  marginBottom: "$xl",
+  marginBottom: "$xxxl",
   display: "flex",
   "flex-direction": "row",
   "align-items": "flex-start",
+  "scroll-snap-align": "start",
   h3: {
     color: "$black",
   },
   h6: {
     marginBottom: "$s",
+  },
+
+  p: {
+    color: "black",
+    fontWeight: "300",
+  },
+  "#section-work": {
+    // position: "absolute",
+    // top: "-180px",
   },
 
   "@bp1": {
@@ -25,24 +35,11 @@ const Wrapper = styled(Box, {
   "@bp3": { "flex-direction": "column" },
 })
 
-const Column = styled("div", {
-  minWidth: "100%",
+const Column = styled(Box, {
   display: "flex",
   flexDirection: "column",
   justifyContent: "flex-start",
   flexBasis: "80%",
-})
-
-const CompanyTitle = styled(Box, {
-  // border: "red solid 1px",
-  display: "flex",
-  flexFlow: "row nowrap",
-  alignItems: "flex-end",
-  justifyContent: "space-between",
-  marginBottom: "$s",
-  "& > *": {
-    // marginRight: "$l",
-  },
 })
 
 const ImageContainer = styled(Box, {
@@ -54,33 +51,34 @@ const ImageContainer = styled(Box, {
 export default () => {
   const items = content.experience
   const html = []
-
-  // generate each row
+  // generate each work experience
   for (const idx in items) {
     html.push(
-      <Wrapper key={idx}>
-        <Column>
-          <CompanyTitle>
+      <Wrapper key={idx} center>
+        <Box row>
+          <Column>
+            {idx === "0" ? <h1 id="section-work">work</h1> : ""}
             <h3>{items[idx].title}</h3>
-            {items[idx].logo ? (
-              <ImageContainer>
-                <Image
-                  src={items[idx].logo}
-                  objectFit="contain"
-                  // size="m"
-                  alt="logo"
-                  priority
-                ></Image>
-              </ImageContainer>
-            ) : (
-              ""
-            )}
-          </CompanyTitle>
-          <Tags list={items[idx].skills} blue />
-        </Column>
+            <h3>{items[idx].company}</h3>
+            <p>{items[idx].years}</p>
+            <Tags list={items[idx].skills} blue />
+          </Column>
 
+          {items[idx].logo ? (
+            <ImageContainer>
+              <Image
+                src={items[idx].logo}
+                objectFit="contain"
+                // size="m"
+                alt="logo"
+                priority
+              ></Image>
+            </ImageContainer>
+          ) : (
+            ""
+          )}
+        </Box>
         <Box column>
-          <h6>{items[idx].team}</h6>
           <Bullets items={items[idx]["bullet-points"]}></Bullets>
         </Box>
       </Wrapper>
@@ -89,10 +87,7 @@ export default () => {
 
   return (
     <Padding id="experience" l>
-      <Box column>
-        <h1>work</h1>
-        {html}
-      </Box>
+      {html}
     </Padding>
   )
 }

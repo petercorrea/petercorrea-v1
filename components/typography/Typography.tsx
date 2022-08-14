@@ -1,6 +1,4 @@
 import { styled } from "../../styles/stitches.config"
-import Block from "../layout/Block"
-import Box from "../layout/Box"
 import Padding from "../layout/Padding"
 import Button from "../ui/Button"
 import Href from "../ui/Href"
@@ -44,13 +42,6 @@ export default () => {
         >
           Submit
         </Button>
-        <br />
-        <br />
-        <Box border row right>
-          <Block>Text</Block>
-          <Block>Text</Block>
-          <Block>Text</Block>
-        </Box>
       </Wrapper>
     </Padding>
   )

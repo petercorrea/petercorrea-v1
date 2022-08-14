@@ -9,7 +9,8 @@ import StyledLink from "./StyledLink"
 
 const MobileNavbar = styled(Box, {
   flexDirection: "column",
-  position: "sticky",
+  position: "absolute",
+  height: "80px",
   top: "-$xxl",
   bottom: "$z",
   zIndex: 10,

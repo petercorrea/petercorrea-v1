@@ -91,11 +91,6 @@ const Box = styled("div", {
         },
       },
     },
-    bg: {
-      true: {
-        backgroundColor: "$bg",
-      },
-    },
   },
 })
 

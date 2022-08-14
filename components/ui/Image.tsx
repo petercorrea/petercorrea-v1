@@ -40,6 +40,14 @@ const ImageWrapper = styled(Box, {
         width: "$400",
         height: "$400",
       },
+      xxxl: {
+        width: "$400",
+        height: "$400",
+      },
+      fill: {
+        width: "100%",
+        height: "100%",
+      },
     },
   },
 })
@@ -47,19 +55,29 @@ const ImageWrapper = styled(Box, {
 type ImageProps = {
   src: string | StaticImageData
   alt: string
-  size?: "xxs" | "xs" | "s" | "m" | "l" | "xl" | "xxl"
+  size?: "xxs" | "xs" | "s" | "m" | "l" | "xl" | "xxl" | "xxxl"
   objectFit: "contain" | "cover"
   priority?: boolean
+  height?: string
+  width?: string
 }
 
 // for custom sizing, wrap this components within a Box and set it's dimensions
 // as this Image component will conform to the size
 
-export default ({ src, alt, size, objectFit, priority }: ImageProps) => {
+export default ({
+  src,
+  alt,
+  size,
+  objectFit,
+  priority,
+  height,
+  width,
+}: ImageProps) => {
   return (
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     //@ts-ignore
-    <ImageWrapper size={size}>
+    <ImageWrapper size={size} width={width} height={height}>
       <Image
         src={src}
         alt={alt}
